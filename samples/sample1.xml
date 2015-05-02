@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<event xmlns="http://auckland.ac.nz">
+  <name>name1</name>
+  <organiser>organiser1</organiser>
+  <location>location1</location>
+  <start>1900-01-01T01:01:01+13:00</start>
+  <end>1900-01-01T01:01:01+13:00</end>
+  <subEvents>
+    <subEvent>
+      <name>name1</name>
+      <presenter>presenter1</presenter>
+      <location>location1</location>
+      <start>1900-01-01T01:01:01+13:00</start>
+      <end>1900-01-01T01:01:01+13:00</end>
+    </subEvent>
+    <subEvent>
+      <name>name1</name>
+      <presenter>presenter1</presenter>
+      <location>location1</location>
+      <start>1900-01-01T01:01:01+13:00</start>
+      <end>1900-01-01T01:01:01+13:00</end>
+    </subEvent>
+  </subEvents>
+</event>

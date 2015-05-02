@@ -2,34 +2,37 @@
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
 	targetNamespace="http://auckland.ac.nz"
 	xmlns="http://auckland.ac.nz"
-	elementFormDefault="qualified">
+	elementFormDefault="qualified"
+           version="0.1.0">
 
 
-<xs:complexType name="subEvent">
-  <xs:sequence>
+  <xs:complexType name="subEvent">
+    <xs:sequence>
       <xs:element name="name" type="xs:string"/>
       <xs:element name="presenter" type="xs:string"/>
       <xs:element name="location" type="xs:string"/>
       <xs:element name="start" type="xs:dateTime"/>
       <xs:element name="end" type="xs:dateTime"/>
-  </xs:sequence>
-</xs:complexType>
-
-<xs:element name="event">
-  <xs:complexType>
-    <xs:sequence>
-      <xs:element name="name" type="xs:string"/>
-      <xs:element name="organiser" type="xs:string"/>
-      <xs:element name="location" type="xs:string"/>
-      <xs:element name="start" type="xs:dateTime"/>
-      <xs:element name="end" type="xs:dateTime"/>
-      <xs:element name="subEvents">
-          <xs:simpleType>
-              <xs:list itemType="subEvent"/>
-          </xs:simpleType>
-      </xs:element>
     </xs:sequence>
   </xs:complexType>
-</xs:element>
+
+  <xs:element name="event">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="name" type="xs:string"/>
+        <xs:element name="organiser" type="xs:string"/>
+        <xs:element name="location" type="xs:string"/>
+        <xs:element name="start" type="xs:dateTime"/>
+        <xs:element name="end" type="xs:dateTime"/>
+        <xs:element name="subEvents">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="subEvent" type="subEvent" maxOccurs="unbounded" />
+            </xs:sequence>
+          </xs:complexType>            
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
 
 </xs:schema>

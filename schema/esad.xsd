@@ -3,36 +3,74 @@
 	targetNamespace="http://auckland.ac.nz"
 	xmlns="http://auckland.ac.nz"
 	elementFormDefault="qualified"
-           version="0.1.0">
+  version="0.1.0">
 
 
-  <xs:complexType name="subEvent">
+  <xs:complexType name="contactDetail">
+    <xs:sequence>
+      <xs:element name="type" type="xs:string"/>
+      <xs:element name="value" type="xs:string"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="person">
     <xs:sequence>
       <xs:element name="name" type="xs:string"/>
-      <xs:element name="presenter" type="xs:string"/>
+      <xs:element name="role" type="xs:string"/>
+      <xs:element name="contactDetails">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="contactDetail" type="contactDetail" maxOccurs="unbounded"/>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="event">
+    <xs:sequence>
+      <xs:element name="title" type="xs:string"/>
       <xs:element name="location" type="xs:string"/>
       <xs:element name="start" type="xs:dateTime"/>
       <xs:element name="end" type="xs:dateTime"/>
     </xs:sequence>
   </xs:complexType>
 
-  <xs:element name="event">
-    <xs:complexType>
-      <xs:sequence>
-        <xs:element name="name" type="xs:string"/>
-        <xs:element name="organiser" type="xs:string"/>
-        <xs:element name="location" type="xs:string"/>
-        <xs:element name="start" type="xs:dateTime"/>
-        <xs:element name="end" type="xs:dateTime"/>
-        <xs:element name="subEvents">
-          <xs:complexType>
-            <xs:sequence>
-              <xs:element name="subEvent" type="subEvent" maxOccurs="unbounded" />
-            </xs:sequence>
-          </xs:complexType>            
-        </xs:element>
-      </xs:sequence>
-    </xs:complexType>
-  </xs:element>
+  <xs:complexType name="subEvent">
+    <xs:complexContent>
+        <xs:extension base="event">
+          <xs:sequence>
+            <xs:element name="description" type="xs:string"/>
+            <xs:element name="type" type="xs:string"/>
+            <xs:element name="people">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="person" type="person" maxOccurs="unbounded"/>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+          </xs:sequence>
+        </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+
+  <xs:complexType name="superEvent">
+    <xs:complexContent>
+        <xs:extension base="event">
+          <xs:sequence>
+            <xs:element name="organiser" type="xs:string"/>
+            <xs:element name="subEvents">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="subEvent" type="subEvent" maxOccurs="unbounded" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+          </xs:sequence>
+        </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+
+  <xs:element name="event" type="superEvent"/>
 
 </xs:schema>

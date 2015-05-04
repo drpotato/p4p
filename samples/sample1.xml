@@ -1,26 +1,40 @@
 <?xml version="1.0" encoding="utf-8"?>
 <event>
-  <title>str1234</title>
-  <location>str1234</location>
+  <title>Part IV Project Presentations</title>
+  <location>The University of Auckland</location>
   <start>2012-12-13T12:12:12</start>
   <end>2012-12-13T12:12:12</end>
-  <organiser>str1234</organiser>
+  <organiser>The University of Auckland</organiser>
   <subEvents>
     <subEvent>
-      <title>str1234</title>
-      <location>str1234</location>
+      <title>Event Syndication and Dissemination</title>
+      <location>303-UG4</location>
       <start>2012-12-13T12:12:12</start>
       <end>2012-12-13T12:12:12</end>
-      <description>str1234</description>
-      <type>str1234</type>
+      <description>
+        Conferences and events (such as the P4P project exhibitions) publish a schedule of events. This is done in an ad-hoc fashion with no publishing standard.
+        Compare this with News syndication where the RSS format governs how the News feeds are stored and transmitted. The RSS format allows News agencies to publish their article summaries in a standardized format enabling generic clients to consume the summaries, yet allowing each agency to have freedom in representing the full articles in their own form and style.
+        This project has two aspects to it. Firstly, to design and propose a standard format that encompasses the schedule requirements of conferences and events. Secondly, to develop reference client implementations (for both mobile and web) that consume and render schedules adhering to this standard format.
+      </description>
+      <type>Project Presentation</type>
       <people>
         <person>
-          <name>str1234</name>
-          <role>str1234</role>
+          <name>Chris Morgan</name>
+          <role>Contributor</role>
           <contactDetails>
             <contactDetail>
-              <type>str1234</type>
-              <value>str1234</value>
+              <type>emailAddress</type>
+              <value>cmor149@aucklanduni.ac.nz</value>
+            </contactDetail>
+          </contactDetails>
+        </person>
+        <person>
+          <name>Matthew Dyer</name>
+          <role>Contributor</role>
+          <contactDetails>
+            <contactDetail>
+              <type>emailAddress</type>
+              <value>mdye000@aucklanduni.ac.nz</value>
             </contactDetail>
           </contactDetails>
         </person>

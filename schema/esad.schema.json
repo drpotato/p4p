@@ -1,6 +1,5 @@
 {
   "$schema": "http://json-schema.org/draft-04/schema#",
-
   "definitions": {
     "contactDetail": {
       "type": "object",
@@ -8,7 +7,6 @@
         "type": {"type": "string"},
         "value": {"type": "string"}
       },
-      "required": ["type", "value"]
     },
     "person" :{
       "type": "object",
@@ -17,7 +15,6 @@
         "role": {"type": "string"},
         "contactDetails" : {"type": "array", "items": {"$ref": "#/definitions/contactDetail"}}
       },
-      "required": ["name"]
     },
     "event": {
       "type": "object",
@@ -27,31 +24,25 @@
         "startTime": {"type": "string"},
         "endTime": {"type": "string"}
       },
-      "required": ["title", "location", "start_time", "end_time"]
     },
     "subEvent": {
       "type": "object",
       "allOf": [
         {"$ref": "#/definitions/event"},
-        {
-          "properties": {
+        {"properties": {
             "description": {"type": "string"},
             "type": {"type": "string"},
             "people": {"type": "array", "items": {"$ref": "#/definitions/person"}}
           },
-          "required": ["people"]
         }
       ]
     }
   },
-
   "title": "Conference",
-  "description": "A product from Acme's catalog",
   "type": "object",
   "allOf": [
     {"$ref": "#/definition/event"},
-    {
-      "properties": {
+    {"properties": {
         "organiser": {"type": "string"},
         "subEvents": {"type": "array", "items": {"$ref": "#/definitions/subEvent"}}
       }

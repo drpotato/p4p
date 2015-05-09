@@ -1,11 +1,8 @@
 <?xml version="1.0"?>
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
-	targetNamespace="http://auckland.ac.nz"
-	xmlns="http://auckland.ac.nz"
-	elementFormDefault="qualified"
-  version="0.1.0">
-
-
+	targetNamespace="http://auckland.ac.nz" xmlns="http://auckland.ac.nz"
+	elementFormDefault="qualified" version="0.1.0">
+  
   <xs:complexType name="contactDetail">
     <xs:sequence>
       <xs:element name="type" type="xs:string"/>

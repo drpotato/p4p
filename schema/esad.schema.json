@@ -41,7 +41,7 @@
   "title": "Conference",
   "type": "object",
   "allOf": [
-    {"$ref": "#/definition/event"},
+    {"$ref": "#/definitions/event"},
     {"properties": {
         "organiser": {"type": "string"},
         "subEvents": {"type": "array", "items": {"$ref": "#/definitions/subEvent"}}

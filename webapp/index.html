@@ -4,9 +4,70 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <style>
+        .textArea {
+            margin-top:10%;
+            border: 1px hsl(0,100%,0%);
+            width:100%;
+            height:60%;
+        };    
+    </style>
     </head>
     <body>
         <div class="container">
+            <div class="col-md-6">
+            <textarea class="textArea" id="textArea">{
+          "event": {
+            "title": "Part IV Project Presentations",
+            "location": "The University of Auckland",
+            "start": "2012-12-13T12:12:12",
+            "end": "2012-12-13T12:12:12",
+            "organiser": "The University of Auckland",
+            "subEvents": {
+              "subEvent": {
+                "title": "Event Syndication and Dissemination",
+                "location": "303-UG4",
+                "start": "2012-12-13T12:12:12",
+                "end": "2012-12-13T12:12:12",
+                "description": "Conferences and events (such as the P4P project exhibitions) publish a schedule of events. This is done in an ad-hoc fashion with no publishing standard.\nCompare this with News syndication where the RSS format governs how the News feeds are stored and transmitted. The RSS format allows News agencies to publish their article summaries in a standardized format enabling generic clients to consume the summaries, yet allowing each agency to have freedom in representing the full articles in their own form and style.\nThis project has two aspects to it. Firstly, to design and propose a standard format that encompasses the schedule requirements of conferences and events. Secondly, to develop reference client implementations (for both mobile and web) that consume and render schedules adhering to this standard format.",
+                "type": "Project Presentation",
+                "people": {
+                  "person": [
+                    {
+                      "name": "Chris Morgan",
+                      "role": "Contributor",
+                      "contactDetails": {
+                        "contactDetail": {
+                          "type": "emailAddress",
+                          "value": "cmor149@aucklanduni.ac.nz"
+                        }
+                      }
+                    },
+                    {
+                      "name": "Matthew Dyer",
+                      "role": "Contributor",
+                      "contactDetails": {
+                        "contactDetail": {
+                          "type": "emailAddress",
+                          "value": "mdye175@aucklanduni.ac.nz"
+                        }
+                      }
+                    }
+                  ]
+                }
+              }
+            }
+          }
+        }</textarea>
+            </div>
+            <div class="col-md-6">
+                <h1 id="title"></h1>
+                <h3 id="location"></h3>
+                <h3 id="start"></h3>
+                <h3 id="end"></h3>
+                <h3 id="organiser"></h3>
+                <ul id="subEvents"></ul>
+            </div>
         </div>
     
     </body>
@@ -68,55 +129,33 @@
             }
           ]
         });
-        console.log(env);
-
-        var errors = env.validate('event',{
-          "event": {
-            "title": "Part IV Project Presentations",
-            "location": "The University of Auckland",
-            "start": "2012-12-13T12:12:12",
-            "end": "2012-12-13T12:12:12",
-            "organiser": "The University of Auckland",
-            "subEvents": {
-              "subEvent": {
-                "title": "Event Syndication and Dissemination",
-                "location": "303-UG4",
-                "start": "2012-12-13T12:12:12",
-                "end": "2012-12-13T12:12:12",
-                "description": "Conferences and events (such as the P4P project exhibitions) publish a schedule of events. This is done in an ad-hoc fashion with no publishing standard.\nCompare this with News syndication where the RSS format governs how the News feeds are stored and transmitted. The RSS format allows News agencies to publish their article summaries in a standardized format enabling generic clients to consume the summaries, yet allowing each agency to have freedom in representing the full articles in their own form and style.\nThis project has two aspects to it. Firstly, to design and propose a standard format that encompasses the schedule requirements of conferences and events. Secondly, to develop reference client implementations (for both mobile and web) that consume and render schedules adhering to this standard format.",
-                "type": "Project Presentation",
-                "people": {
-                  "person": [
-                    {
-                      "name": "Chris Morgan",
-                      "role": "Contributor",
-                      "contactDetails": {
-                        "contactDetail": {
-                          "type": "emailAddress",
-                          "value": "cmor149@aucklanduni.ac.nz"
-                        }
-                      }
-                    },
-                    {
-                      "name": "Matthew Dyer",
-                      "role": "Contributor",
-                      "contactDetails": {
-                        "contactDetail": {
-                          "type": "emailAddress",
-                          "value": "mdye000@aucklanduni.ac.nz"
-                        }
-                      }
-                    }
-                  ]
-                }
-              }
-            }
-          }
+        window.onload = updateEvent;
+        $('#textArea').on('keyup',function(){
+           updateEvent();
         });
-        if (!errors) {
-            alert('User has been validated.')
-        } else {
-            console.log('Failed with error object ' + JSON.stringify(errors));
+
+        function updateEvent(){
+            var event = JSON.parse($('#textArea').val());
+            var errors = env.validate('event',event);
+            if (!errors) {
+                $('#subEvents').empty();
+                $('#title').text(event.event.title);
+                $('#location').text(event.event.location);
+                $('#start').text("Starts: " + event.event.start);
+                $('#end').text("Ends: "+ event.event.end);
+                $('#organiser').text(event.event.organiser);
+                $.each(event.event.subEvents,function(key,subEvent){
+                    console.log(subEvent.title);
+                    $('#subEvents').append("<li id='"+key+"'></li>");
+                    var id = "#"+key;
+                    $(id).append("<h3>"+subEvent.title+"</h3>");
+                    $(id).append("<p>"+subEvent.location+"</p>");
+                    $(id).append("<p>"+subEvent.description+"</p>");
+
+                });
+            } else {
+                alert('Failed with error object ' + JSON.stringify(errors));
+            }
         }
     </script>
 </html>

@@ -122,3 +122,5 @@ sympy-plots-for-*.tex/
 *.xdy
 
 .idea/
+
+node_modules/

@@ -10,63 +10,49 @@
             border: 1px hsl(0,100%,0%);
             width:100%;
             height:60%;
-        };    
+        }  
+        
+        .btn-file {
+            position: relative;
+            overflow: hidden;
+        }
+        .btn-file input[type=file] {
+            position: absolute;
+            top: 0;
+            right: 0;
+            min-width: 100%;
+            min-height: 100%;
+            font-size: 100px;
+            text-align: right;
+            filter: alpha(opacity=0);
+            opacity: 0;
+            outline: none;
+            background: white;
+            cursor: inherit;
+            display: block;
+        }
     </style>
     </head>
-    <body>
-        <div class="container">
+    <body ng-app="event">
+        <div class="container"  ng-controller="EventController as eventApp">
             <div class="col-md-6">
-            <textarea class="textArea" id="textArea">{
-          "event": {
-            "title": "Part IV Project Presentations",
-            "location": "The University of Auckland",
-            "start": "2012-12-13T12:12:12",
-            "end": "2012-12-13T12:12:12",
-            "organiser": "The University of Auckland",
-            "subEvents": {
-              "subEvent": {
-                "title": "Event Syndication and Dissemination",
-                "location": "303-UG4",
-                "start": "2012-12-13T12:12:12",
-                "end": "2012-12-13T12:12:12",
-                "description": "Conferences and events (such as the P4P project exhibitions) publish a schedule of events. This is done in an ad-hoc fashion with no publishing standard.\nCompare this with News syndication where the RSS format governs how the News feeds are stored and transmitted. The RSS format allows News agencies to publish their article summaries in a standardized format enabling generic clients to consume the summaries, yet allowing each agency to have freedom in representing the full articles in their own form and style.\nThis project has two aspects to it. Firstly, to design and propose a standard format that encompasses the schedule requirements of conferences and events. Secondly, to develop reference client implementations (for both mobile and web) that consume and render schedules adhering to this standard format.",
-                "type": "Project Presentation",
-                "people": {
-                  "person": [
-                    {
-                      "name": "Chris Morgan",
-                      "role": "Contributor",
-                      "contactDetails": {
-                        "contactDetail": {
-                          "type": "emailAddress",
-                          "value": "cmor149@aucklanduni.ac.nz"
-                        }
-                      }
-                    },
-                    {
-                      "name": "Matthew Dyer",
-                      "role": "Contributor",
-                      "contactDetails": {
-                        "contactDetail": {
-                          "type": "emailAddress",
-                          "value": "mdye175@aucklanduni.ac.nz"
-                        }
-                      }
-                    }
-                  ]
-                }
-              }
-            }
-          }
-        }</textarea>
+                <form ng-submit="validate()">
+                    <div class="form-group">
+                        <span class="btn btn-default btn-file">
+                            Browse <input id="fileInput" type="file"  custom-on-change="uploadFile">
+                        </span>
+                        <input class="btn btn-primary" type="submit" value="Validate">
+                        <pre>{{jsonText}}</pre>
+                    </div>
+                </form>
             </div>
             <div class="col-md-6">
-                <h1 id="title"></h1>
-                <h3 id="location"></h3>
-                <h3 id="start"></h3>
-                <h3 id="end"></h3>
-                <h3 id="organiser"></h3>
-                <ul id="subEvents"></ul>
+                <h1 id="title">{{event.title}}</h1>
+                <h3 id="location">{{event.location}}</h3>
+                <h3 id="start">{{event.start}}</h3>
+                <h3 id="end">{{event.end}}</h3>
+                <h3 id="organiser">{{event.organiser}}</h3>
+                <ul id="subEvents">{{event.subEvents}}</ul>
             </div>
         </div>
     
@@ -74,88 +60,13 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
     <script src="jjv.js"></script>
+    <script src="node_modules/angular/angular.min.js"></script>
+    <script src="node_modules/ng-file-upload/dist/ng-file-upload.min.js"></script> 
+    <script src="event.js"></script>
+    
     <script type="text/javascript">
-        //Create a validator
-        var env = jjv();
-        
-        env.addSchema('event',{
-          "$schema": "http://json-schema.org/draft-04/schema#",
-          "definitions": {
-            "contactDetail": {
-              "type": "object",
-              "properties": {
-                "type": {"type": "string"},
-                "value": {"type": "string"}
-              },
-            },
-            "person" :{
-              "type": "object",
-              "properties": {
-                "name" : {"type": "string"},
-                "role": {"type": "string"},
-                "contactDetails" : {"type": "array", "items": {"$ref": "#/definitions/contactDetail"}}
-              },
-            },
-            "event": {
-              "type": "object",
-              "properties": {
-                "title": {"type": "string"},
-                "location": {"type": "string"},
-                "startTime": {"type": "string"},
-                "endTime": {"type": "string"}
-              },
-            },
-            "subEvent": {
-              "type": "object",
-              "allOf": [
-                {"$ref": "#/definitions/event"},
-                {"properties": {
-                    "description": {"type": "string"},
-                    "type": {"type": "string"},
-                    "people": {"type": "array", "items": {"$ref": "#/definitions/person"}}
-                  },
-                }
-              ]
-            }
-          },
-          "title": "Conference",
-          "type": "object",
-          "allOf": [
-            {"$ref": "#/definitions/event"},
-            {"properties": {
-                "organiser": {"type": "string"},
-                "subEvents": {"type": "array", "items": {"$ref": "#/definitions/subEvent"}}
-              }
-            }
-          ]
-        });
-        window.onload = updateEvent;
-        $('#textArea').on('keyup',function(){
-           updateEvent();
-        });
+        //document.getElementById('fileInput').addEventListener('change', handleFileSelect, false);
 
-        function updateEvent(){
-            var event = JSON.parse($('#textArea').val());
-            var errors = env.validate('event',event);
-            if (!errors) {
-                $('#subEvents').empty();
-                $('#title').text(event.event.title);
-                $('#location').text(event.event.location);
-                $('#start').text("Starts: " + event.event.start);
-                $('#end').text("Ends: "+ event.event.end);
-                $('#organiser').text(event.event.organiser);
-                $.each(event.event.subEvents,function(key,subEvent){
-                    console.log(subEvent.title);
-                    $('#subEvents').append("<li id='"+key+"'></li>");
-                    var id = "#"+key;
-                    $(id).append("<h3>"+subEvent.title+"</h3>");
-                    $(id).append("<p>"+subEvent.location+"</p>");
-                    $(id).append("<p>"+subEvent.description+"</p>");
-
-                });
-            } else {
-                alert('Failed with error object ' + JSON.stringify(errors));
-            }
-        }
     </script>
+   
 </html>

@@ -1,0 +1,13 @@
+{
+    "name": "p4p",
+    "version": "0.0.1",
+    "main": "index.html",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/drpotato/p4p"
+    },
+    "dependencies": {
+        "angular":"1.4.0",
+        "ng-file-upload":"4.2.4"
+    }
+}

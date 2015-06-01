@@ -8,6 +8,7 @@
     },
     "dependencies": {
         "angular":"1.4.0",
-        "ng-file-upload":"4.2.4"
+        "ng-file-upload":"4.2.4",
+        "is-my-json-valid":"2.12.0"
     }
 }

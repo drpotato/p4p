@@ -12,61 +12,109 @@ eventApp.directive('customOnChange', function() {
 
 eventApp.controller('EventController',function($scope){
    //Create a validator
-    var env = jjv();
+    var validator = require('is-my-json-valid');
     
 
-    env.addSchema('event',{
-      "$schema": "http://json-schema.org/draft-04/schema#",
-      "definitions": {
+    var schema = {
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "definitions": {
         "contactDetail": {
-          "type": "object",
-          "properties": {
-            "type": {"type": "string"},
-            "value": {"type": "string"}
-          },
+            "type": "object",
+            "properties": {
+                "type": {
+                    "type": "string"
+                },
+                "value": {
+                    "type": "string"
+                }
+            }
         },
-        "person" :{
-          "type": "object",
-          "properties": {
-            "name" : {"type": "string"},
-            "role": {"type": "string"},
-            "contactDetails" : {"type": "array", "items": {"$ref": "#/definitions/contactDetail"}}
-          },
+        "person": {
+            "type": "object",
+            "properties": {
+                "name": {
+                    "type": "string"
+                },
+                "role": {
+                    "type": "string"
+                },
+                "contactDetails": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/contactDetail"
+                    }
+                }
+            }
         },
         "event": {
-          "type": "object",
-          "properties": {
-            "title": {"type": "string"},
-            "location": {"type": "string"},
-            "startTime": {"type": "string"},
-            "endTime": {"type": "string"}
-          },
+            "type": "object",
+            "properties": {
+                "title": {
+                    "type": "string",
+                    "required":true
+                },
+                "location": {
+                    "type": "string"
+                },
+                "startTime": {
+                    "type": "string"
+                },
+                "endTime": {
+                    "type": "string"
+                }
+            }
         },
         "subEvent": {
-          "type": "object",
-          "allOf": [
-            {"$ref": "#/definitions/event"},
-            {"properties": {
-                "description": {"type": "string"},
-                "type": {"type": "string"},
-                "people": {"type": "array", "items": {"$ref": "#/definitions/person"}}
-              },
+            "type": "object",
+            "allOf": [
+                {
+                    "$ref": "#/definitions/event"
+                },
+                {
+                    "properties": {
+                        "description": {
+                            "type": "string"
+                        },
+                        "type": {
+                            "type": "string"
+                        },
+                        "people": {
+                            "type": "array",
+                            "items": {
+                                "$ref": "#/definitions/person"
+                            }
+                        }
+                    }
+                }
+            ]
+        }
+    },
+    "title": "Conference",
+    "type": "object",
+    "allOf": [
+        {
+            "$ref": "#/definitions/event"
+        },
+        {
+            "properties": {
+                "organiser": {
+                    "type": "string"
+                },
+                "subEvents": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/subEvent"
+                    }
+                }
             }
-          ]
         }
-      },
-      "title": "Conference",
-      "type": "object",
-      "allOf": [
-        {"$ref": "#/definitions/event"},
-        {"properties": {
-            "organiser": {"type": "string"},
-            "subEvents": {"type": "array", "items": {"$ref": "#/definitions/subEvent"}}
-          }
-        }
-      ]
+    ]
+};
+    var validate = validator(schema, {
+      verbose: true,
+      greedy: true
     });
-    
+
     
     
     $scope.uploadFile = function(evt) {
@@ -81,16 +129,18 @@ eventApp.controller('EventController',function($scope){
 
         reader.onload = function(file){
             $scope.jsonText = reader.result;
-            console.log(reader);
         };    
     };
     
     $scope.validate = function(){
         var eventJSON = JSON.parse($scope.jsonText);
-        var errors = env.validate('event',eventJSON);
-        if (errors){
+        validate(eventJSON);
+        if (validate.errors){
             //Handle Error States 
             $scope.event = null;
+            validate.errors.forEach(function(error){
+               console.log(error); 
+            });
         }else{
             $scope.event = eventJSON.event;
             console.log($scope.event);

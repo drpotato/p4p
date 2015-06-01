@@ -47,19 +47,32 @@
                 </form>
             </div>
             <div class="col-md-6">
-                <h1 id="title">{{event.title}}</h1>
-                <h3 id="location">{{event.location}}</h3>
-                <h3 id="start">{{event.start}}</h3>
-                <h3 id="end">{{event.end}}</h3>
-                <h3 id="organiser">{{event.organiser}}</h3>
-                <ul id="subEvents">{{event.subEvents}}</ul>
+                <h1>{{event.title}}</h1>
+                <h3>{{event.location}}</h3>
+                <h3>{{event.start}}</h3>
+                <h3>{{event.end}}</h3>
+                <h3>{{event.organiser}}</h3>
+                <ul>
+                    <li ng-repeat="subEvent in event.subEvents">
+                        <h3>{{subEvent.title}}</h3>
+                        <h3>{{subEvent.location}}</h3>
+                        <h3>{{subEvent.start}}</h3>
+                        <h3>{{subEvent.end}}</h3>
+                        <p>{{subEvent.description}}</p>
+                        <ul>
+                            <li ng-repeat="person in subEvent.people.person">
+                                 <h3>{{person.name}}</h3>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
             </div>
         </div>
     
     </body>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
-    <script src="jjv.js"></script>
+    <script src="js/is-my-json-valid.js"></script>
     <script src="node_modules/angular/angular.min.js"></script>
     <script src="node_modules/ng-file-upload/dist/ng-file-upload.min.js"></script> 
     <script src="event.js"></script>

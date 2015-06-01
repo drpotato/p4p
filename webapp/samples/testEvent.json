@@ -5,8 +5,8 @@
     "start": "2012-12-13T12:12:12",
     "end": "2012-12-13T12:12:12",
     "organiser": "The University of Auckland",
-    "subEvents": {
-      "subEvent": {
+    "subEvents": [
+      {
         "title": "Event Syndication and Dissemination",
         "location": "303-UG4",
         "start": "2012-12-13T12:12:12",
@@ -25,7 +25,7 @@
                 }
               }
             },
-            {
+              {
               "name": "Matthew Dyer",
               "role": "Contributor",
               "contactDetails": {
@@ -38,6 +38,6 @@
           ]
         }
       }
-    }
+    ]
   }
 }

@@ -31,6 +31,24 @@
             cursor: inherit;
             display: block;
         }
+        
+        
+        .eventListItem {        
+            -webkit-transition: max-height 0.3s;
+            -moz-transition: max-height 0.3s;
+            transition: max-height 0.3s;
+            transition: opacity 0.2s ease-in-out;
+            overflow: hidden;
+            display: block !important;
+            max-height: 0;
+            opacity:0;
+        }
+        
+        .eventListItem.visible {
+            opacity:1;
+            max-height: 1000px;
+        }
+        
     </style>
     </head>
     <body ng-app="event">
@@ -52,18 +70,9 @@
                 <h3>{{event.start}}</h3>
                 <h3>{{event.end}}</h3>
                 <h3>{{event.organiser}}</h3>
-                <ul>
-                    <li ng-repeat="subEvent in event.subEvents">
-                        <h3>{{subEvent.title}}</h3>
-                        <h3>{{subEvent.location}}</h3>
-                        <h3>{{subEvent.start}}</h3>
-                        <h3>{{subEvent.end}}</h3>
-                        <p>{{subEvent.description}}</p>
-                        <ul>
-                            <li ng-repeat="person in subEvent.people.person">
-                                 <h3>{{person.name}}</h3>
-                            </li>
-                        </ul>
+                <ul class="list-unstyled">
+                    <li ng-repeat="subEvent in event.subEvents" class="panel panel-default">
+                        <eventitem event="subEvent"></eventitem>
                     </li>
                 </ul>
             </div>
@@ -76,6 +85,7 @@
     <script src="js/event.js"></script>
     <script src="node_modules/angular/angular.min.js"></script>
     <script src="node_modules/ng-file-upload/dist/ng-file-upload.min.js"></script> 
+    <script src="js/components.js"></script>
     <script src="app.js"></script>
     <script type="text/javascript">
         //document.getElementById('fileInput').addEventListener('change', handleFileSelect, false);

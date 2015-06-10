@@ -55,6 +55,8 @@ EventValidator.prototype.validate = function(json){
     return result(json);
 };
 
+var module = module || null;
+
 if (module){
  module.exports = EventValidator;   
 }

@@ -83,8 +83,9 @@ eventApp.controller('EventController', function ($scope, $http) {
     }
     var file = files[0];
     var reader = new FileReader();
-    reader.onload = function (file) {
-      $scope.jsonText = reader.result;
+    reader.onload = function (e) {
+      $scope.jsonText = e.target.result;
+      $scope.$apply();
     };
     reader.readAsText(file);
   };

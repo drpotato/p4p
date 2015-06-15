@@ -14,7 +14,7 @@
         "name" : {"type": "string"},
         "role": {"type": "string"},
         "contactDetails" : {"type": "array", "items": {"$ref": "#/definitions/contactDetail"}}
-      },
+      }
     },
     "event": {
       "type": "object",
@@ -33,7 +33,7 @@
             "description": {"type": "string"},
             "type": {"type": "string"},
             "people": {"type": "array", "items": {"$ref": "#/definitions/person"}}
-          },
+          }
         }
       ]
     }

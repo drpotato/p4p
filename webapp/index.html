@@ -33,7 +33,7 @@
         }
         
         
-        .eventListItem {        
+        .expandable {        
             -webkit-transition: max-height 0.3s;
             -moz-transition: max-height 0.3s;
             transition: max-height 0.3s;
@@ -41,12 +41,29 @@
             overflow: hidden;
             display: block !important;
             max-height: 0;
+            min-height: 0;
             opacity:0;
         }
         
-        .eventListItem.visible {
+        .expandable.visible {
             opacity:1;
             max-height: 1000px;
+        }
+        
+        .mapWindow{
+            -webkit-transition: max-height 0.3s;
+            -moz-transition: max-height 0.3s;
+            transition: max-height 0.3s;
+            transition: opacity 0.2s ease-in-out;
+            overflow: hidden;
+            max-height: 0;
+            min-height: 0;
+            opacity:0;
+        }
+        
+        .mapWindow.visible {
+            opacity:1;
+            min-height: 400px;
         }
         
     </style>
@@ -66,7 +83,7 @@
             </div>
             <div class="col-md-6">
                 <h1>{{event.title}}</h1>
-                <h3>{{event.location}}</h3>
+                <map location="event.location"></map>
                 <h3>{{event.start}}</h3>
                 <h3>{{event.end}}</h3>
                 <h3>{{event.organiser}}</h3>
@@ -81,15 +98,13 @@
     </body>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?libraries=places"></script>
     <script src="js/is-my-json-valid.js"></script>
     <script src="js/event.js"></script>
     <script src="node_modules/angular/angular.min.js"></script>
     <script src="node_modules/ng-file-upload/dist/ng-file-upload.min.js"></script> 
     <script src="js/components.js"></script>
     <script src="app.js"></script>
-    <script type="text/javascript">
-        //document.getElementById('fileInput').addEventListener('change', handleFileSelect, false);
-
-    </script>
+  
    
 </html>

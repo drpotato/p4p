@@ -16,13 +16,20 @@ angular.module('components', [])
         '<div ng-click="expand()" class="panel-body">' +
             '<h3>{{event.title}}</h3>' +
             '<div class="expandable" ng-class="{visible:expanded}">'+
-                '<h3>{{event.location}}</h3>' + 
+                '<h3>{{event.location}}</h3>' +
                 '<h3>{{event.start}}</h3>' +
-                '<h3>{{event.end}}</h3>' + 
+                '<h3>{{event.end}}</h3>' +
                 '<p>{{event.description}}</p>' +
                 '<ul>' +
-                    '<li ng-repeat="person in event.people">' +
-                         '<h3>{{person.name}}</h3>' +
+                  '<li ng-repeat="person in event.people">' +
+                    '<h3>{{person.name}}</h3>' +
+                    '<div>{{person.role}}</div>' +
+                    '<div ng-if="person.contactDetails">' +
+                    '<div>Contact Details:</div>' +
+                    '<ul>'+
+                      '<li ng-repeat="detail in person.contactDetails"> {{detail.type}} - {{detail.value}}</li>' +
+                    '</ul>' +
+                    '</div>' +
                     '</li>' +
                 '</ul>' +
             '<div>'+
@@ -38,10 +45,10 @@ angular.module('components', [])
         },
         controller: function($scope,$element){
             $scope.mapExpanded = false;
-            
-            
+
+
             $scope.doSearch = function(){
-                
+
                 if ($scope.location){
                     console.log($scope.location);
                     if ("geolocation" in navigator) {

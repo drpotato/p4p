@@ -17,46 +17,55 @@ eventApp.controller('EventController', function ($scope, $http) {
 
   var schema = {
     "$schema": "http://json-schema.org/draft-04/schema#",
-    "type": "object",
-    "properties": {
+    "definitions": {
+      "contactDetail": {
+        "type": "object",
+        "properties": {
+          "type": {"type": "string"},
+          "value": {"type": "string"}
+        },
+      },
+      "person": {
+        "type": "object",
+        "properties": {
+          "name": {"type": "string"},
+          "role": {"type": "string"},
+          "contactDetails": {"type": "array", "items": {"$ref": "#/definitions/contactDetail"}}
+        },
+      },
       "event": {
         "type": "object",
         "properties": {
-          "title": {
-            "type": "string"
-          },
-          "location": {
-            "type": "string"
-          },
-          "start": {
-            "type": "string"
-          },
-          "end": {
-            "type": "string"
-          },
-          "organiser": {
-            "type": "string"
-          },
-          "subEvents": {
-            "type": "array",
-            "items": {
-              "type": "object",
-              "properties": {}
-            }
-          }
+          "title": {"type": "string"},
+          "location": {"type": "string"},
+          "startTime": {"type": "string"},
+          "endTime": {"type": "string"}
         },
-        "required": [
-          "title",
-          "location",
-          "start",
-          "end",
-          "organiser",
-          "subEvents"
+      },
+      "subEvent": {
+        "type": "object",
+        "allOf": [
+          {"$ref": "#/definitions/event"},
+          {
+            "properties": {
+              "description": {"type": "string"},
+              "type": {"type": "string"},
+              "people": {"type": "array", "items": {"$ref": "#/definitions/person"}}
+            },
+          }
         ]
       }
     },
-    "required": [
-      "event"
+    "title": "Conference",
+    "type": "object",
+    "allOf": [
+      {"$ref": "#/definitions/event"},
+      {
+        "properties": {
+          "organiser": {"type": "string"},
+          "subEvents": {"type": "array", "items": {"$ref": "#/definitions/subEvent"}}
+        }
+      }
     ]
   };
 
@@ -74,11 +83,10 @@ eventApp.controller('EventController', function ($scope, $http) {
     }
     var file = files[0];
     var reader = new FileReader();
-    reader.readAsText(file);
-
     reader.onload = function (file) {
       $scope.jsonText = reader.result;
     };
+    reader.readAsText(file);
   };
 
   $scope.validate = function () {

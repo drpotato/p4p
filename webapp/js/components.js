@@ -21,7 +21,7 @@ angular.module('components', [])
                 '<h3>{{event.end}}</h3>' + 
                 '<p>{{event.description}}</p>' +
                 '<ul>' +
-                    '<li ng-repeat="person in event.people.person">' +
+                    '<li ng-repeat="person in event.people">' +
                          '<h3>{{person.name}}</h3>' +
                     '</li>' +
                 '</ul>' +

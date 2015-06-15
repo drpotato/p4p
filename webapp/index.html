@@ -3,17 +3,31 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Scrolls -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
   <link rel="stylesheet" href="css/main.css">
+
+  <!-- Spells -->
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+  <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?libraries=places"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.3.16/angular.min.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular-file-upload/1.1.5/angular-file-upload.min.js"></script>
+  <script src="js/is-my-json-valid.js"></script>
+  <script src="js/event.js"></script>
+  <script src="js/components.js"></script>
+  <script src="app.js"></script>
+
 </head>
 <body ng-app="event">
 <div class="container" ng-controller="EventController as eventApp">
   <div class="col-md-6">
     <form ng-submit="validate()">
       <div class="form-group">
-                        <span class="btn btn-default btn-file">
-                            Browse <input id="fileInput" type="file" custom-on-change="uploadFile">
-                        </span>
+        <span class="btn btn-default btn-file">
+            Browse <input id="fileInput" type="file" custom-on-change="uploadFile">
+        </span>
         <input class="btn btn-primary" type="submit" value="Validate">
         <pre>{{jsonText}}</pre>
       </div>
@@ -36,15 +50,4 @@
 </div>
 
 </body>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
-<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?libraries=places"></script>
-<script src="js/is-my-json-valid.js"></script>
-<script src="js/event.js"></script>
-<script src="node_modules/angular/angular.min.js"></script>
-<script src="node_modules/ng-file-upload/dist/ng-file-upload.min.js"></script>
-<script src="js/components.js"></script>
-<script src="app.js"></script>
-
-
 </html>

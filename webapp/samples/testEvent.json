@@ -17,22 +17,22 @@
             {
               "name": "Chris Morgan",
               "role": "Contributor",
-              "contactDetails": {
-                "contactDetail": {
-                  "type": "emailAddress",
+              "contactDetails": [
+                {
+                  "type": "Email",
                   "value": "cmor149@aucklanduni.ac.nz"
                 }
-              }
+              ]
             },
               {
               "name": "Matthew Dyer",
               "role": "Contributor",
-              "contactDetails": {
-                "contactDetail": {
-                  "type": "emailAddress",
+              "contactDetails": [
+                {
+                  "type": "Email",
                   "value": "mdye175@aucklanduni.ac.nz"
                 }
-              }
+              ]
             }
           ]
       }

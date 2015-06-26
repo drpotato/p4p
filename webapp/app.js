@@ -69,41 +69,50 @@ eventApp.controller('EventController', function ($scope, $http) {
     ]
   };
 
-  var validate = validator(schema, {
-    verbose: true,
-    greedy: true
-  });
+    var validate = validator(schema, {
+        verbose: true,
+        greedy: true
+    });
+    $scope.uploadFile = function (evt) {
+        var files = evt.target.files; // FileList object
 
-
-  $scope.uploadFile = function (evt) {
-    var files = evt.target.files; // FileList object
-
-    if (files.length != 1) {
-      alert("Only 1 file");
-    }
-    var file = files[0];
-    var reader = new FileReader();
-    reader.onload = function (e) {
-      $scope.jsonText = e.target.result;
-      $scope.$apply();
+        if (files.length != 1) {
+          alert("Only 1 file");
+        }
+        var file = files[0];
+        var reader = new FileReader();
+        reader.onload = function (e) {
+          $scope.jsonText = e.target.result;
+          $scope.$apply();
+        };
+        reader.readAsText(file);
     };
-    reader.readAsText(file);
-  };
 
-  $scope.validate = function () {
-    var eventJSON = JSON.parse($scope.jsonText);
-    validate(eventJSON);
-    if (validate.errors) {
-      //Handle Error States
-      $scope.event = null;
-      validate.errors.forEach(function (error) {
-        alert(error.field + " " + error.message);
-      });
-    } else {
-      $scope.event = eventJSON.event;
-      console.log($scope.event);
-    }
-  };
+    $scope.validate = function () {
+        var eventJSON = JSON.parse($scope.jsonText);
+        validate(eventJSON);
+        if (validate.errors) {
+          //Handle Error States
+          $scope.event = null;
+          validate.errors.forEach(function (error) {
+            alert(error.field + " " + error.message);
+          });
+        } else {
+          $scope.event = eventJSON.event;
+          console.log($scope.event);
+        }
+    };
+    
+    $scope.makeICS = function(){
+        var cal = ics();
+        $scope.event.subEvents.forEach(function(subEvent){
+            console.log(subEvent); 
+            cal.addEvent(subEvent.title,subEvent.title,subEvent.location,subEvent.start, subEvent.end);
+        });
+        //cal.addEvent('Demo Event', 'This is an all day event', 'Nome, AK', '8/7/2015', '8/7/2015');
+        console.log(cal.events());
+        cal.download();
+    };
 
 
 });

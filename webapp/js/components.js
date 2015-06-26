@@ -45,10 +45,7 @@ angular.module('components', [])
         },
         controller: function($scope,$element){
             $scope.mapExpanded = false;
-
-
             $scope.doSearch = function(){
-
                 if ($scope.location){
                     console.log($scope.location);
                     if ("geolocation" in navigator) {

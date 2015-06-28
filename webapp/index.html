@@ -22,37 +22,47 @@
   <script src="app.js"></script>
 
 </head>
-<body ng-app="event">
-<div class="container" ng-controller="EventController as eventApp">
-  <div class="col-md-6">
-    <form ng-submit="validate()">
-      <div class="form-group">
-        <span class="btn btn-default btn-file">
-            Upload <input id="fileInput" type="file" custom-on-change="uploadFile">
-        </span>
-        <input class="btn btn-primary" type="submit" value="Validate">
-        <pre>{{jsonText}}</pre>
+<body ng-app="event" ng-controller="EventController as eventApp">
+    <nav class="navbar navbar-default navbar-static-top">
+        <div class="container">
+            <div class="navbar-header"><a class="navbar-brand">Event Schema 1.0</a></div>
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li class="active">
+                        <span class="nav-span"> Upload <input id="fileInput" class="nav-input" type="file" custom-on-change="uploadFile" value="foo"></span>
+                    </li>
+                    <li>
+                        <a  ng-click="validate()">Validate</a>
+                    </li>
+                    <li>
+                    <a ng-click="makeICS()">
+                        Generate ICS
+                    </a>
+                    </li>
+                </ul>
+            </div>
+        </div>    
+    </nav>
+    <div class="container">
+      <div class="col-md-6">
+           <pre>{{jsonText}}</pre>
       </div>
-    </form>
-  </div>
-  <div class="col-md-6">
-    <h1>{{event.title}}</h1>
-    <map location="event.location"></map>
-    <h3>{{event.start}}</h3>
+      <div class="col-md-6">
+        <h1>{{event.title}}</h1>
+        <map location="event.location"></map>
+        <h3>{{event.start}}</h3>
 
-    <h3>{{event.end}}</h3>
+        <h3>{{event.end}}</h3>
 
-    <h3>{{event.organiser}}</h3>
-    <ul class="list-unstyled">
-      <li ng-repeat="subEvent in event.subEvents" class="panel panel-default">
-        <eventitem event="subEvent"></eventitem>
-      </li>
-    </ul>
-        <button class="btn btn-default" ng-click="makeICS()">
-            Generate ICS
-        </btn>
-  </div>
-</div>
+        <h3>{{event.organiser}}</h3>
+        <ul class="list-unstyled">
+          <li ng-repeat="subEvent in event.subEvents" class="panel panel-default">
+            <eventitem event="subEvent"></eventitem>
+          </li>
+        </ul>
+            
+      </div>
+    </div>
 
 </body>
 </html>

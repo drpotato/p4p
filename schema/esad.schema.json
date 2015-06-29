@@ -32,7 +32,8 @@
         {"properties": {
             "description": {"type": "string"},
             "type": {"type": "string"},
-            "people": {"type": "array", "items": {"$ref": "#/definitions/person"}}
+            "people": {"type": "array", "items": {"$ref": "#/definitions/person"}},
+            "tags": {"type": "array", "items": {"type": "string"}}
           }
         }
       ]

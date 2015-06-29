@@ -13,6 +13,7 @@
         "endTime": "2013-09-13T10:30:00",
         "description": "",
         "type": "Project Seminar",
+        "tags": ["Control Systems"],
         "people": [
             {"name": "Henry Miao", "role": "Student"},
             {"name": "Aparna Pratthi", "role": "Student"},
@@ -28,6 +29,7 @@
         "endTime": "2013-09-13T15:30:00",
         "description": "",
         "type": "Project Seminar",
+        "tags": ["Control Systems"],
         "people": [
             {"name": "Stuart Harwood", "role": "Student"},
             {"name": "Josh Mapstone", "role": "Student"},
@@ -43,6 +45,7 @@
         "endTime": "2013-09-13T15:30:00",
         "description": "",
         "type": "Project Seminar",
+        "tags": ["Control Systems"],
         "people": [
             {"name": "Joshua Masilamani", "role": "Student"},
             {"name": "John Zhang", "role": "Student"},
@@ -58,6 +61,7 @@
         "endTime": "2013-09-13T15:30:00",
         "description": "",
         "type": "Project Seminar",
+        "tags": ["Embedded Systems"],
         "people": [
             {"name": "Glen Kaunds", "role": "Student"},
             {"name": "Nathan Whittington", "role": "Student"},
@@ -73,6 +77,7 @@
         "endTime": "2013-09-13T15:30:00",
         "description": "",
         "type": "Project Seminar",
+        "tags": ["Embedded Systems"],
         "people": [
             {"name": "Derek Yao", "role": "Student"},
             {"name": "Roy Zane", "role": "Student"},
@@ -88,6 +93,7 @@
         "endTime": "2013-09-13T15:30:00",
         "description": "",
         "type": "Project Seminar",
+        "tags": ["Embedded Systems"],
         "people": [
             {"name": "Hamish Lonergan", "role": "Student"},
             {"name": "Buddy Gorven", "role": "Student"},
@@ -103,6 +109,7 @@
         "endTime": "2013-09-13T15:30:00",
         "description": "",
         "type": "Project Seminar",
+        "tags": ["Power Systems"],
         "people": [
             {"name": "Justin Cho", "role": "Student"},
             {"name": "Kashani Sharma", "role": "Student"},
@@ -118,6 +125,7 @@
         "endTime": "2013-09-13T15:30:00",
         "description": "",
         "type": "Project Seminar",
+        "tags": ["Power Systems"],
         "people": [
             {"name": "Xuedong Lin", "role": "Student"},
             {"name": "Mary Zhang", "role": "Student"},
@@ -133,6 +141,7 @@
         "endTime": "2013-09-13T15:30:00",
         "description": "",
         "type": "Project Seminar",
+        "tags": ["Power Systems"],
         "people": [
             {"name": "Yeyong Li", "role": "Student"},
             {"name": "Zhe Wu", "role": "Student"},
@@ -148,6 +157,7 @@
         "endTime": "2013-09-13T15:30:00",
         "description": "",
         "type": "Project Seminar",
+        "tags": ["Power Electronics"],
         "people": [
             {"name": "Achintha De Alwis", "role": "Student"},
             {"name": "Zachary Harris", "role": "Student"},
@@ -163,6 +173,7 @@
         "endTime": "2013-09-13T15:30:00",
         "description": "",
         "type": "Project Seminar",
+        "tags": ["Power Electronics"],
         "people": [
             {"name": "Kevin Huang", "role": "Student"},
             {"name": "William Quach", "role": "Student"},
@@ -178,6 +189,7 @@
         "endTime": "2013-09-13T15:30:00",
         "description": "",
         "type": "Project Seminar",
+        "tags": ["Power Electronics"],
         "people": [
             {"name": "Jagmeet Singh", "role": "Student"},
             {"name": "Robert Lui", "role": "Student"},
@@ -193,6 +205,7 @@
         "endTime": "2013-09-13T15:30:00",
         "description": "",
         "type": "Project Seminar",
+        "tags": ["Robotics"],
         "people": [
             {"name": "Charu Wadhwa", "role": "Student"},
             {"name": "Pauline Santos", "role": "Student"},
@@ -208,6 +221,7 @@
         "endTime": "2013-09-13T15:30:00",
         "description": "",
         "type": "Project Seminar",
+        "tags": ["Robotics"],
         "people": [
             {"name": "Charu Wadhwa", "role": "Student"},
             {"name": "Pauline Santos", "role": "Student"},
@@ -223,6 +237,7 @@
         "endTime": "2013-09-13T15:30:00",
         "description": "",
         "type": "Project Seminar",
+        "tags": ["Robotics"],
         "people": [
             {"name": "Sam Mcardle", "role": "Student"},
             {"name": "Greg Sumner", "role": "Student"},

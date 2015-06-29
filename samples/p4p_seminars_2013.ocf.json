@@ -1,0 +1,236 @@
+{
+  "event": {
+    "title": "Seminar Series 2013 - Part IV Research Projects",
+    "location": "Faculty of Engineering, 20 Symonds St, Auckland",
+    "startTime": "2013-09-12T09:00:00",
+    "endTime": "2013-09-13T15:30:00",
+    "organiser": "The University of Auckland - Department of Electrical and Computer Engineering",
+    "subEvents": [
+      {
+        "title": "Delta-domain based controllers for linear dynamic systems",
+        "location": "Room 403.401",
+        "startTime": "2013-09-12T09:00:00",
+        "endTime": "2013-09-13T10:30:00",
+        "description": "",
+        "type": "Project Seminar",
+        "people": [
+            {"name": "Henry Miao", "role": "Student"},
+            {"name": "Aparna Pratthi", "role": "Student"},
+            {"name": "Akshya Swain", "role": "Chair"},
+            {"name": "Nitish Patel", "role": "Assessor"},
+            {"name": "Sing Nguang", "role": "Assessor"}
+          ]
+      },
+      {
+        "title": "Controller design for wind energy systems",
+        "location": "Room 403.401",
+        "startTime": "2013-09-12T09:00:00",
+        "endTime": "2013-09-13T15:30:00",
+        "description": "",
+        "type": "Project Seminar",
+        "people": [
+            {"name": "Stuart Harwood", "role": "Student"},
+            {"name": "Josh Mapstone", "role": "Student"},
+            {"name":"Akshya Swain", "role": "Chair"},
+            {"name":"Nitish Patel", "role": "Assessor"},
+            {"name":"Sing Nguang", "role": "Assessor"}
+          ]
+      },
+      {
+        "title": "Knowledge based controllers for power system",
+        "location": "Room 403.401",
+        "startTime": "2013-09-12T09:00:00",
+        "endTime": "2013-09-13T15:30:00",
+        "description": "",
+        "type": "Project Seminar",
+        "people": [
+            {"name": "Joshua Masilamani", "role": "Student"},
+            {"name": "John Zhang", "role": "Student"},
+            {"name": "Akshya Swain", "role": "Chair"},
+            {"name": "Nitish Patel", "role": "Assessor"},
+            {"name": "Sing Nguang", "role": "Assessor"}
+          ]
+      },
+      {
+        "title": "RET-OS for biomedical devices",
+        "location": "Room 403.402",
+        "startTime": "2013-09-12T09:00:00",
+        "endTime": "2013-09-13T15:30:00",
+        "description": "",
+        "type": "Project Seminar",
+        "people": [
+            {"name": "Glen Kaunds", "role": "Student"},
+            {"name": "Nathan Whittington", "role": "Student"},
+            {"name": "Partha Roop", "role": "Chair"},
+            {"name": "Kevin I-Kai Wang", "role": "Assessor"},
+            {"name": "Morteza Biglari-Abhari", "role": "Assessor"}
+          ]
+      },
+      {
+        "title": "Controller synthesis for coordinated ramp signalling",
+        "location": "Room 403.402",
+        "startTime": "2013-09-12T09:00:00",
+        "endTime": "2013-09-13T15:30:00",
+        "description": "",
+        "type": "Project Seminar",
+        "people": [
+            {"name": "Derek Yao", "role": "Student"},
+            {"name": "Roy Zane", "role": "Student"},
+            {"name": "Partha Roop", "role": "Chair"},
+            {"name": "Kevin I-Kai Wang", "role": "Assessor"},
+            {"name": "Morteza Biglari-Abhari", "role": "Assessor"}
+          ]
+      },
+      {
+        "title": "GALS multi-core processor",
+        "location": "Room 403.402",
+        "startTime": "2013-09-12T09:00:00",
+        "endTime": "2013-09-13T15:30:00",
+        "description": "",
+        "type": "Project Seminar",
+        "people": [
+            {"name": "Hamish Lonergan", "role": "Student"},
+            {"name": "Buddy Gorven", "role": "Student"},
+            {"name": "Partha Roop", "role": "Chair"},
+            {"name": "Kevin I-Kai Wang", "role": "Assessor"},
+            {"name": "Morteza Biglari-Abhari", "role": "Assessor"}
+          ]
+      },
+      {
+        "title": "Impact of electrical vehicle (EV) on the distribution network",
+        "location": "Room 403.404",
+        "startTime": "2013-09-12T09:00:00",
+        "endTime": "2013-09-13T15:30:00",
+        "description": "",
+        "type": "Project Seminar",
+        "people": [
+            {"name": "Justin Cho", "role": "Student"},
+            {"name": "Kashani Sharma", "role": "Student"},
+            {"name": "Nirmal-Kumar Nair", "role": "Chair"},
+            {"name": "Aiguo Patrick Hu", "role": "Assessor"},
+            {"name": "Duleepa Thrimawithana", "role": "Assessor"}
+          ]
+      },
+      {
+        "title": "Comprehensive Assessment of Fault Clearance Times in Power System Distribution",
+        "location": "Room 403.404",
+        "startTime": "2013-09-12T09:00:00",
+        "endTime": "2013-09-13T15:30:00",
+        "description": "",
+        "type": "Project Seminar",
+        "people": [
+            {"name": "Xuedong Lin", "role": "Student"},
+            {"name": "Mary Zhang", "role": "Student"},
+            {"name": "Nirmal-Kumar Nair", "role": "Chair"},
+            {"name": "Aiguo Patrick Hu", "role": "Assessor"},
+            {"name": "Duleepa Thrimawithana", "role": "Assessor"}
+          ]
+      },
+      {
+        "title": "Development of smart grid SCADA prototype for power system distribution networks",
+        "location": "Room 403.404",
+        "startTime": "2013-09-12T09:00:00",
+        "endTime": "2013-09-13T15:30:00",
+        "description": "",
+        "type": "Project Seminar",
+        "people": [
+            {"name": "Yeyong Li", "role": "Student"},
+            {"name": "Zhe Wu", "role": "Student"},
+            {"name": "Nirmal-Kumar Nair", "role": "Chair"},
+            {"name": "Aiguo Patrick Hu", "role": "Assessor"},
+            {"name": "Duleepa Thrimawithana", "role": "Assessor"}
+          ]
+      },
+      {
+        "title": "A Comparison of IPT Technologies Suitable for EV Applications",
+        "location": "Room 403.407",
+        "startTime": "2013-09-12T09:00:00",
+        "endTime": "2013-09-13T15:30:00",
+        "description": "",
+        "type": "Project Seminar",
+        "people": [
+            {"name": "Achintha De Alwis", "role": "Student"},
+            {"name": "Zachary Harris", "role": "Student"},
+            {"name": "Grant Covic", "role": "Chair"},
+            {"name": "Udaya Madawala", "role": "Assessor"},
+            {"name": "Mark Andrews", "role": "Assessor"}
+          ]
+      },
+      {
+        "title": "Marina shorepower via IPT",
+        "location": "Room 403.407",
+        "startTime": "2013-09-12T09:00:00",
+        "endTime": "2013-09-13T15:30:00",
+        "description": "",
+        "type": "Project Seminar",
+        "people": [
+            {"name": "Kevin Huang", "role": "Student"},
+            {"name": "William Quach", "role": "Student"},
+            {"name": "Grant Covic", "role": "Chair"},
+            {"name": "Udaya Madawala", "role": "Assessor"},
+            {"name": "Mark Andrews", "role": "Assessor"}
+          ]
+      },
+      {
+        "title": "Communication monitoring and control of roadway IPT systems",
+        "location": "Room 403.407",
+        "startTime": "2013-09-12T09:00:00",
+        "endTime": "2013-09-13T15:30:00",
+        "description": "",
+        "type": "Project Seminar",
+        "people": [
+            {"name": "Jagmeet Singh", "role": "Student"},
+            {"name": "Robert Lui", "role": "Student"},
+            {"name": "Grant Covic", "role": "Chair"},
+            {"name": "Udaya Madawala", "role": "Assessor"},
+            {"name": "Mark Andrews", "role": "Assessor"}
+          ]
+      },
+      {
+        "title": "Memory games for a robot",
+        "location": "Room 401.401",
+        "startTime": "2013-09-12T09:00:00",
+        "endTime": "2013-09-13T15:30:00",
+        "description": "",
+        "type": "Project Seminar",
+        "people": [
+            {"name": "Charu Wadhwa", "role": "Student"},
+            {"name": "Pauline Santos", "role": "Student"},
+            {"name": "Bruce MacDonald", "role": "Chair"},
+            {"name": "Burkhard Wuensche", "role": "Assessor"},
+            {"name": "George Coghill", "role": "Assessor"}
+          ]
+      },
+      {
+        "title": "Humanoid robot walking",
+        "location": "Room 401.401",
+        "startTime": "2013-09-12T09:00:00",
+        "endTime": "2013-09-13T15:30:00",
+        "description": "",
+        "type": "Project Seminar",
+        "people": [
+            {"name": "Charu Wadhwa", "role": "Student"},
+            {"name": "Pauline Santos", "role": "Student"},
+            {"name": "Bruce MacDonald", "role": "Chair"},
+            {"name": "Burkhard Wuensche", "role": "Assessor"},
+            {"name": "George Coghill", "role": "Assessor"}
+          ]
+      },
+      {
+        "title": "Forklift teleoperation and telepresence",
+        "location": "Room 401.401",
+        "startTime": "2013-09-12T09:00:00",
+        "endTime": "2013-09-13T15:30:00",
+        "description": "",
+        "type": "Project Seminar",
+        "people": [
+            {"name": "Sam Mcardle", "role": "Student"},
+            {"name": "Greg Sumner", "role": "Student"},
+            {"name": "Bruce MacDonald", "role": "Chair"},
+            {"name": "Burkhard Wuensche", "role": "Assessor"},
+            {"name": "George Coghill", "role": "Assessor"}
+          ]
+      }
+    ]
+  }
+}

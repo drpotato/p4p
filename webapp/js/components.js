@@ -20,6 +20,7 @@ angular.module('components', [])
                 '<h3>{{event.start}}</h3>' +
                 '<h3>{{event.end}}</h3>' +
                 '<p>{{event.description}}</p>' +
+                '<p ng-if="event.tags">Tags: <a ng-repeat="tag in event.tags">{{ tag }} </a></p>' +
                 '<ul>' +
                   '<li ng-repeat="person in event.people">' +
                     '<h3>{{person.name}}</h3>' +

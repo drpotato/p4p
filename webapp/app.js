@@ -29,7 +29,7 @@ eventApp.controller('EventController', function ($scope, $http) {
               "type":"string",
               "pattern":"^.*$"
             }
-            
+
           },"required":["value"]
         },
         "person": {
@@ -91,6 +91,12 @@ eventApp.controller('EventController', function ($scope, $http) {
                             "type": "array",
                             "items": {
                                 "$ref": "#/definitions/person"
+                            }
+                        },
+                        "tags": {
+                            "type": "array",
+                            "items": {
+                                "type": "string"
                             }
                         }
                     }
@@ -161,11 +167,11 @@ eventApp.controller('EventController', function ($scope, $http) {
           console.log($scope.event);
         }
     };
-    
+
     $scope.makeICS = function(){
         var cal = ics();
         $scope.event.subEvents.forEach(function(subEvent){
-            console.log(subEvent); 
+            console.log(subEvent);
             cal.addEvent(subEvent.title,subEvent.title,subEvent.location,subEvent.startTime, subEvent.endTime);
         });
         //cal.addEvent('Demo Event', 'This is an all day event', 'Nome, AK', '8/7/2015', '8/7/2015');

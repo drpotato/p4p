@@ -20,18 +20,17 @@ eventApp.controller('EventController', function ($scope, $http) {
     "definitions": {
         "contactDetail": {
             "type": "object",
-            "properties": {
-                "type": {
-                    "type": "string"
-                },
-                "value": {
-                    "type": "string"
-                }
-            },
-            "required": [
-                "type",
-                "value"
-            ]
+            "oneOf":[{"$ref":"#/definitions/emailDetail"}]
+        },
+        "emailDetail":{
+          "type":"object",
+          "properties":{
+            "value":{
+              "type":"string",
+              "pattern":"^.*$"
+            }
+            
+          },"required":["value"]
         },
         "person": {
             "type": "object",
@@ -45,7 +44,7 @@ eventApp.controller('EventController', function ($scope, $http) {
                 "contactDetails": {
                     "type": "array",
                     "items": {
-                        "oneof": [
+                        "anyOf": [
                             {
                                 "$ref": "#/definitions/contactDetail"
                             }
@@ -114,11 +113,12 @@ eventApp.controller('EventController', function ($scope, $http) {
                         },
                         "subEvents": {
                             "type": "array",
+                            "minItems":1,
                             "items": {
                                 "$ref": "#/definitions/subEvent"
                             }
                         }
-                    },"required":["subEvents"]
+                    },"required":["subEvents","organiser"]
                 }
             ]
         }
@@ -166,7 +166,7 @@ eventApp.controller('EventController', function ($scope, $http) {
         var cal = ics();
         $scope.event.subEvents.forEach(function(subEvent){
             console.log(subEvent); 
-            cal.addEvent(subEvent.title,subEvent.title,subEvent.location,subEvent.start, subEvent.end);
+            cal.addEvent(subEvent.title,subEvent.title,subEvent.location,subEvent.startTime, subEvent.endTime);
         });
         //cal.addEvent('Demo Event', 'This is an all day event', 'Nome, AK', '8/7/2015', '8/7/2015');
         console.log(cal.events());

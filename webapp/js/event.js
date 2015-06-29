@@ -4,18 +4,17 @@ function EventValidator() {
     "definitions": {
         "contactDetail": {
             "type": "object",
-            "properties": {
-                "type": {
-                    "type": "string"
-                },
-                "value": {
-                    "type": "string"
-                }
-            },
-            "required": [
-                "type",
-                "value"
-            ]
+            "oneOf":[{"$ref":"#/definitions/emailDetail"}]
+        },
+        "emailDetail":{
+          "type":"object",
+          "properties":{
+            "value":{
+              "type":"string",
+              "pattern":"^.*$"
+            }
+            
+          },"required":["value"]
         },
         "person": {
             "type": "object",
@@ -29,7 +28,7 @@ function EventValidator() {
                 "contactDetails": {
                     "type": "array",
                     "items": {
-                        "oneof": [
+                        "anyOf": [
                             {
                                 "$ref": "#/definitions/contactDetail"
                             }
@@ -103,7 +102,7 @@ function EventValidator() {
                                 "$ref": "#/definitions/subEvent"
                             }
                         }
-                    },"required":["subEvents"]
+                    },"required":["subEvents","organiser"]
                 }
             ]
         }

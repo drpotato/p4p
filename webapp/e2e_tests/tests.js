@@ -1,4 +1,4 @@
-var EventValidator = require('./js/event.js');
+var EventValidator = require('./../assets/js/event.js');
 var fs = require('fs');
 var assert = require('assert');
 var chai = require('chai');

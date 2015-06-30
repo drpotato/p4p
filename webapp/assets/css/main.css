@@ -6,7 +6,7 @@
 }
 
 .nav-span {
-    display: block;
+  display: block;
     position: relative;
     overflow: hidden;
     color: 777777;
@@ -14,10 +14,21 @@
     padding-top:15px;
     padding-bottom: 15px;
     line-height: 20px;
-
     background-color: transparent;
     list-style: outside none none;
 }
+
+.nav-search{
+    display: block;
+    position: relative;
+    overflow: hidden;
+    color: 777777;
+    
+    margin-top:5px;
+    margin-bottom: 5px;
+    line-height: 30px;
+}
+
 .nav-input{
   position: absolute;
   top: 0;

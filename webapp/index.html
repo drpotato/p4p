@@ -39,6 +39,9 @@
                         Generate ICS
                     </a>
                     </li>
+                    <li>
+                        <input class="nav-search" placeholder="Search" ng-model="query">
+                    </li>
                 </ul>
             </div>
         </div>    
@@ -51,12 +54,11 @@
         <h1>{{event.title}}</h1>
         <map location="event.location"></map>
         <h3>{{event.startTime}}</h3>
-
         <h3>{{event.endTime}}</h3>
 
         <h3>{{event.organiser}}</h3>
         <ul class="list-unstyled">
-          <li ng-repeat="subEvent in event.subEvents" class="panel panel-default">
+          <li ng-repeat="subEvent in event.subEvents | filter:query" class="panel panel-default">
             <eventitem event="subEvent"></eventitem>
           </li>
         </ul>

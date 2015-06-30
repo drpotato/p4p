@@ -1,4 +1,4 @@
-var eventApp = angular.module('event', ['components']);
+var eventApp = angular.module('event', ['components','schemaForm']);
 
 eventApp.directive('customOnChange', function () {
   return {
@@ -181,3 +181,31 @@ eventApp.controller('EventController', function ($scope, $http) {
 
 
 });
+
+
+eventApp.controller('FormController', function($scope) {
+    $scope.schema = {
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "Conference",
+    "type": "object",
+    "properties": {
+        "event": {
+          "type":"string"
+        }
+    },
+    "required": [
+        "event"
+    ]
+};
+
+    $scope.form = [
+      "*",
+      {
+        type: "submit",
+        title: "Save"
+      }
+    ];
+
+    $scope.model = {};
+    console.log($scope);
+  });

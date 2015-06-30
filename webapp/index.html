@@ -12,15 +12,20 @@
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
   <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
   <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?libraries=places"></script>
-  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.3.16/angular.min.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.3.16/angular.js"></script>
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular-file-upload/1.1.5/angular-file-upload.min.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.3.16/angular-sanitize.min.js"></script>
+  <script type="text/javascript" src="node_modules/tv4/tv4.js"></script>
+  <script type="text/javascript" src="node_modules/objectpath/lib/ObjectPath.js"></script>
+  <script type="text/javascript" src="node_modules/angular-schema-form/dist/schema-form.js"></script>
+  <script type="text/javascript" src="node_modules/angular-schema-form/dist/bootstrap-decorator.min.js"></script>
   <script src="js/is-my-json-valid.js"></script>
   <script src="js/ics.deps.min.js"></script>
   <script src="js/ics.min.js"></script>
   <script src="js/event.js"></script>
   <script src="js/components.js"></script>
   <script src="app.js"></script>
-
+  
 </head>
 <body ng-app="event" ng-controller="EventController as eventApp">
     <nav class="navbar navbar-default navbar-static-top">
@@ -45,7 +50,9 @@
     </nav>
     <div class="container">
       <div class="col-md-6">
-           <pre>{{jsonText}}</pre>
+           <div ng-controller="FormController">
+             <form sf-schema="schema" sf-form="form" sf-model="model"></form>
+           </div>
       </div>
       <div class="col-md-6">
         <h1>{{event.title}}</h1>

@@ -10,34 +10,12 @@ eventApp.directive('customOnChange', function () {
   };
 });
 
-eventApp.controller('EventController', function ($scope, $http, schema) {
-  //Create a validator
-  var validator = require('is-my-json-valid');
-
-    var validate = validator(schema, {
-        verbose: true,
-        greedy: true
-    });
-    $scope.uploadFile = function (evt) {
-        var files = evt.target.files; // FileList object
-
-        if (files.length != 1) {
-          alert("Only 1 file");
-        }
-        var file = files[0];
-        var reader = new FileReader();
-        reader.onload = function (e) {
-          $scope.jsonText = e.target.result;
-          $scope.$apply();
-        };
-        reader.readAsText(file);
-    };
+eventApp.controller('EventController', function ($scope, $http, openConferenceFormat) {
 
     $scope.validate = function () {
-        var eventJSON = JSON.parse($scope.jsonText);
-        var validator = new EventValidator();
-        var result = validator.validate(eventJSON);
-        if (result.errors) {
+      var eventJSON = JSON.parse($scope.jsonText);
+      var result = openConferenceFormat.validate(eventJSON);
+      if (result.errors) {
           //Handle Error States
           $scope.event = null;
           result.errors.forEach(function (error) {

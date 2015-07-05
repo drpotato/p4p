@@ -10,8 +10,14 @@ eventApp.directive('customOnChange', function () {
   };
 });
 
-eventApp.controller('EventController', function ($scope, $http) {
-  
+eventApp.controller('EventController', function ($scope, $http, schema) {
+  //Create a validator
+  var validator = require('is-my-json-valid');
+
+    var validate = validator(schema, {
+        verbose: true,
+        greedy: true
+    });
     $scope.uploadFile = function (evt) {
         var files = evt.target.files; // FileList object
 

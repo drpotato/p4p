@@ -1700,7 +1700,7 @@ var compile = function(schema, cache, root, reporter, opts) {
         var n = gensym('ref')
         scope[n] = fn
         validate('if (!(%s(%s))) {', n, name)
-        error('referenced schema does not match')
+        error('referenced openConferenceFormat does not match')
         validate('}')
       }
     }
@@ -1710,7 +1710,7 @@ var compile = function(schema, cache, root, reporter, opts) {
       validate('var %s = errors', prev)
       visit(name, node.not, false, filter)
       validate('if (%s === errors) {', prev)
-      error('negative schema matches')
+      error('negative openConferenceFormat matches')
       validate('} else {')
         ('errors = %s', prev)
       ('}')

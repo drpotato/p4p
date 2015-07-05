@@ -5,7 +5,7 @@ if (typeof schema === "undefined") {
 
 
 function EventValidator() {
-  this.schema = schema;
+  this.schema = schema;gi
 }
 
 EventValidator.prototype.validate = function (json) {

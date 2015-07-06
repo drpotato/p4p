@@ -1,8 +1,8 @@
 'use strict';
 
-var eventModule = angular.module('components');
+var componentsModule = angular.module('components');
 
-eventModule.directive('map', function () {
+componentsModule.directive('map', function () {
   return {
     restict: 'E',
     transclude: true,

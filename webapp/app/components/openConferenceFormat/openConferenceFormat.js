@@ -128,8 +128,19 @@ angular.module('event')
       verbose: true,
       greedy: true
     });
+  
+    var getStreams = function(object){
+      var streams = [];
+      object.event.subEvents.forEach(function(subEvent){
+        if (streams.indexOf(subEvent.location) === -1){
+          streams.push(subEvent.location);
+        }
+      });  
+      return streams;
+    };
 
     return {
-      validate: validate
+      validate: validate,
+      getStreams: getStreams
     }
   });

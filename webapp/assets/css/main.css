@@ -76,3 +76,28 @@
   opacity:1;
   min-height: 400px;
 }
+
+
+.stream-container{
+  /* basic styling */
+  height: 300px;
+
+  /* flexbox setup */
+  display: -webkit-flex;
+  -webkit-flex-direction: row;
+
+  display: flex;
+  flex-direction: row;
+}
+
+.stream-box {
+  -webkit-flex: 1 1 auto;
+  flex: 1 1 auto;
+
+  width: 30px; /* To make the transition work nicely.  (Transitions to/from
+                  "width:auto" are buggy in Gecko and Webkit, at least.
+                  See http://bugzil.la/731886 for more info.) */
+
+  -webkit-transition: width 0.7s ease-out;
+  transition: width 0.7s ease-out;
+}

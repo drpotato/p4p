@@ -11,7 +11,9 @@ eventApp.directive('customOnChange', function () {
 });
 
 eventApp.controller('EventController', function ($scope, $http, openConferenceFormat) {
-
+  $scope.streams = [];
+  $scope.event = {};
+  
   $scope.uploadFile = function (evt) {
     var files = evt.target.files; // FileList object
 
@@ -39,7 +41,7 @@ eventApp.controller('EventController', function ($scope, $http, openConferenceFo
       });
     } else {
       $scope.event = eventJSON.event;
-      console.log($scope.event);
+      $scope.streams = openConferenceFormat.getStreams(eventJSON);
     }
   };
 

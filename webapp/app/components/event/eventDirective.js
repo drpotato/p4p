@@ -1,15 +1,9 @@
 'use strict';
 
-angular.module('components', [])
+//So you need the empty [] to declare the module, if you don't you just reference it
+var eventModule = angular.module('components',[]);
 
-//.controller(function ($scope, $element) {
-//  $scope.expanded = false;
-//  $scope.expand = function () {
-//    $scope.expanded = !$scope.expanded;
-//  };
-//})
-
-.directive('eventitem', function () {
+eventModule.directive('eventitem', function () {
   return {
     restrict: 'E',
     transclude: true,

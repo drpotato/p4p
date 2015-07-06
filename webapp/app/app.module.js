@@ -11,14 +11,7 @@ eventApp.directive('customOnChange', function () {
 });
 
 eventApp.controller('EventController', function ($scope, $http) {
-  //Create a validator
-  var validator = require('is-my-json-valid');
-
-
-    var validate = validator(schema, {
-        verbose: true,
-        greedy: true
-    });
+  
     $scope.uploadFile = function (evt) {
         var files = evt.target.files; // FileList object
 
@@ -36,11 +29,12 @@ eventApp.controller('EventController', function ($scope, $http) {
 
     $scope.validate = function () {
         var eventJSON = JSON.parse($scope.jsonText);
-        validate(eventJSON);
-        if (validate.errors) {
+        var validator = new EventValidator();
+        var result = validator.validate(eventJSON);
+        if (result.errors) {
           //Handle Error States
           $scope.event = null;
-          validate.errors.forEach(function (error) {
+          result.errors.forEach(function (error) {
             alert(error.field + " " + error.message);
           });
         } else {

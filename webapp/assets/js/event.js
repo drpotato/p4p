@@ -1,5 +1,11 @@
+
+if (typeof schema === "undefined") {
+  var schema = require("../schema/schema.ocf.js");
+}
+
+
 function EventValidator() {
-  this.schema = {};
+  this.schema = schema;
 }
 
 EventValidator.prototype.validate = function (json) {
@@ -8,8 +14,8 @@ EventValidator.prototype.validate = function (json) {
   return result(json);
 };
 
-var module = module || null;
 
-if (module) {
+
+if (typeof module !== "undefined") {
   module.exports = EventValidator;
 }

@@ -1,19 +1,7 @@
+var EventValidator = require('./../assets/js/event.js');
 var fs = require('fs');
 var assert = require('assert');
 var chai = require('chai');
-var schema = require('../assets/schema/schema.ocf.js');
-
-function EventValidator() {
-  this.schema = schema;
-}
-
-EventValidator.prototype.validate = function (json) {
-  var validator = require('is-my-json-valid');
-  var result = validator(this.schema);
-  return result(json);
-};
-
-
 
 var eventValidator = new EventValidator();
 

@@ -122,3 +122,7 @@ var schema = {
         "event"
     ]
 };
+
+if (typeof module !== "undefined"){
+  module.exports = schema;
+}

@@ -9,7 +9,7 @@ angular.module('esad.subEvent', [])
   };
 })
 
-.directive('eventcomponent', function () {
+.directive('subEvent', function () {
   return {
     restrict: 'E',
     transclude: true,

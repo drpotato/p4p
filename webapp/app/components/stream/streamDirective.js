@@ -6,7 +6,7 @@ angular.module('esad.stream', [])
 
 })
 
-.directive('streamcomponent', function () {
+.directive('eventStream', function () {
   return {
     restrict: 'E',
     transclude: true,

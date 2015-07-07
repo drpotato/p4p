@@ -1,6 +1,6 @@
 <div ng-controller="SubEventController">
     <div ng-click="expand()" class="panel-body">
-        <h5>{{subEvent.title}}</h5>
+        <h5>{{subEvent.title | limitTo:70}}</h5>
         <div class="expandable" ng-class="{visible:expanded}">
             <h3>{{subEvent.location}}</h3>
             <h3>{{subEvent.start}}</h3>

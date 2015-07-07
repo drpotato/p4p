@@ -5,6 +5,18 @@
   height:60%;
 }
 
+.panel-body{
+  min-height: 100px;
+  border-top: 1px solid hsl(0,0%,60%);
+  border-left: 1px solid hsl(0,0%,60%);
+  border-right: 2px solid hsl(0,0%,50%);
+  border-bottom: 2px solid hsl(0,0%,50%);
+  border-radius: 3px;
+  margin-bottom:3%;
+  padding:10px;
+  
+}
+
 .nav-span {
   display: block;
     position: relative;
@@ -81,23 +93,26 @@
 .stream-container{
   /* basic styling */
   height: 300px;
-
+  width: inherit;
   /* flexbox setup */
   display: -webkit-flex;
   -webkit-flex-direction: row;
-
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
+  -webkit-flex-wrap: wrap;
 }
 
 .stream-box {
   -webkit-flex: 1 1 auto;
   flex: 1 1 auto;
-
-  width: 30px; /* To make the transition work nicely.  (Transitions to/from
+  
+  width: 200px; /* To make the transition work nicely.  (Transitions to/from
                   "width:auto" are buggy in Gecko and Webkit, at least.
                   See http://bugzil.la/731886 for more info.) */
 
   -webkit-transition: width 0.7s ease-out;
   transition: width 0.7s ease-out;
+  margin:5px;
+  text-align: center;
 }

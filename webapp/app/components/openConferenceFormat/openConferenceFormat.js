@@ -129,18 +129,9 @@ angular.module('esad.openConferenceFormat', [])
       greedy: true
     });
   
-    var getStreams = function(object){
-      var streams = [];
-      object.event.subEvents.forEach(function(subEvent){
-        if (streams.indexOf(subEvent.location) === -1){
-          streams.push(subEvent.location);
-        }
-      });  
-      return streams;
-    };
+  
 
     return {
-      validate: validate,
-      getStreams: getStreams
+      validate: validate
     }
   });

@@ -31,23 +31,20 @@
             <div class="navbar-header"><a class="navbar-brand">Open Conference Format</a></div>
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
-                    <li class="active">
+                    <li>
                         <span class="nav-span"> Upload <input id="fileInput" class="nav-input" type="file" custom-on-change="uploadFile" value="foo"></span>
                     </li>
                     <li>
-                        <a  ng-click="validate()">Validate</a>
+                    <li ng-click="makeICS()">
+                        <span class="nav-span">Generate ICS</span>
                     </li>
-                    <li>
-                    <a ng-click="makeICS()">
-                        Generate ICS
-                    </a>
                     </li>
                     <li>
                         <input class="nav-search" placeholder="Search" ng-model="query">
                     </li>
                 </ul>
             </div>
-        </div>    
+        </div>
     </nav>
     <div class="container">
       <div class="">
@@ -56,7 +53,7 @@
         <h3>{{event.startTime}}</h3>
         <h3>{{event.endTime}}</h3>
         <h3>{{event.organiser}}</h3>
-        
+
         <div class="stream-container">
           <div ng-repeat="stream in streams | filter:query" class="stream-box">
             <event-stream name="stream" events="event.subEvents"></event-stream>

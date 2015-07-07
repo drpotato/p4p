@@ -1,8 +1,8 @@
 'use strict';
 
-angular.module('esad', ['esad.map', 'esad.stream', 'esad.subEvent', 'esad.openConferenceFormat']).
+angular.module('esad', ['esad.map', 'esad.stream', 'esad.subEvent', 'esad.openConferenceFormat'])
 
-directive('customOnChange', function () {
+.directive('customOnChange', function () {
   return {
     restrict: 'A',
     link: function (scope, element, attrs) {
@@ -25,26 +25,21 @@ directive('customOnChange', function () {
     var file = files[0];
     var reader = new FileReader();
     reader.onload = function (e) {
-      $scope.jsonText = e.target.result;
+      var eventJSON = JSON.parse(e.target.result);
+      var result = openConferenceFormat.validate(eventJSON);
+      if (result.errors) {
+        //Handle Error States
+        $scope.event = null;
+        result.errors.forEach(function (error) {
+          console.error(error);
+        });
+      } else {
+        $scope.event = eventJSON.event;
+        $scope.streams = openConferenceFormat.getStreams(eventJSON);
+      }
       $scope.$apply();
     };
     reader.readAsText(file);
-  };
-
-
-  $scope.validate = function () {
-    var eventJSON = JSON.parse($scope.jsonText);
-    var result = openConferenceFormat.validate(eventJSON);
-    if (result.errors) {
-      //Handle Error States
-      $scope.event = null;
-      result.errors.forEach(function (error) {
-        alert(error.field + " " + error.message);
-      });
-    } else {
-      $scope.event = eventJSON.event;
-      $scope.streams = openConferenceFormat.getStreams(eventJSON);
-    }
   };
 
   $scope.makeICS = function(){

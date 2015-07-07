@@ -1,6 +1,6 @@
-var eventApp = angular.module('event', ['components']);
+angular.module('event', ['components']).
 
-eventApp.directive('customOnChange', function () {
+directive('customOnChange', function () {
   return {
     restrict: 'A',
     link: function (scope, element, attrs) {
@@ -8,9 +8,9 @@ eventApp.directive('customOnChange', function () {
       element.bind('change', onChangeFunc);
     }
   };
-});
+})
 
-eventApp.controller('EventController', function ($scope, $http, openConferenceFormat) {
+.controller('EventController', function ($scope, $http, openConferenceFormat) {
   $scope.streams = [];
   $scope.event = {};
   

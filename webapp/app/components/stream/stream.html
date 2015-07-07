@@ -1,8 +1,8 @@
-<div>
+<div ng-controller="StreamController">
   <h3>{{name}}</h3>
   <ul class="list-unstyled">
     <li ng-repeat="subEvent in events | filter: name" class="panel panel-default">
-      <eventcomponent event="subEvent"></eventcomponent>
+      <eventcomponent sub-event="subEvent"></eventcomponent>
     </li>
   </ul>
 </div>

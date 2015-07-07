@@ -1,7 +1,6 @@
 'use strict';
 
-//So you need the empty [] to declare the module, if you don't you just reference it
-angular.module('components')
+angular.module('esad.stream', [])
 
 .controller('StreamController', function ($scope, $element) {
 

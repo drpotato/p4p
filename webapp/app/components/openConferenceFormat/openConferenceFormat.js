@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('event')
+angular.module('esad.openConferenceFormat', [])
 
 .factory('openConferenceFormat', function() {
 

@@ -1,4 +1,6 @@
-angular.module('event', ['components']).
+'use strict';
+
+angular.module('esad', ['esad.map', 'esad.stream', 'esad.subEvent', 'esad.openConferenceFormat']).
 
 directive('customOnChange', function () {
   return {

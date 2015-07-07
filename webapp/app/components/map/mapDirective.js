@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('components')
+angular.module('esad.map', [])
   
 .controller('MapController', function ($scope, $element) {
   $scope.mapExpanded = false;

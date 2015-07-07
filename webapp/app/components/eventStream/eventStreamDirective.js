@@ -14,6 +14,6 @@ angular.module('esad.stream', [])
       name : "=name",
       events : "=events"
     },
-    templateUrl: 'app/components/stream/stream.html',
+    templateUrl: 'app/components/eventStream/eventStream.html'
   };
 });

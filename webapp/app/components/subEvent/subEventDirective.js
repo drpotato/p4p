@@ -16,6 +16,6 @@ angular.module('esad.subEvent', [])
     scope: {
       subEvent: "=subEvent"
     },
-    templateUrl: "app/components/event/event.html",
+    templateUrl: "app/components/subEvent/subEvent.html"
   };
 });

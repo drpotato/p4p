@@ -10,18 +10,15 @@ angular.module('esad.scheduleCreation', ['ngRoute', 'angular-json-editor', 'esad
 }])
 
 .controller('ScheduleCreationController', function ($scope, openConferenceFormat) {
-
   $scope.schema = openConferenceFormat.schema;
-
   $scope.schedule = {};
 
-  $scope.onSubmit = function () {
-    console.log('onSubmit data in sync controller', $scope.editor.getValue());
+  $scope.formChanged = function (form) {
+    console.log(JSON.stringify(form));
+    $scope.schedule = form;
   };
 
-  $scope.onAction2 = function () {
-    console.log('onAction2');
-  };
+  var json = JSON.stringify($scope.form);
 
-
+  $scope.url = URL.createObjectURL(new Blob([json], {type: "application/json"}));
 });

@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('esad', ['esad.map', 'esad.stream', 'esad.subEvent', 'esad.openConferenceFormat', 'esad.scheduleCreation'])
+angular.module('esad', ['esad.map', 'esad.stream', 'esad.subEvent', 'esad.openConferenceFormat', 'esad.schedule', 'esad.scheduleCreation'])
 
 .config(['$locationProvider', function ($locationProvider) {
   $locationProvider.html5Mode(true)

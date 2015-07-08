@@ -6,6 +6,15 @@ var app = express();
 var logger = morgan('dev');
 
 app.use(logger);
-app.use('/', express.static(__dirname + '/webapp'));
+app.use('/app', express.static(__dirname + '/webapp/app'));
+app.use('/assets', express.static(__dirname + '/webapp/assets'));
+
+
+var catchAll = function (req, res) {
+  res.sendFile(__dirname + '/webapp/index.html');
+};
+
+app.use(catchAll);
+app.get('/', catchAll);
 
 app.listen(process.env.PORT || 3000);

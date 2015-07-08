@@ -4,6 +4,8 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
+  <base href="/">
+
   <!-- Scrolls -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
   <link rel="stylesheet" href="assets/css/main.css">
@@ -12,57 +14,64 @@
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.js"></script>
   <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.js"></script>
   <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?libraries=places"></script>
-  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.3.16/angular.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.2/angular.js"></script>
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular-file-upload/1.1.5/angular-file-upload.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.2/angular-route.js"></script>
   <script src="assets/js/is-my-json-valid.js"></script>
   <script src="assets/js/ics.deps.min.js"></script>
   <script src="assets/js/ics.min.js"></script>
-  <!--<script src="assets/js/components.js"></script>-->
   <script src="app/app.module.js"></script>
   <script src="app/components/openConferenceFormat/openConferenceFormat.js"></script>
   <script src="app/components/subEvent/subEventDirective.js"></script>
   <script src="app/components/eventStream/eventStreamDirective.js"></script>
   <script src="app/components/map/mapDirective.js"></script>
+  <script src="app/components/scheduleCreation/scheduleCreationController.js"></script>
 
 </head>
 <body ng-app="esad" ng-controller="EventController as eventApp">
-    <nav class="navbar navbar-default navbar-static-top">
-        <div class="container">
-            <div class="navbar-header"><a class="navbar-brand">Open Conference Format</a></div>
-            <div class="navbar-collapse collapse">
-                <ul class="nav navbar-nav">
-                    <li>
-                        <span class="nav-span"> Upload <input id="fileInput" class="nav-input" type="file" custom-on-change="uploadFile" value="foo"></span>
-                    </li>
-                    <li>
-                    <li ng-click="makeICS()">
-                        <span class="nav-span">Generate ICS</span>
-                    </li>
-                    </li>
-                    <li>
-                        <input class="nav-search" placeholder="Search" ng-model="query">
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-    <div class="container">
-      <div class="">
-        <h1>{{event.title}}</h1>
-        <map location="event.location"></map>
-        <h3>{{event.startTime}}</h3>
-        <h3>{{event.endTime}}</h3>
-        <h3>{{event.organiser}}</h3>
+<nav class="navbar navbar-default navbar-static-top">
+  <div class="container">
+    <div class="navbar-header"><a class="navbar-brand">Open Conference Format</a></div>
+    <div class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+        <li>
+          <span class="nav-span"> Upload <input id="fileInput" class="nav-input" type="file"
+                                                custom-on-change="uploadFile" value="foo"></span>
+        </li>
+        <li>
+        <li ng-click="makeICS()">
+          <span class="nav-span">Generate ICS</span>
+        </li>
+        </li>
+        <li>
+          <input class="nav-search" placeholder="Search" ng-model="query">
+        </li>
+        <li>
+          <span class="nav-span"><a href="/new">New</a></span>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<!-- angular templating -->
+<!-- this is where content will be injected -->
+<div ng-view></div>
+<div class="container">
+  <div class="">
+    <h1>{{event.title}}</h1>
+    <map location="event.location"></map>
+    <h3>{{event.startTime}}</h3>
 
-        <div class="stream-container">
-          <div ng-repeat="stream in streams | filter:query" class="stream-box">
-            <event-stream name="stream" events="event.subEvents"></event-stream>
-          </div>
-        </div>
-        
-            
+    <h3>{{event.endTime}}</h3>
+
+    <h3>{{event.organiser}}</h3>
+
+    <div class="stream-container">
+      <div ng-repeat="stream in streams | filter:query" class="stream-box">
+        <event-stream name="stream" events="event.subEvents"></event-stream>
       </div>
     </div>
-
+  </div>
+</div>
 </body>
 </html>

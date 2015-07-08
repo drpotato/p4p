@@ -6,37 +6,37 @@ angular.module('esad.openConferenceFormat', [])
 
     var validator = require('is-my-json-valid');
     var schema = {
-      $schema: "http://json-schema.org/draft-04/schema#",
+      $schema: 'http://json-schema.org/draft-04/schema#',
       definitions: {
         contactDetail: {
-          type: "object",
-          oneOf: [{$ref: "#/definitions/emailDetail"}]
+          type: 'object',
+          oneOf: [{$ref: '#/definitions/emailDetail'}]
         },
         emailDetail: {
-          type: "object",
+          type: 'object',
           properties: {
             value: {
-              type: "string",
-              pattern: "^.*$"
+              type: 'string',
+              pattern: '^.*$'
             }
 
-          }, required: ["value"]
+          }, required: ['value']
         },
         person: {
-          type: "object",
+          type: 'object',
           properties: {
             name: {
-              type: "string"
+              type: 'string'
             },
             role: {
-              type: "string"
+              type: 'string'
             },
             contactDetails: {
-              type: "array",
+              type: 'array',
               items: {
                 anyOf: [
                   {
-                    $ref: "#/definitions/contactDetail"
+                    $ref: '#/definitions/contactDetail'
                   }
                 ]
               }
@@ -44,49 +44,49 @@ angular.module('esad.openConferenceFormat', [])
           }
         },
         event: {
-          type: "object",
+          type: 'object',
           properties: {
             title: {
-              type: "string"
+              type: 'string'
             },
             location: {
-              type: "string"
+              type: 'string'
             },
             startTime: {
-              type: "string"
+              type: 'string'
             },
             endTime: {
-              type: "string"
+              type: 'string'
             }
           },
           required: [
-            "title", "location"
+            'title', 'location'
           ]
         },
         subEvent: {
-          type: "object",
+          type: 'object',
           allOf: [
             {
-              $ref: "#/definitions/event"
+              $ref: '#/definitions/event'
             },
             {
               properties: {
                 description: {
-                  type: "string"
+                  type: 'string'
                 },
                 type: {
-                  type: "string"
+                  type: 'string'
                 },
                 people: {
-                  type: "array",
+                  type: 'array',
                   items: {
-                    $ref: "#/definitions/person"
+                    $ref: '#/definitions/person'
                   }
                 },
                 tags: {
-                  type: "array",
+                  type: 'array',
                   items: {
-                    type: "string"
+                    type: 'string'
                   }
                 }
               }
@@ -94,33 +94,33 @@ angular.module('esad.openConferenceFormat', [])
           ]
         }
       },
-      title: "Conference",
-      type: "object",
+      title: 'Conference',
+      type: 'object',
       properties: {
         event: {
           allOf: [
             {
-              $ref: "#/definitions/event"
+              $ref: '#/definitions/event'
             },
             {
               properties: {
                 organiser: {
-                  type: "string"
+                  type: 'string'
                 },
                 subEvents: {
-                  type: "array",
+                  type: 'array',
                   minItems: 1,
                   items: {
-                    $ref: "#/definitions/subEvent"
+                    $ref: '#/definitions/subEvent'
                   }
                 }
-              }, required: ["subEvents", "organiser"]
+              }, required: ['subEvents', 'organiser']
             }
           ]
         }
       },
       required: [
-        "event"
+        'event'
       ]
     };
 

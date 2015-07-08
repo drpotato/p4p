@@ -3,7 +3,7 @@ var morgan = require('morgan');
 
 var app = express();
 
-var logger = morgan('combined');
+var logger = morgan('dev');
 
 app.use(logger);
 app.use('/', express.static(__dirname + '/webapp'));

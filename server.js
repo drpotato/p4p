@@ -8,6 +8,7 @@ var logger = morgan('dev');
 app.use(logger);
 app.use('/app', express.static(__dirname + '/webapp/app'));
 app.use('/assets', express.static(__dirname + '/webapp/assets'));
+app.use('/bower_components', express.static(__dirname + '/webapp/bower_components'));
 
 
 var catchAll = function (req, res) {

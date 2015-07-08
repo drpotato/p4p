@@ -132,6 +132,7 @@ angular.module('esad.openConferenceFormat', [])
   
 
     return {
-      validate: validate
+      validate: validate,
+      schema: schema
     }
   });

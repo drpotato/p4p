@@ -12,7 +12,6 @@
     "angular-loader": "~1.4.0",
     "angular-mocks": "~1.4.0", 
     "chai": "1.6.0",
-    "is-my-json-valid": "2.12.0",
     "ng-file-upload": "4.2.4",
     "supertest": ">=0.15.0",
     "angular-schema-form": "*"

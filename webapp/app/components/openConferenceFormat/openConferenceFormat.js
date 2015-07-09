@@ -4,7 +4,6 @@ angular.module('esad.openConferenceFormat', [])
 
 .factory('openConferenceFormat', function() {
 
-    var validator = require('is-my-json-valid');
     var schema = {
       $schema: 'http://json-schema.org/draft-04/schema#',
       definitions: {
@@ -53,10 +52,10 @@ angular.module('esad.openConferenceFormat', [])
               type: 'string'
             },
             startTime: {
-              type: 'date-time'
+              type: 'string'
             },
             endTime: {
-              type: 'date-time'
+              type: 'string'
             }
           },
           required: [
@@ -124,11 +123,9 @@ angular.module('esad.openConferenceFormat', [])
       ]
     };
 
-    var validate = validator(schema, {
-      verbose: true,
-      greedy: true
-    });
-  
+    var validate = function(json){
+      return tv4.validateMultiple(json, schema);
+    }
   
 
     return {

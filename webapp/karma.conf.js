@@ -15,11 +15,14 @@ module.exports = function(config) {
 
     // list of files / patterns to load in the browser
     files: [
+      'bower_components/tv4/tv4.js',
       'node_modules/angular/angular.js',
       'node_modules/angular-route/angular-route.js',
       'node_modules/angular-mocks/angular-mocks.js',
       'bower_components/angular-json-editor/**/*.js',
+      'bower_components/karma-read-json/karma-read-json.js',
       'app/*.js',
+      'assets/js/*.js',
       'app/components/**/*.js',
       'app/view*/**/*.js',
       'tests/*.js',
@@ -67,9 +70,8 @@ module.exports = function(config) {
 
     // start these browsers
     // available browser launchers: https://npmjs.org/browse/keyword/karma-launcher
- //   browsers: ['Chrome', 'Firefox', 'Safari', 'IE'],
-    browsers: ['Chrome'],
-
+    browsers: ['Chrome', 'Firefox', 'Safari', 'IE'],
+    
     // Continuous Integration mode
     // if true, Karma captures browsers, runs the tests and exits
     singleRun: true

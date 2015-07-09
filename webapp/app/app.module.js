@@ -43,8 +43,8 @@ angular.module('esad', ['esad.map', 'esad.stream', 'esad.subEvent', 'esad.openCo
     var reader = new FileReader();
     reader.onload = function (e) {
       var eventJSON = JSON.parse(e.target.result);
-      var result = openConferenceFormat.validate(eventJSON);
-      if (result.errors) {
+      var result = $scope.validateFile(eventJSON);
+      if (result.valid === false) {
         //Handle Error States
         $scope.event = null;
         result.errors.forEach(function (error) {
@@ -61,6 +61,11 @@ angular.module('esad', ['esad.map', 'esad.stream', 'esad.subEvent', 'esad.openCo
     reader.readAsText(file);
   };
 
+  //Useful for testing :v
+  $scope.validateFile = function(json){
+    return openConferenceFormat.validate(json);
+  };
+  
   $scope.makeICS = function(){
     //TODO: maybe this can be an angular module so we don't have to declare it in the html as well?
     var cal = ics();

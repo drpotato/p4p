@@ -1,15 +1,6 @@
 <div class="container" ng-controller="ScheduleCreationController">
-  <json-editor schema="schema" startval="schedule">
-    <button type="submit" class="btn btn-success" ng-click="onSubmit($event)" ng-disabled="!isValid">
-      <span class="glyphicon glyphicon-check"></span>
-      Submit
-    </button>
-
-    <button type="button" class="btn btn-danger" ng-click="onAction2($event)">
-      <span class="glyphicon glyphicon-remove"></span>
-      Action 2
-    </button>
-  </json-editor>
+  <json-editor schema="schema" startval="schedule" on-change="formChanged($editorValue)"></json-editor>
+  <a class="btn btn-default" download="backup.json" href="{{ url }}">Download</a>
   <pre>
     {{ schedule || json }}
   </pre>

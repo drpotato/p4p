@@ -1,25 +1,35 @@
 <div ng-controller="SubEventController">
     <div ng-click="expand()" class="panel-body">
         <h5>{{subEvent.title | limitTo:70}}</h5>
-        <div class="expandable" ng-class="{visible:expanded}">
-            <h3>{{subEvent.location}}</h3>
-            <h3>{{subEvent.start}}</h3>
-            <h3>{{subEvent.end}}</h3>
-            <p>{{subEvent.description}}</p>
-            <p ng-if="subEvent.tags">Tags: <a ng-repeat="tag in subEvent.tags">{{ tag }} </a></p>
-            <ul>
-                <li ng-repeat="person in subEvent.people">
-                    <h3>{{person.name}}</h3>
+      
+        <script type="text/ng-template" id="myModalContent.html">
+          <div class="modal-header">
+              <h3 class="modal-title">{{subEvent.title}}</h3>
+          </div>
+          <div class="modal-body">
+              <h3>{{subEvent.location}}</h3>
+              <h3>{{subEvent.startTime}}</h3>
+              <h3>{{subEvent.endTime}}</h3>
+              <p>{{subEvent.description}}</p>
+              <p ng-if="subEvent.tags">Tags: <a ng-repeat="tag in subEvent.tags">{{ tag }} </a></p>
+              <ul>
+                  <li ng-repeat="person in subEvent.people">
+                      <h3>{{person.name}}</h3>
 
-                    <div>{{person.role}}</div>
-                    <div ng-if="person.contactDetails">
-                        <div>Contact Details:</div>
-                        <ul>
-                            <li ng-repeat="detail in person.contactDetails"> {{detail.type}} - {{detail.value}}</li>
-                        </ul>
-                    </div>
-                </li>
-            </ul>
-        </div>
-</div>
+                      <div>{{person.role}}</div>
+                      <div ng-if="person.contactDetails">
+                          <div>Contact Details:</div>
+                          <ul>
+                              <li ng-repeat="detail in person.contactDetails"> {{detail.type}} - {{detail.value}}</li>
+                          </ul>
+                      </div>
+                  </li>
+              </ul>
+          </div>
+          <div class="modal-footer">
+              <button class="btn btn-primary" ng-click="ok()">OK</button>
+              <button class="btn btn-warning" ng-click="cancel()">Cancel</button>
+          </div>
+        </script>   
+  </div>
 </div>

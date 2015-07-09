@@ -53,10 +53,10 @@ angular.module('esad.openConferenceFormat', [])
               type: 'string'
             },
             startTime: {
-              type: 'string'
+              type: 'date-time'
             },
             endTime: {
-              type: 'string'
+              type: 'date-time'
             }
           },
           required: [

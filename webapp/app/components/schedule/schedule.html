@@ -9,10 +9,10 @@
     </div>
   </div>
   <ul class="list-unstyled">
-    <li class="" ng-repeat="time in timetable">
+    <li class="esad-time" ng-repeat="time in timetable">
       <div class="row vertical-centre">
         <div class="col-md-1">
-          <h5>{{time.time | date:'MMM d, h:mm a'}}</h5>
+          <h4>{{time.time | date:'MMM d, h:mm a'}}</h4>
         </div>
         <div class="col-md-11 stream-container">
           <div ng-repeat="stream in time.streams" class="stream-box">

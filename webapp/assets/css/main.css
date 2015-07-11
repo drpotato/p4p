@@ -131,6 +131,10 @@
   width:15%;
 }
 
+.esad-time{
+  border-bottom: 1px solid hsl(0,0%,50%);
+}
+
 
 @media (min-width: 1200px) {
 .container{

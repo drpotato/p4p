@@ -49,8 +49,10 @@ angular.module('esad', ['esad.map', 'esad.stream', 'esad.subEvent', 'esad.openCo
         $scope.event = null;
         result.errors.forEach(function (error) {
           console.error(error);
-          $scope.validJSON = false;
         });
+        var eventJSON = {};
+        alert("Invalid JSON");
+        return;
       } else {
         $scope.validJSON = true;
         $scope.event = eventJSON.event;

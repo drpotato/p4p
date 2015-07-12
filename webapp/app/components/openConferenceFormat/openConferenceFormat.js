@@ -15,8 +15,8 @@ angular.module('esad.openConferenceFormat', [])
           type: 'object',
           properties: {
             value: {
-              type: 'string',
-              pattern: '^.*$'
+              format:'email',
+              type: 'string'
             }
 
           }, required: ['value']
@@ -52,10 +52,12 @@ angular.module('esad.openConferenceFormat', [])
               type: 'string'
             },
             startTime: {
-              type: 'string'
+              type: 'string',
+              format: 'date-time'
             },
             endTime: {
-              type: 'string'
+              type: 'string',
+              format: 'date-time'
             }
           },
           required: [

@@ -1,9 +1,9 @@
 'use strict';
 
-angular.module('esad', ['esad.map', 'esad.stream', 'esad.subEvent', 'esad.openConferenceFormat', 'esad.schedule', 'esad.scheduleCreation'])
+angular.module('esad', ['esad.map', 'esad.stream', 'esad.subEvent', 'esad.openConferenceFormat', 'esad.schedule', 'esad.scheduleCreation','esad.errorView'])
 
 .config(['$locationProvider', function ($locationProvider) {
-  $locationProvider.html5Mode(true)
+  $locationProvider.html5Mode(true);
 }])
 
 .directive('customOnChange', function () {
@@ -16,10 +16,10 @@ angular.module('esad', ['esad.map', 'esad.stream', 'esad.subEvent', 'esad.openCo
   };
 })
 
-.controller('EventController', function ($scope, $http, openConferenceFormat) {
+.controller('EventController', function ($scope, $http, openConferenceFormat,displayError) {
   $scope.timetable = [];
   $scope.validJSON = false;
-  
+  $scope.error = [];
   
   //Does JS have this method?
   var getUniqueOccurances = function(array,property){
@@ -42,6 +42,7 @@ angular.module('esad', ['esad.map', 'esad.stream', 'esad.subEvent', 'esad.openCo
     var file = files[0];
     var reader = new FileReader();
     reader.onload = function (e) {
+      $scope.errors = [];
       var eventJSON = JSON.parse(e.target.result);
       var result = $scope.validateFile(eventJSON);
       if (result.valid === false) {
@@ -50,10 +51,11 @@ angular.module('esad', ['esad.map', 'esad.stream', 'esad.subEvent', 'esad.openCo
         result.errors.forEach(function (error) {
           console.error(error);
         });
+        displayError.display(result.errors);
         var eventJSON = {};
-        alert("Invalid JSON");
         return;
       } else {
+        console.log(eventJSON);
         $scope.validJSON = true;
         $scope.event = eventJSON.event;
         $scope.generateTimetable();

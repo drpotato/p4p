@@ -54,6 +54,7 @@ angular.module('esad', ['esad.map', 'esad.stream', 'esad.subEvent', 'esad.openCo
         alert("Invalid JSON");
         return;
       } else {
+        console.log(eventJSON);
         $scope.validJSON = true;
         $scope.event = eventJSON.event;
         $scope.generateTimetable();

@@ -2,15 +2,15 @@
   "event": {
     "title": "Part IV Project Presentations",
     "location": "The University of Auckland",
-    "startTime": "2012-12-13T12:12:12",
-    "endTime": "2012-12-13T12:12:12",
+    "startTime": "2012-12-12T23:12:12.000Z",
+    "endTime": "2012-12-12T23:12:12.000Z",
     "organiser": "The University of Auckland",
     "subEvents": [
       {
         "title": "Event Syndication and Dissemination",
         "location": "303-UG4",
-        "startTime": "2012-12-13T12:12:12",
-        "endTime": "2012-12-13T12:12:12",
+        "startTime": "2012-12-12T23:12:12.000Z",
+        "endTime": "2012-12-12T23:12:12.000Z",
         "description": "Conferences and events (such as the P4P project exhibitions) publish a schedule of events. This is done in an ad-hoc fashion with no publishing standard.\nCompare this with News syndication where the RSS format governs how the News feeds are stored and transmitted. The RSS format allows News agencies to publish their article summaries in a standardized format enabling generic clients to consume the summaries, yet allowing each agency to have freedom in representing the full articles in their own form and style.\nThis project has two aspects to it. Firstly, to design and propose a standard format that encompasses the schedule requirements of conferences and events. Secondly, to develop reference client implementations (for both mobile and web) that consume and render schedules adhering to this standard format.",
         "type": "Project Presentation",
         "people": [

@@ -14,11 +14,16 @@ angular.module('esad.scheduleCreation', ['ngRoute', 'angular-json-editor', 'esad
   $scope.schedule = {};
 
   $scope.formChanged = function (form) {
-    console.log(JSON.stringify(form));
     $scope.schedule = form;
   };
 
-  var json = JSON.stringify($scope.form);
+  $scope.download = function() {
+    var objString = JSON.stringify($scope.schedule);
+    var url = 'data:text/json;charset=utf8,' + encodeURIComponent(objString);
 
-  $scope.url = URL.createObjectURL(new Blob([json], {type: "application/json"}));
+    // There's probably a more angular way of doing this.
+    window.open(url, '_blank');
+    window.focus();
+  }
+
 });

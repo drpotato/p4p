@@ -44,19 +44,17 @@
     <div class="navbar-collapse collapse">
       <ul class="nav navbar-nav">
         <li>
-          <span class="nav-span">Upload<input id="fileInput" class="nav-input" type="file"
+          <span class="nav-span link-hover">Upload<input id="fileInput" class="nav-input" type="file"
                                                 custom-on-change="uploadFile" value="foo"></span>
         </li>
-        <li>
         <li ng-click="makeICS()">
-          <span class="nav-span">Generate ICS</span>
+          <span class="nav-span link-hover">Generate ICS</span>
         </li>
+        <li>
+          <span class="nav-span"><a class="link-plain" href="/new">New</a></span>
         </li>
         <li>
           <input class="nav-search" placeholder="Search" ng-model="query">
-        </li>
-        <li>
-          <span class="nav-span"><a href="/new">New</a></span>
         </li>
       </ul>
     </div>

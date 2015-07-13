@@ -137,9 +137,23 @@
   border-bottom: 1px solid hsl(0,0%,50%);
 }
 
+.link-hover {
+  cursor: pointer;
+}
+
+.link-plain {
+  text-decoration: none;
+  color: inherit;
+}
+
+.link-plain:hover {
+  text-decoration: none;
+  color: inherit;
+}
 
 @media (min-width: 1200px) {
-.container{
+  .container {
     max-width: 1500px;
-    width:1300px;
+    width: 1300px;
+  }
 }

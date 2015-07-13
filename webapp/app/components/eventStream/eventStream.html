@@ -1,7 +1,7 @@
-<div ng-controller="StreamController">
+<div ng-style="display" ng-controller="StreamController" class="stream-box">
   <h3>{{name}}</h3>
   <ul class="list-unstyled">
-    <li ng-repeat="subEvent in subEvents | filter:query" class="">
+    <li ng-repeat="subEvent in filteredEvents = (subEvents | filter:query)" class="">
       <sub-event sub-event="subEvent"></sub-event>
     </li>
   </ul>

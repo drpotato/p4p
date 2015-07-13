@@ -15,7 +15,7 @@
           <h4>{{time.time | date:'MMM d, h:mm a'}}</h4>
         </div>
         <div class="col-md-11 stream-container">
-          <div ng-repeat="stream in time.streams" class="stream-box">
+          <div ng-repeat="stream in time.streams">
             <event-stream name="stream" events="time.events" query="query"></event-stream>
           </div>
         </div>

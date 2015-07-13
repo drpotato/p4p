@@ -10,241 +10,572 @@
         "title": "Delta-domain based controllers for linear dynamic systems",
         "location": "Room 403.401",
         "startTime": "2013-09-12T09:00:00",
-        "endTime": "2013-09-13T10:30:00",
+        "endTime": "2013-09-12T09:30:00",
         "description": "",
         "type": "Project Seminar",
-        "tags": ["Control Systems"],
         "people": [
-            {"name": "Henry Miao", "role": "Student"},
-            {"name": "Aparna Pratthi", "role": "Student"},
-            {"name": "Akshya Swain", "role": "Chair"},
-            {"name": "Nitish Patel", "role": "Assessor"},
-            {"name": "Sing Nguang", "role": "Assessor"}
-          ]
+          {
+            "name": "Henry Miao",
+            "role": "Student"
+          },
+          {
+            "name": "Aparna Pratthi",
+            "role": "Student"
+          },
+          {
+            "name": "Akshya Swain",
+            "role": "Chair"
+          },
+          {
+            "name": "Nitish Patel",
+            "role": "Assessor"
+          },
+          {
+            "name": "Sing Nguang",
+            "role": "Assessor"
+          }
+        ],
+        "tags": [
+          "Control Systems"
+        ]
       },
       {
         "title": "Controller design for wind energy systems",
         "location": "Room 403.401",
-        "startTime": "2013-09-12T09:00:00",
-        "endTime": "2013-09-13T15:30:00",
+        "startTime": "2013-09-12T09:30:00",
+        "endTime": "2013-09-12T10:00:00",
         "description": "",
         "type": "Project Seminar",
-        "tags": ["Control Systems"],
         "people": [
-            {"name": "Stuart Harwood", "role": "Student"},
-            {"name": "Josh Mapstone", "role": "Student"},
-            {"name":"Akshya Swain", "role": "Chair"},
-            {"name":"Nitish Patel", "role": "Assessor"},
-            {"name":"Sing Nguang", "role": "Assessor"}
-          ]
+          {
+            "name": "Stuart Harwood",
+            "role": "Student"
+          },
+          {
+            "name": "Josh Mapstone",
+            "role": "Student"
+          },
+          {
+            "name": "Akshya Swain",
+            "role": "Chair"
+          },
+          {
+            "name": "Nitish Patel",
+            "role": "Assessor"
+          },
+          {
+            "name": "Sing Nguang",
+            "role": "Assessor"
+          }
+        ],
+        "tags": [
+          "Control Systems"
+        ]
       },
       {
         "title": "Knowledge based controllers for power system",
         "location": "Room 403.401",
-        "startTime": "2013-09-12T09:00:00",
-        "endTime": "2013-09-13T15:30:00",
+        "startTime": "2013-09-12T10:00:00",
+        "endTime": "2013-09-12T10:30:00",
         "description": "",
         "type": "Project Seminar",
-        "tags": ["Control Systems"],
         "people": [
-            {"name": "Joshua Masilamani", "role": "Student"},
-            {"name": "John Zhang", "role": "Student"},
-            {"name": "Akshya Swain", "role": "Chair"},
-            {"name": "Nitish Patel", "role": "Assessor"},
-            {"name": "Sing Nguang", "role": "Assessor"}
-          ]
+          {
+            "name": "Joshua Masilamani",
+            "role": "Student"
+          },
+          {
+            "name": "John Zhang",
+            "role": "Student"
+          },
+          {
+            "name": "Akshya Swain",
+            "role": "Chair"
+          },
+          {
+            "name": "Nitish Patel",
+            "role": "Assessor"
+          },
+          {
+            "name": "Sing Nguang",
+            "role": "Assessor"
+          }
+        ],
+        "tags": [
+          "Control Systems"
+        ]
       },
       {
         "title": "RET-OS for biomedical devices",
         "location": "Room 403.402",
         "startTime": "2013-09-12T09:00:00",
-        "endTime": "2013-09-13T15:30:00",
+        "endTime": "2013-09-12T09:30:00",
         "description": "",
         "type": "Project Seminar",
-        "tags": ["Embedded Systems"],
         "people": [
-            {"name": "Glen Kaunds", "role": "Student"},
-            {"name": "Nathan Whittington", "role": "Student"},
-            {"name": "Partha Roop", "role": "Chair"},
-            {"name": "Kevin I-Kai Wang", "role": "Assessor"},
-            {"name": "Morteza Biglari-Abhari", "role": "Assessor"}
-          ]
+          {
+            "name": "Glen Kaunds",
+            "role": "Student"
+          },
+          {
+            "name": "Nathan Whittington",
+            "role": "Student"
+          },
+          {
+            "name": "Partha Roop",
+            "role": "Chair"
+          },
+          {
+            "name": "Kevin I-Kai Wang",
+            "role": "Assessor"
+          },
+          {
+            "name": "Morteza Biglari-Abhari",
+            "role": "Assessor"
+          }
+        ],
+        "tags": [
+          "Embedded Systems"
+        ]
       },
       {
         "title": "Controller synthesis for coordinated ramp signalling",
         "location": "Room 403.402",
-        "startTime": "2013-09-12T09:00:00",
-        "endTime": "2013-09-13T15:30:00",
+        "startTime": "2013-09-12T09:30:00",
+        "endTime": "2013-09-12T10:00:00",
         "description": "",
         "type": "Project Seminar",
-        "tags": ["Embedded Systems"],
         "people": [
-            {"name": "Derek Yao", "role": "Student"},
-            {"name": "Roy Zane", "role": "Student"},
-            {"name": "Partha Roop", "role": "Chair"},
-            {"name": "Kevin I-Kai Wang", "role": "Assessor"},
-            {"name": "Morteza Biglari-Abhari", "role": "Assessor"}
-          ]
+          {
+            "name": "Derek Yao",
+            "role": "Student"
+          },
+          {
+            "name": "Roy Zane",
+            "role": "Student"
+          },
+          {
+            "name": "Partha Roop",
+            "role": "Chair"
+          },
+          {
+            "name": "Kevin I-Kai Wang",
+            "role": "Assessor"
+          },
+          {
+            "name": "Morteza Biglari-Abhari",
+            "role": "Assessor"
+          }
+        ],
+        "tags": [
+          "Embedded Systems"
+        ]
       },
       {
         "title": "GALS multi-core processor",
         "location": "Room 403.402",
-        "startTime": "2013-09-12T09:00:00",
-        "endTime": "2013-09-13T15:30:00",
+        "startTime": "2013-09-12T10:00:00",
+        "endTime": "2013-09-12T10:30:00",
         "description": "",
         "type": "Project Seminar",
-        "tags": ["Embedded Systems"],
         "people": [
-            {"name": "Hamish Lonergan", "role": "Student"},
-            {"name": "Buddy Gorven", "role": "Student"},
-            {"name": "Partha Roop", "role": "Chair"},
-            {"name": "Kevin I-Kai Wang", "role": "Assessor"},
-            {"name": "Morteza Biglari-Abhari", "role": "Assessor"}
-          ]
+          {
+            "name": "Hamish Lonergan",
+            "role": "Student"
+          },
+          {
+            "name": "Buddy Gorven",
+            "role": "Student"
+          },
+          {
+            "name": "Partha Roop",
+            "role": "Chair"
+          },
+          {
+            "name": "Kevin I-Kai Wang",
+            "role": "Assessor"
+          },
+          {
+            "name": "Morteza Biglari-Abhari",
+            "role": "Assessor"
+          }
+        ],
+        "tags": [
+          "Embedded Systems"
+        ]
       },
       {
         "title": "Impact of electrical vehicle (EV) on the distribution network",
         "location": "Room 403.404",
         "startTime": "2013-09-12T09:00:00",
-        "endTime": "2013-09-13T15:30:00",
+        "endTime": "2013-09-12T09:30:00",
         "description": "",
         "type": "Project Seminar",
-        "tags": ["Power Systems"],
         "people": [
-            {"name": "Justin Cho", "role": "Student"},
-            {"name": "Kashani Sharma", "role": "Student"},
-            {"name": "Nirmal-Kumar Nair", "role": "Chair"},
-            {"name": "Aiguo Patrick Hu", "role": "Assessor"},
-            {"name": "Duleepa Thrimawithana", "role": "Assessor"}
-          ]
+          {
+            "name": "Justin Cho",
+            "role": "Student"
+          },
+          {
+            "name": "Kashani Sharma",
+            "role": "Student"
+          },
+          {
+            "name": "Nirmal-Kumar Nair",
+            "role": "Chair"
+          },
+          {
+            "name": "Aiguo Patrick Hu",
+            "role": "Assessor"
+          },
+          {
+            "name": "Duleepa Thrimawithana",
+            "role": "Assessor"
+          }
+        ],
+        "tags": [
+          "Power Systems"
+        ]
       },
       {
         "title": "Comprehensive Assessment of Fault Clearance Times in Power System Distribution",
         "location": "Room 403.404",
-        "startTime": "2013-09-12T09:00:00",
-        "endTime": "2013-09-13T15:30:00",
+        "startTime": "2013-09-12T09:30:00",
+        "endTime": "2013-09-12T10:00:00",
         "description": "",
         "type": "Project Seminar",
-        "tags": ["Power Systems"],
         "people": [
-            {"name": "Xuedong Lin", "role": "Student"},
-            {"name": "Mary Zhang", "role": "Student"},
-            {"name": "Nirmal-Kumar Nair", "role": "Chair"},
-            {"name": "Aiguo Patrick Hu", "role": "Assessor"},
-            {"name": "Duleepa Thrimawithana", "role": "Assessor"}
-          ]
+          {
+            "name": "Xuedong Lin",
+            "role": "Student"
+          },
+          {
+            "name": "Mary Zhang",
+            "role": "Student"
+          },
+          {
+            "name": "Nirmal-Kumar Nair",
+            "role": "Chair"
+          },
+          {
+            "name": "Aiguo Patrick Hu",
+            "role": "Assessor"
+          },
+          {
+            "name": "Duleepa Thrimawithana",
+            "role": "Assessor"
+          }
+        ],
+        "tags": [
+          "Power Systems"
+        ]
       },
       {
         "title": "Development of smart grid SCADA prototype for power system distribution networks",
         "location": "Room 403.404",
-        "startTime": "2013-09-12T09:00:00",
-        "endTime": "2013-09-13T15:30:00",
+        "startTime": "2013-09-12T10:00:00",
+        "endTime": "2013-09-12T10:30:00",
         "description": "",
         "type": "Project Seminar",
-        "tags": ["Power Systems"],
         "people": [
-            {"name": "Yeyong Li", "role": "Student"},
-            {"name": "Zhe Wu", "role": "Student"},
-            {"name": "Nirmal-Kumar Nair", "role": "Chair"},
-            {"name": "Aiguo Patrick Hu", "role": "Assessor"},
-            {"name": "Duleepa Thrimawithana", "role": "Assessor"}
-          ]
+          {
+            "name": "Yeyong Li",
+            "role": "Student"
+          },
+          {
+            "name": "Zhe Wu",
+            "role": "Student"
+          },
+          {
+            "name": "Nirmal-Kumar Nair",
+            "role": "Chair"
+          },
+          {
+            "name": "Aiguo Patrick Hu",
+            "role": "Assessor"
+          },
+          {
+            "name": "Duleepa Thrimawithana",
+            "role": "Assessor"
+          }
+        ],
+        "tags": [
+          "Power Systems"
+        ]
       },
       {
         "title": "A Comparison of IPT Technologies Suitable for EV Applications",
         "location": "Room 403.407",
         "startTime": "2013-09-12T09:00:00",
-        "endTime": "2013-09-13T15:30:00",
+        "endTime": "2013-09-12T09:30:00",
         "description": "",
         "type": "Project Seminar",
-        "tags": ["Power Electronics"],
         "people": [
-            {"name": "Achintha De Alwis", "role": "Student"},
-            {"name": "Zachary Harris", "role": "Student"},
-            {"name": "Grant Covic", "role": "Chair"},
-            {"name": "Udaya Madawala", "role": "Assessor"},
-            {"name": "Mark Andrews", "role": "Assessor"}
-          ]
+          {
+            "name": "Achintha De Alwis",
+            "role": "Student"
+          },
+          {
+            "name": "Zachary Harris",
+            "role": "Student"
+          },
+          {
+            "name": "Grant Covic",
+            "role": "Chair"
+          },
+          {
+            "name": "Udaya Madawala",
+            "role": "Assessor"
+          },
+          {
+            "name": "Mark Andrews",
+            "role": "Assessor"
+          }
+        ],
+        "tags": [
+          "Power Electronics"
+        ]
       },
       {
         "title": "Marina shorepower via IPT",
         "location": "Room 403.407",
-        "startTime": "2013-09-12T09:00:00",
-        "endTime": "2013-09-13T15:30:00",
+        "startTime": "2013-09-12T09:30:00",
+        "endTime": "2013-09-12T10:00:00",
         "description": "",
         "type": "Project Seminar",
-        "tags": ["Power Electronics"],
         "people": [
-            {"name": "Kevin Huang", "role": "Student"},
-            {"name": "William Quach", "role": "Student"},
-            {"name": "Grant Covic", "role": "Chair"},
-            {"name": "Udaya Madawala", "role": "Assessor"},
-            {"name": "Mark Andrews", "role": "Assessor"}
-          ]
+          {
+            "name": "Kevin Huang",
+            "role": "Student"
+          },
+          {
+            "name": "William Quach",
+            "role": "Student"
+          },
+          {
+            "name": "Grant Covic",
+            "role": "Chair"
+          },
+          {
+            "name": "Udaya Madawala",
+            "role": "Assessor"
+          },
+          {
+            "name": "Mark Andrews",
+            "role": "Assessor"
+          }
+        ],
+        "tags": [
+          "Power Electronics"
+        ]
       },
       {
         "title": "Communication monitoring and control of roadway IPT systems",
         "location": "Room 403.407",
-        "startTime": "2013-09-12T09:00:00",
-        "endTime": "2013-09-13T15:30:00",
+        "startTime": "2013-09-12T10:00:00",
+        "endTime": "2013-09-12T10:30:00",
         "description": "",
         "type": "Project Seminar",
-        "tags": ["Power Electronics"],
         "people": [
-            {"name": "Jagmeet Singh", "role": "Student"},
-            {"name": "Robert Lui", "role": "Student"},
-            {"name": "Grant Covic", "role": "Chair"},
-            {"name": "Udaya Madawala", "role": "Assessor"},
-            {"name": "Mark Andrews", "role": "Assessor"}
-          ]
+          {
+            "name": "Jagmeet Singh",
+            "role": "Student"
+          },
+          {
+            "name": "Robert Lui",
+            "role": "Student"
+          },
+          {
+            "name": "Grant Covic",
+            "role": "Chair"
+          },
+          {
+            "name": "Udaya Madawala",
+            "role": "Assessor"
+          },
+          {
+            "name": "Mark Andrews",
+            "role": "Assessor"
+          }
+        ],
+        "tags": [
+          "Power Electronics"
+        ]
       },
       {
         "title": "Memory games for a robot",
         "location": "Room 401.401",
         "startTime": "2013-09-12T09:00:00",
-        "endTime": "2013-09-13T15:30:00",
+        "endTime": "2013-09-12T09:30:00",
         "description": "",
         "type": "Project Seminar",
-        "tags": ["Robotics"],
         "people": [
-            {"name": "Charu Wadhwa", "role": "Student"},
-            {"name": "Pauline Santos", "role": "Student"},
-            {"name": "Bruce MacDonald", "role": "Chair"},
-            {"name": "Burkhard Wuensche", "role": "Assessor"},
-            {"name": "George Coghill", "role": "Assessor"}
-          ]
+          {
+            "name": "Charu Wadhwa",
+            "role": "Student"
+          },
+          {
+            "name": "Pauline Santos",
+            "role": "Student"
+          },
+          {
+            "name": "Bruce MacDonald",
+            "role": "Chair"
+          },
+          {
+            "name": "Burkhard Wuensche",
+            "role": "Assessor"
+          },
+          {
+            "name": "George Coghill",
+            "role": "Assessor"
+          }
+        ],
+        "tags": [
+          "Robotics"
+        ]
       },
       {
         "title": "Humanoid robot walking",
         "location": "Room 401.401",
-        "startTime": "2013-09-12T09:00:00",
-        "endTime": "2013-09-13T15:30:00",
+        "startTime": "2013-09-12T09:30:00",
+        "endTime": "2013-09-12T10:00:00",
         "description": "",
         "type": "Project Seminar",
-        "tags": ["Robotics"],
         "people": [
-            {"name": "Charu Wadhwa", "role": "Student"},
-            {"name": "Pauline Santos", "role": "Student"},
-            {"name": "Bruce MacDonald", "role": "Chair"},
-            {"name": "Burkhard Wuensche", "role": "Assessor"},
-            {"name": "George Coghill", "role": "Assessor"}
-          ]
+          {
+            "name": "Charu Wadhwa",
+            "role": "Student"
+          },
+          {
+            "name": "Pauline Santos",
+            "role": "Student"
+          },
+          {
+            "name": "Bruce MacDonald",
+            "role": "Chair"
+          },
+          {
+            "name": "Burkhard Wuensche",
+            "role": "Assessor"
+          },
+          {
+            "name": "George Coghill",
+            "role": "Assessor"
+          }
+        ],
+        "tags": [
+          "Robotics"
+        ]
       },
       {
         "title": "Forklift teleoperation and telepresence",
         "location": "Room 401.401",
-        "startTime": "2013-09-12T09:00:00",
-        "endTime": "2013-09-13T15:30:00",
+        "startTime": "2013-09-12T10:00:00",
+        "endTime": "2013-09-12T10:30:00",
         "description": "",
         "type": "Project Seminar",
-        "tags": ["Robotics"],
         "people": [
-            {"name": "Sam Mcardle", "role": "Student"},
-            {"name": "Greg Sumner", "role": "Student"},
-            {"name": "Bruce MacDonald", "role": "Chair"},
-            {"name": "Burkhard Wuensche", "role": "Assessor"},
-            {"name": "George Coghill", "role": "Assessor"}
-          ]
+          {
+            "name": "Sam Mcardle",
+            "role": "Student"
+          },
+          {
+            "name": "Greg Sumner",
+            "role": "Student"
+          },
+          {
+            "name": "Bruce MacDonald",
+            "role": "Chair"
+          },
+          {
+            "name": "Burkhard Wuensche",
+            "role": "Assessor"
+          },
+          {
+            "name": "George Coghill",
+            "role": "Assessor"
+          }
+        ],
+        "tags": [
+          "Robotics"
+        ]
+      },
+      {
+        "title": "Inertial navigation and attitude sensing",
+        "location": "403.401",
+        "startTime": "2013-09-12T11:00:00",
+        "endTime": "2013-09-12T11:30:00",
+        "description": "",
+        "type": "Project Seminar",
+        "people": [
+          {
+            "name": "Waleed Abdulla",
+            "role": "Chair",
+            "contactDetails": []
+          },
+          {
+            "name": "Kevin Sowerby",
+            "role": "Assessor",
+            "contactDetails": []
+          },
+          {
+            "name": "Bruce MacDonald",
+            "role": "Assessor",
+            "contactDetails": []
+          },
+          {
+            "name": "Joshua King",
+            "role": "Student",
+            "contactDetails": []
+          },
+          {
+            "name": "Jonathan Clapson",
+            "role": "Student",
+            "contactDetails": []
+          }
+        ],
+        "tags": [
+          "Control Systems"
+        ]
+      },
+      {
+        "title": "Time synchronized rescue robots",
+        "location": "403.401",
+        "startTime": "2013-09-12T11:30:00",
+        "endTime": "2013-09-12T12:00:00",
+        "description": "",
+        "type": "",
+        "people": [
+          {
+            "name": "Waleed Abdulla",
+            "role": "Chair",
+            "contactDetails": []
+          },
+          {
+            "name": "Kevin Sowerby",
+            "role": "Assessor",
+            "contactDetails": []
+          },
+          {
+            "name": "Bruce MacDonald",
+            "role": "Assessor",
+            "contactDetails": []
+          },
+          {
+            "name": "Tom Strowger",
+            "role": "Student",
+            "contactDetails": []
+          },
+          {
+            "name": "Ryan Kurte",
+            "role": "Student",
+            "contactDetails": []
+          }
+        ],
+        "tags": [
+          "Control Systems"
+        ]
       }
     ]
   }

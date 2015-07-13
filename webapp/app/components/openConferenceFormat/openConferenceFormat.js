@@ -127,7 +127,7 @@ angular.module('esad.openConferenceFormat', [])
 
     var validate = function(json){
       return tv4.validateMultiple(json, schema);
-    }
+    };
   
 
     return {

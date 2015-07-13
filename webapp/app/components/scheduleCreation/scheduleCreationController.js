@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('esad.scheduleCreation', ['ngRoute', 'angular-json-editor', 'esad.openConferenceFormat'])
+angular.module('esad.scheduleCreation', ['ngRoute', 'angular-json-editor', 'cfp.hotkeys', 'esad.openConferenceFormat'])
 
 .config(['$routeProvider', function ($routeProvider) {
   $routeProvider.when('/new', {
@@ -9,7 +9,7 @@ angular.module('esad.scheduleCreation', ['ngRoute', 'angular-json-editor', 'esad
   })
 }])
 
-.controller('ScheduleCreationController', function ($scope, openConferenceFormat) {
+.controller('ScheduleCreationController', function ($scope, openConferenceFormat, hotkeys) {
   $scope.schema = openConferenceFormat.schema;
   $scope.newSchedule = JSON.parse(localStorage.getItem('newSchedule.json'));
 
@@ -25,6 +25,15 @@ angular.module('esad.scheduleCreation', ['ngRoute', 'angular-json-editor', 'esad
     // There's probably a more angular way of doing this.
     window.open(url, '_blank');
     window.focus();
-  }
+  };
+
+  hotkeys.add({
+    combo: 'mod+s',
+    description: 'Save schedule',
+    callback: function (event) {
+      event.preventDefault();
+      $scope.download()
+    }
+  });
 
 });

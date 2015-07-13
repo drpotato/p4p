@@ -11,14 +11,15 @@ angular.module('esad.scheduleCreation', ['ngRoute', 'angular-json-editor', 'esad
 
 .controller('ScheduleCreationController', function ($scope, openConferenceFormat) {
   $scope.schema = openConferenceFormat.schema;
-  $scope.schedule = {};
+  $scope.newSchedule = JSON.parse(localStorage.getItem('newSchedule.json'));
 
   $scope.formChanged = function (form) {
-    $scope.schedule = form;
+    $scope.newSchedule = form;
+    localStorage.setItem('newSchedule.json', JSON.stringify(form));
   };
 
   $scope.download = function() {
-    var objString = JSON.stringify($scope.schedule);
+    var objString = JSON.stringify($scope.newSchedule);
     var url = 'data:text/json;charset=utf8,' + encodeURIComponent(objString);
 
     // There's probably a more angular way of doing this.

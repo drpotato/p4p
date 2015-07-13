@@ -1,7 +1,9 @@
 <div class="container" ng-controller="ScheduleCreationController">
-  <json-editor schema="schema" startval="schedule" on-change="formChanged($editorValue)"></json-editor>
-  <a class="btn btn-default" download="backup.json" href="#" ng-click="download()">Download</a>
+  <json-editor schema="schema" startval="newSchedule" on-change="formChanged($editorValue)">
+    <a class="btn btn-danger" href="#" ng-click="editor.setValue({})">Reset Form</a>
+  </json-editor>
+  <a class="btn btn-default" href="#" ng-click="download()">Download</a>
   <pre>
-    {{ schedule || json }}
+    {{ newSchedule || json }}
   </pre>
 </div>

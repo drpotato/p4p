@@ -19,7 +19,7 @@ angular.module('esad.scheduleCreation', ['ngRoute', 'angular-json-editor', 'esad
   };
 
   $scope.download = function() {
-    var objString = JSON.stringify($scope.newSchedule);
+    var objString = JSON.stringify($scope.newSchedule, null, 2);
     var url = 'data:text/json;charset=utf8,' + encodeURIComponent(objString);
 
     // There's probably a more angular way of doing this.

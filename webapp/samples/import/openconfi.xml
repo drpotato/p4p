@@ -1,0 +1,620 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!--
+-
+- OCC2016 Program
+-
+- Publisher: OpenConf (www.OpenConf.com)
+- Format:    1.0
+- Generated: 2015-07-16 00:33:12
+-
+-->
+<openconf>		
+<program>
+<event>OpenConf Conference 2016</event>
+<event_code>OCC2016</event_code>
+<event_url>http://www.openconf.com</event_url>
+<timeslots>
+<timeslot>
+<timeslot_start>2015-12-01T08:00</timeslot_start>
+<timeslot_end>2015-12-01T09:00</timeslot_end>
+<timeslot_title>Welcome &amp; Keynote</timeslot_title>
+<sessions>
+<session>
+<session_id>6</session_id>
+<session_type>Plenary</session_type>
+<session_title>Welcome &amp; Keynote</session_title>
+<session_room>Rooms A &amp; B</session_room>
+<session_link/>
+<session_topic/>
+<session_chair>
+<session_chair_name/>
+<session_chair_organization/>
+</session_chair>
+<session_info/>
+<session_page>&lt;p&gt;Vivamus fermentum semper porta. Nunc diam velit, adipiscing ut tristique vitae, sagittis vel odio. Maecenas convallis ullamcorper ultricies. Curabitur ornare, ligula semper consectetur sagittis, nisi diam iaculis velit, id fringilla sem nunc vel mi. Nam dictum, odio nec pretium volutpat, arcu ante placerat erat, non tristique elit urna et turpis. Quisque mi metus, ornare sit amet fermentum et, tincidunt et orci. Fusce eget orci a orci congue vestibulum. Ut dolor diam, elementum et vestibulum eu, porttitor vel elit. Curabitur venenatis pulvinar tellus gravida ornare. Sed et erat faucibus nunc euismod ultricies ut id justo. Nullam cursus suscipit nisi, et ultrices justo sodales nec. Fusce venenatis facilisis lectus ac semper. Aliquam at massa ipsum. Quisque bibendum purus convallis nulla ultrices ultricies. Nullam aliquam, mi eu aliquam tincidunt, purus velit laoreet tortor, viverra pretium nisi quam vitae mi. Fusce vel volutpat elit. Nam sagittis nisi dui.&lt;/p&gt;
+</session_page>
+</session>
+</sessions>
+</timeslot>
+<timeslot>
+<timeslot_start>2015-12-01T09:00</timeslot_start>
+<timeslot_end>2015-12-01T09:30</timeslot_end>
+<timeslot_title>Break</timeslot_title>
+<sessions>
+<session>
+<session_id>7</session_id>
+<session_type>Break</session_type>
+<session_title>Break</session_title>
+<session_room/>
+<session_link/>
+<session_topic/>
+<session_chair>
+<session_chair_name/>
+<session_chair_organization/>
+</session_chair>
+<session_info/>
+<session_page/>
+</session>
+</sessions>
+</timeslot>
+<timeslot>
+<timeslot_start>2015-12-01T09:30</timeslot_start>
+<timeslot_end>2015-12-01T12:00</timeslot_end>
+<timeslot_title>Session 1</timeslot_title>
+<sessions>
+<session>
+<session_id>8</session_id>
+<session_type>RefereedPapers</session_type>
+<session_title>Session 1</session_title>
+<session_room>Room A</session_room>
+<session_link/>
+<session_topic>Computer Science</session_topic>
+<session_chair>
+<session_chair_name>Vannevar Bush</session_chair_name>
+<session_chair_organization>Office of Scientific Research and Development</session_chair_organization>
+</session_chair>
+<session_info/>
+<session_page/>
+<presentations>
+<presentation>
+<presentation_id>7</presentation_id>
+<presentation_title>On Distributed Communications</presentation_title>
+<presentation_link>http://www.openconf.com/demo/openconf6/modules/request.php?module=oc_program&amp;id=7&amp;action=summary.php</presentation_link>
+<authors>
+<author>
+<author_id>3</author_id>
+<name_first>Paul</name_first>
+<name_last>Baran</name_last>
+<organization>RAND</organization>
+<country>United States</country>
+</author>
+</authors>
+<discussant>
+<discussant_name>Jane Smith</discussant_name>
+<discussant_affiliation>ACME Inc.</discussant_affiliation>
+</discussant>
+<abstract>Let us consider the synthesis of a communication network which will allow several hundred major communications stations to talk with one another after an enemy attack. As a criterion of survivability we elect to use the percentage of stations both surviving the physical attack and remaining in electrical connection with the largest single group of surviving stations. This criterion is chosen as a conservative measure of the ability of the surviving stations to operate together as a coherent entity after the attack. This means that small groups of stations isolated from the single largest group are considered to be ineffective.
+
+Although one can draw a wide variety of networks, they all factor into two components: centralized (or star) and distributed (or grid or mesh).
+
+The centralized network is obviously vulnerable as destruction of a single central node destroys communication between the end stations. In practice, a mixture of star and mesh components is used to form communications networks. For example, type (b) in Fig. 1 shows the hierarchical structure of a set of stars connected in the form of a larger star with an additional link forming a loop. Such a network is sometimes called a &quot;decentralized&quot; network, because complete reliance upon a single point is not always required.</abstract>
+</presentation>
+<presentation>
+<presentation_id>5</presentation_id>
+<presentation_title>Why Pascal Is Not My Favorite Programming Language</presentation_title>
+<presentation_link>http://www.openconf.com/demo/openconf6/modules/request.php?module=oc_program&amp;id=5&amp;action=summary.php</presentation_link>
+<authors>
+<author>
+<author_id>2</author_id>
+<name_first>Brian</name_first>
+<name_last>Kernighan</name_last>
+<organization>AT&amp;T Bell Laboratories</organization>
+<country>United States</country>
+</author>
+</authors>
+<discussant>
+<discussant_name/>
+<discussant_affiliation/>
+</discussant>
+<abstract> The programming language Pascal has become the dominant language of instruction in computer science education.  It has also strongly influenced languages developed subsequently, in particular Ada.
+
+Pascal was originally intended primarily as a teaching language, but it has been more and more often recommended as a language for serious programming as well, for example, for system programming tasks and even operating systems.
+
+Pascal, at least in its standard form, is just plain not suitable for serious programming.  This paper discusses my personal discovery of some of the reasons why. </abstract>
+</presentation>
+</presentations>
+</session>
+<session>
+<session_id>9</session_id>
+<session_type>RefereedPapers</session_type>
+<session_title>Session 2</session_title>
+<session_room>Room B</session_room>
+<session_link/>
+<session_topic>Humo(u)r</session_topic>
+<session_chair>
+<session_chair_name>Steve Crocker</session_chair_name>
+<session_chair_organization>UCLA</session_chair_organization>
+</session_chair>
+<session_info/>
+<session_page/>
+<presentations>
+<presentation>
+<presentation_id>17</presentation_id>
+<presentation_title>Arpawocky</presentation_title>
+<presentation_link>http://www.openconf.com/demo/openconf6/modules/request.php?module=oc_program&amp;id=17&amp;action=summary.php</presentation_link>
+<authors>
+<author>
+<author_id>9</author_id>
+<name_first>R.</name_first>
+<name_last>Merryman</name_last>
+<organization>UCSD-CC</organization>
+<country>United States</country>
+</author>
+</authors>
+<discussant>
+<discussant_name/>
+<discussant_affiliation/>
+</discussant>
+<abstract>ARPAWOCKY
+
+                    Twas brillig, and the Protocols
+                         Did USER-SERVER in the wabe.
+                    All mimsey was the FTP,
+                         And the RJE outgrabe,
+
+                    Beware the ARPANET, my son;
+                         The bits that byte, the heads that scratch;
+                    Beware the NCP, and shun
+                         the frumious system patch,
+
+                    He took his coding pad in hand;
+                         Long time the Echo-plex he sought.
+                    When his HOST-to-IMP began to limp
+                         he stood a while in thought,
+
+                    And while he stood, in uffish thought,
+                         The ARPANET, with IMPish bent,
+                    Sent packets through conditioned lines,
+                         And checked them as they went,
+
+                    One-two, one-two, and through and through
+                         The IMP-to-IMP went ACK and NACK,
+                    When the RFNM came, he said &quot;I'm game&quot;,
+                         And sent the answer back,
+
+                    Then hast thou joined the ARPANET?
+                         Oh come to me, my bankrupt boy!
+                    Quick, call the NIC! Send RFCs!
+                         He chortled in his joy.
+
+                    Twas brillig, and the Protocols
+                         Did USER-SERVER in the wabe.
+                    All mimsey was the FTP,
+                         And the RJE outgrabe.
+
+                                                            D.L. COVILL
+                                                            May 1973</abstract>
+</presentation>
+<presentation>
+<presentation_id>24</presentation_id>
+<presentation_title>Ip Over Avian Carriers With Quality Of Service</presentation_title>
+<presentation_link>http://www.openconf.com/demo/openconf6/modules/request.php?module=oc_program&amp;id=24&amp;action=summary.php</presentation_link>
+<authors>
+<author>
+<author_id>15</author_id>
+<name_first>D.</name_first>
+<name_last>Waitzman</name_last>
+<organization>IronBridge Networks</organization>
+<country>United States</country>
+</author>
+</authors>
+<discussant>
+<discussant_name/>
+<discussant_affiliation/>
+</discussant>
+<abstract>This memo amends RFC 1149, &quot;A Standard for the Transmission of IP Datagrams on Avian Carriers&quot;, with Quality of Service information. This is an experimental, not recommended standard.</abstract>
+</presentation>
+</presentations>
+</session>
+</sessions>
+</timeslot>
+<timeslot>
+<timeslot_start>2015-12-01T12:00</timeslot_start>
+<timeslot_end>2015-12-01T14:00</timeslot_end>
+<timeslot_title>Lunch</timeslot_title>
+<sessions>
+<session>
+<session_id>10</session_id>
+<session_type>Lunch</session_type>
+<session_title>Lunch</session_title>
+<session_room/>
+<session_link/>
+<session_topic/>
+<session_chair>
+<session_chair_name/>
+<session_chair_organization/>
+</session_chair>
+<session_info>Buffet lunch will be served in the hotel restaurant</session_info>
+<session_page/>
+</session>
+</sessions>
+</timeslot>
+<timeslot>
+<timeslot_start>2015-12-01T14:00</timeslot_start>
+<timeslot_end>2015-12-01T17:00</timeslot_end>
+<timeslot_title>Session 3</timeslot_title>
+<sessions>
+<session>
+<session_id>11</session_id>
+<session_type>RefereedPapers</session_type>
+<session_title>Session 3</session_title>
+<session_room>Room A</session_room>
+<session_link/>
+<session_topic>Networking</session_topic>
+<session_chair>
+<session_chair_name>Donald Davies</session_chair_name>
+<session_chair_organization>National Physical Laboratory</session_chair_organization>
+</session_chair>
+<session_info/>
+<session_page/>
+<presentations>
+<presentation>
+<presentation_id>11</presentation_id>
+<presentation_title>Communication Networks To Serve Rapid-response Computers</presentation_title>
+<presentation_link>http://www.openconf.com/demo/openconf6/modules/request.php?module=oc_program&amp;id=11&amp;action=summary.php</presentation_link>
+<authors>
+<author>
+<author_id>6</author_id>
+<name_first>Donald</name_first>
+<name_last>Davies</name_last>
+<organization>National Physical Laboratory</organization>
+<country>United Kingdom</country>
+</author>
+</authors>
+<discussant>
+<discussant_name/>
+<discussant_affiliation/>
+</discussant>
+<abstract/>
+</presentation>
+<presentation>
+<presentation_id>15</presentation_id>
+<presentation_title>Host Software</presentation_title>
+<presentation_link>http://www.openconf.com/demo/openconf6/modules/request.php?module=oc_program&amp;id=15&amp;action=summary.php</presentation_link>
+<authors>
+<author>
+<author_id>7</author_id>
+<name_first>Steve</name_first>
+<name_last>Crocker</name_last>
+<organization>UCLA</organization>
+<country>United States</country>
+</author>
+</authors>
+<discussant>
+<discussant_name/>
+<discussant_affiliation/>
+</discussant>
+<abstract>The software for the ARPA Network exists partly in the IMPs and partly in the respective HOSTs.  BB&amp;N has specified the software of the IMPs and it is the responsibility of the HOST groups to agree on HOST software.
+
+During the summer of 1968, representatives from the initial four sites met several times to discuss the HOST software and initial experiments on the network.  There emerged from these meetings a working group of three, Steve Carr from Utah, Jeff Rulifson from SRI, and Steve Crocker of UCLA, who met during the fall and winter.  The most recent meeting was in the last week of March in Utah.  Also present was Bill Duvall of SRI who has recently started working with Jeff Rulifson.
+
+Somewhat independently, Gerard DeLoche of UCLA has been working on the HOST-IMP interface.
+
+I present here some of the tentative agreements reached and some of the open questions encountered.  Very little of what is here is firm and reactions are expected.</abstract>
+</presentation>
+<presentation>
+<presentation_id>16</presentation_id>
+<presentation_title>Telnet Protocols</presentation_title>
+<presentation_link>http://www.openconf.com/demo/openconf6/modules/request.php?module=oc_program&amp;id=16&amp;action=summary.php</presentation_link>
+<authors>
+<author>
+<author_id>8</author_id>
+<name_first>Jon</name_first>
+<name_last>Postel</name_last>
+<organization>UCLA-NMC</organization>
+<country>United States</country>
+</author>
+</authors>
+<discussant>
+<discussant_name/>
+<discussant_affiliation/>
+</discussant>
+<abstract>At the October 1971 Network Working Group Meeting, I promised to promptly produce a document which clearly and succinctly specified and explained the Official Telnet Protocol.  This document fails to meet any part of that promise.  This document was not produced promptly.  This document is neither clear nor succinct.  There is NO Official Telnet Protocol.
+
+The following pages present my understanding of the ad hoc Telnet protocol.  There are some who have serious questions about this protocol.  The proposed changes to the protocol are given in Section IV.
+</abstract>
+</presentation>
+</presentations>
+</session>
+<session>
+<session_id>12</session_id>
+<session_type>RefereedPapers</session_type>
+<session_title>Session 4</session_title>
+<session_room>Room B</session_room>
+<session_link/>
+<session_topic>Classic Papers</session_topic>
+<session_chair>
+<session_chair_name>S. Christey</session_chair_name>
+<session_chair_organization>MonkeySeeDoo, Inc.</session_chair_organization>
+</session_chair>
+<session_info/>
+<session_page/>
+<presentations>
+<presentation>
+<presentation_id>3</presentation_id>
+<presentation_title>As We May Think</presentation_title>
+<presentation_link>http://www.openconf.com/demo/openconf6/modules/request.php?module=oc_program&amp;id=3&amp;action=summary.php</presentation_link>
+<authors>
+<author>
+<author_id>1</author_id>
+<name_first>Vannevar</name_first>
+<name_last>Bush</name_last>
+<organization>Office of Scientific Research and Development</organization>
+<country>United States</country>
+</author>
+</authors>
+<discussant>
+<discussant_name/>
+<discussant_affiliation/>
+</discussant>
+<abstract>This has not been a scientist's war; it has been a war in which all have had a part. The scientists, burying their old professional competition in the demand of a common cause, have shared greatly and learned much. It has been exhilarating to work in effective partnership. Now, for many, this appears to be approaching an end. What are the scientists to do next?
+
+For the biologists, and particularly for the medical scientists, there can be little indecision, for their war work has hardly required them to leave the old paths. Many indeed have been able to carry on their war research in their familiar peacetime laboratories. Their objectives remain much the same.
+
+It is the physicists who have been thrown most violently off stride, who have left academic pursuits for the making of strange destructive gadgets, who have had to devise new methods for their unanticipated assignments. They have done their part on the devices that made it possible to turn back the enemy. They have worked in combined effort with the physicists of our allies. They have felt within themselves the stir of achievement. They have been part of a great team. Now, as peace approaches, one asks where they will find objectives worthy of their best. </abstract>
+</presentation>
+<presentation>
+<presentation_id>9</presentation_id>
+<presentation_title>Toward A Cooperative Network Of Time-shared Computers</presentation_title>
+<presentation_link>http://www.openconf.com/demo/openconf6/modules/request.php?module=oc_program&amp;id=9&amp;action=summary.php</presentation_link>
+<authors>
+<author>
+<author_id>4</author_id>
+<name_first>Thomas</name_first>
+<name_last>Marill</name_last>
+<organization>Computer Corporation of America</organization>
+<country>United States</country>
+</author>
+<author>
+<author_id>5</author_id>
+<name_first>Lawrence</name_first>
+<name_last>Roberts</name_last>
+<organization>MIT, Lincoln Laboratory</organization>
+<country>United States</country>
+</author>
+</authors>
+<discussant>
+<discussant_name/>
+<discussant_affiliation/>
+</discussant>
+<abstract>Incompatible machines represent an old problem in the computer field. Very often, because of computer incompatibility, programs developed at one installation are not available to users of other installations. The same program may therefore have to be rewritten dozens of times. Assume, for example, that a program which performs a syntactic analysis of natural English sentences has been developed for a certain computer, Y. Such a program would be of interest to workers in the fields of natural-language inputs to computers, mechanical translation and linguistics, information retrieval, command and control, and a number of other ancillary disciplines. Unfortunately, the program would be available only to those who had direct access to Y (or to a computer compatible with Y); users of other installations would have to recode the program for their own computers, at a cost per computer comparable to the cost of the original programming development. Viewed on a nationwide scale, such inefficiencies can be enormously expensive.</abstract>
+</presentation>
+</presentations>
+</session>
+</sessions>
+</timeslot>
+<timeslot>
+<timeslot_start>2015-12-01T17:30</timeslot_start>
+<timeslot_end>2015-12-01T20:00</timeslot_end>
+<timeslot_title>Dinner</timeslot_title>
+<sessions>
+<session>
+<session_id>13</session_id>
+<session_type>Dinner</session_type>
+<session_title>Dinner</session_title>
+<session_room/>
+<session_link/>
+<session_topic/>
+<session_chair>
+<session_chair_name/>
+<session_chair_organization/>
+</session_chair>
+<session_info>Dinner will be at the Restaurant Rodizio.  A bus will depart from the hotel entrance at 5:30pm and return at 8pm.</session_info>
+<session_page/>
+</session>
+</sessions>
+</timeslot>
+<timeslot>
+<timeslot_start>2015-12-02T08:00</timeslot_start>
+<timeslot_end>2015-12-02T09:00</timeslot_end>
+<timeslot_title>Breakfast</timeslot_title>
+<sessions>
+<session>
+<session_id>16</session_id>
+<session_type>Breakfast</session_type>
+<session_title>Breakfast</session_title>
+<session_room/>
+<session_link/>
+<session_topic/>
+<session_chair>
+<session_chair_name/>
+<session_chair_organization/>
+</session_chair>
+<session_info/>
+<session_page/>
+</session>
+</sessions>
+</timeslot>
+<timeslot>
+<timeslot_start>2015-12-02T09:00</timeslot_start>
+<timeslot_end>2015-12-02T12:00</timeslot_end>
+<timeslot_title>Session 5</timeslot_title>
+<sessions>
+<session>
+<session_id>14</session_id>
+<session_type>RefereedPapers</session_type>
+<session_title>Session 5</session_title>
+<session_room>Room A</session_room>
+<session_link/>
+<session_topic>RFC</session_topic>
+<session_chair>
+<session_chair_name>Jon Postel</session_chair_name>
+<session_chair_organization>UCLA-NMC</session_chair_organization>
+</session_chair>
+<session_info/>
+<session_page/>
+<presentations>
+<presentation>
+<presentation_id>19</presentation_id>
+<presentation_title>Act One - The Poems</presentation_title>
+<presentation_link>http://www.openconf.com/demo/openconf6/modules/request.php?module=oc_program&amp;id=19&amp;action=summary.php</presentation_link>
+<authors>
+<author>
+<author_id>8</author_id>
+<name_first>J.</name_first>
+<name_last>Postel</name_last>
+<organization>ISI</organization>
+<country>United States</country>
+</author>
+<author>
+<author_id>10</author_id>
+<name_first>L.</name_first>
+<name_last>Kleinrock</name_last>
+<organization>UCLA</organization>
+<country>United States</country>
+</author>
+<author>
+<author_id>11</author_id>
+<name_first>V.</name_first>
+<name_last>Cerf</name_last>
+<organization>NRI</organization>
+<country>United States</country>
+</author>
+<author>
+<author_id>12</author_id>
+<name_first>B.</name_first>
+<name_last>Boehm</name_last>
+<organization>UCLA</organization>
+<country>United States</country>
+</author>
+</authors>
+<discussant>
+<discussant_name/>
+<discussant_affiliation/>
+</discussant>
+<abstract>The Computer Science Department of the University of California, Los   Angeles (UCLA) organized a Symposium on Very High Speed Information   Networks as the first in a projected series of meetings on Advanced   Computer Technologies, thus ACT ONE.  The time was chosen to also   commemorate the 20th anniversary of the installation of the first   Interface Message Processor (IMP) on the ARPANET which took place at    UCLA.
+
+   The Symposium took on a theatrical theme and a few of the speakers    could not resist the temptation to commit poetry.  This memo is an   attempt to capture the result.</abstract>
+</presentation>
+<presentation>
+<presentation_id>27</presentation_id>
+<presentation_title>The Infinite Monkey Protocol Suite (imps)</presentation_title>
+<presentation_link>http://www.openconf.com/demo/openconf6/modules/request.php?module=oc_program&amp;id=27&amp;action=summary.php</presentation_link>
+<authors>
+<author>
+<author_id>16</author_id>
+<name_first>S.</name_first>
+<name_last>Christey</name_last>
+<organization>MonkeySeeDoo, Inc.</organization>
+<country>United States</country>
+</author>
+</authors>
+<discussant>
+<discussant_name/>
+<discussant_affiliation/>
+</discussant>
+<abstract>This memo describes a protocol suite which supports an infinite number of monkeys that sit at an infinite number of typewriters in order to determine when they have either produced the entire works of William Shakespeare or a good television show.  The suite includes communications and control protocols for monkeys and the organizations that interact with them.</abstract>
+</presentation>
+</presentations>
+</session>
+<session>
+<session_id>15</session_id>
+<session_type>RefereedPapers</session_type>
+<session_title>Session 6</session_title>
+<session_room>Room B</session_room>
+<session_link/>
+<session_topic>Programming</session_topic>
+<session_chair>
+<session_chair_name>B. Boehm</session_chair_name>
+<session_chair_organization>UCLA</session_chair_organization>
+</session_chair>
+<session_info/>
+<session_page/>
+<presentations>
+<presentation>
+<presentation_id>23</presentation_id>
+<presentation_title>Hyper Text Coffee Pot Control Protocol (htcpcp/1.0)</presentation_title>
+<presentation_link>http://www.openconf.com/demo/openconf6/modules/request.php?module=oc_program&amp;id=23&amp;action=summary.php</presentation_link>
+<authors>
+<author>
+<author_id>14</author_id>
+<name_first>L.</name_first>
+<name_last>Masinter</name_last>
+<organization>Xerox Palo Alto Research Center</organization>
+<country>United States</country>
+</author>
+</authors>
+<discussant>
+<discussant_name/>
+<discussant_affiliation/>
+</discussant>
+<abstract>This document describes HTCPCP, a protocol for controlling,  monitoring, and diagnosing coffee pots.</abstract>
+</presentation>
+<presentation>
+<presentation_id>21</presentation_id>
+<presentation_title>Standard For The Transmission Of Ip Datagrams On Avian Carriers</presentation_title>
+<presentation_link>http://www.openconf.com/demo/openconf6/modules/request.php?module=oc_program&amp;id=21&amp;action=summary.php</presentation_link>
+<authors>
+<author>
+<author_id>13</author_id>
+<name_first>D.</name_first>
+<name_last>Waitzman</name_last>
+<organization>BBN STC</organization>
+<country>United States</country>
+</author>
+</authors>
+<discussant>
+<discussant_name/>
+<discussant_affiliation/>
+</discussant>
+<abstract>This memo describes an experimental method for the encapsulation of IP datagrams in avian carriers.  This specification is primarily useful in Metropolitan Area Networks.  This is an experimental, not  recommended standard.  Distribution of this memo is unlimited.</abstract>
+</presentation>
+</presentations>
+</session>
+</sessions>
+</timeslot>
+<timeslot>
+<timeslot_start>2015-12-02T12:00</timeslot_start>
+<timeslot_end>2015-12-02T14:00</timeslot_end>
+<timeslot_title>Lunch</timeslot_title>
+<sessions>
+<session>
+<session_id>17</session_id>
+<session_type>Lunch</session_type>
+<session_title>Lunch</session_title>
+<session_room/>
+<session_link/>
+<session_topic/>
+<session_chair>
+<session_chair_name/>
+<session_chair_organization/>
+</session_chair>
+<session_info/>
+<session_page/>
+</session>
+</sessions>
+</timeslot>
+<timeslot>
+<timeslot_start>2015-12-02T14:00</timeslot_start>
+<timeslot_end>2015-12-02T16:00</timeslot_end>
+<timeslot_title>Conference Recap &amp; Closing</timeslot_title>
+<sessions>
+<session>
+<session_id>18</session_id>
+<session_type>Plenary</session_type>
+<session_title>Conference Recap &amp; Closing</session_title>
+<session_room>Rooms A &amp; B</session_room>
+<session_link/>
+<session_topic/>
+<session_chair>
+<session_chair_name/>
+<session_chair_organization/>
+</session_chair>
+<session_info/>
+<session_page/>
+</session>
+</sessions>
+</timeslot>
+</timeslots>
+</program>
+</openconf>

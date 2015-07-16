@@ -12,9 +12,9 @@ angular.module('esad.dataImport')
     
     var convert = function(document){
       
-      var eventTitle = document.querySelector('event').innerHTML;
+      var eventTitle = document.querySelector('event').textContent;
       var location = "";
-      var organiser = document.querySelector('event_url').innerHTML;
+      var organiser = document.querySelector('event_url').textContent;
       
       
       
@@ -41,9 +41,9 @@ angular.module('esad.dataImport')
   
     var parseTimeSlot = function(timeslot,subEvents){
       
-      var startTime = timeslot.querySelector('timeslot_start').innerHTML;
-      var endTime = timeslot.querySelector('timeslot_end').innerHTML;
-      var title = timeslot.querySelector('timeslot_title').innerHTML;
+      var startTime = timeslot.querySelector('timeslot_start').textContent;
+      var endTime = timeslot.querySelector('timeslot_end').textContent;
+      var title = timeslot.querySelector('timeslot_title').textContent;
       
       var sessions = timeslot.querySelectorAll('session');
       for (var i =0;i<sessions.length;i++){
@@ -51,10 +51,10 @@ angular.module('esad.dataImport')
         
         if (session.querySelector('presentations') === null || session.querySelectorAll('presentation').length === 0){
         
-          var subTitle = session.querySelector('session_title').innerHTML;
-          var location = session.querySelector('session_room').innerHTML;
-          var description = session.querySelector('session_page').innerHTML;
-          var type = session.querySelector('session_type').innerHTML;
+          var subTitle = session.querySelector('session_title').textContent;
+          var location = session.querySelector('session_room').textContent;
+          var description = session.querySelector('session_page').textContent;
+          var type = session.querySelector('session_type').textContent;
           
           subEvents.push({
             "title": title,
@@ -84,19 +84,19 @@ angular.module('esad.dataImport')
     };
   
     var parsePresentation = function(presentation,session,timeslot,subEvents){
-      var subTitle = presentation.querySelector('presentation_title').innerHTML;
-      var location = session.querySelector('session_room').innerHTML;
-      var description = presentation.querySelector('abstract').innerHTML;
-      var startTime = timeslot.querySelector('timeslot_start').innerHTML;
-      var endTime = timeslot.querySelector('timeslot_end').innerHTML;
-      var type = session.querySelector('session_type').innerHTML;
+      var subTitle = presentation.querySelector('presentation_title').textContent;
+      var location = session.querySelector('session_room').textContent;
+      var description = presentation.querySelector('abstract').textContent;
+      var startTime = timeslot.querySelector('timeslot_start').textContent;
+      var endTime = timeslot.querySelector('timeslot_end').textContent;
+      var type = session.querySelector('session_type').textContent;
       
       var people = [];
       for (var i=0;i<presentation.querySelectorAll("author").length;i++){
         var author = presentation.querySelectorAll("author")[i];
         people.push({
-          "name": author.querySelector("name_first").innerHTML + " " + author.querySelector("name_last").innerHTML,
-          "organisation": author.querySelector("organization").innerHTML ,
+          "name": author.querySelector("name_first").textContent + " " + author.querySelector("name_last").textContent,
+          "organisation": author.querySelector("organization").textContent ,
           "role":"Author"
         });
       }

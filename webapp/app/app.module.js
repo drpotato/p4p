@@ -1,22 +1,13 @@
 'use strict';
 
-angular.module('esad', ['esad.map', 'esad.stream', 'esad.subEvent', 'esad.openConferenceFormat', 'esad.schedule', 'esad.scheduleCreation','esad.errorView'])
+angular.module('esad', ['esad.fileUpload','esad.map', 'esad.stream', 'esad.subEvent', 'esad.openConferenceFormat', 'esad.schedule', 'esad.scheduleCreation','esad.errorView','esad.dataImport'])
 
 .config(['$locationProvider', function ($locationProvider) {
   $locationProvider.html5Mode(true);
 }])
 
-.directive('customOnChange', function () {
-  return {
-    restrict: 'A',
-    link: function (scope, element, attrs) {
-      var onChangeFunc = scope.$eval(attrs.customOnChange);
-      element.bind('change', onChangeFunc);
-    }
-  };
-})
 
-.controller('EventController', function ($scope, $http, openConferenceFormat,displayError) {
+.controller('EventController', function ($scope, $http, fileUpload, openConferenceFormat,displayError) {
   $scope.timetable = [];
   $scope.validJSON = false;
   $scope.error = [];
@@ -32,38 +23,28 @@ angular.module('esad', ['esad.map', 'esad.stream', 'esad.subEvent', 'esad.openCo
     return propValues;
   };
 
-  
-  $scope.uploadFile = function (evt) {
-    var files = evt.target.files; // FileList object
-
-    if (files.length != 1) {
-      alert("Only 1 file");
+  $scope.onFileLoad = function (e) {
+    $scope.errors = [];
+    var eventJSON = JSON.parse(e.target.result);
+    var result = $scope.validateFile(eventJSON);
+    if (result.valid === false) {
+      //Handle Error States
+      $scope.event = null;
+      result.errors.forEach(function (error) {
+        console.error(error);
+      });
+      displayError.display(result.errors);
+      var eventJSON = {};
+      return;
+    } else {
+      console.log(eventJSON);
+      $scope.validJSON = true;
+      $scope.event = eventJSON.event;
+      $scope.generateTimetable();
     }
-    var file = files[0];
-    var reader = new FileReader();
-    reader.onload = function (e) {
-      $scope.errors = [];
-      var eventJSON = JSON.parse(e.target.result);
-      var result = $scope.validateFile(eventJSON);
-      if (result.valid === false) {
-        //Handle Error States
-        $scope.event = null;
-        result.errors.forEach(function (error) {
-          console.error(error);
-        });
-        displayError.display(result.errors);
-        var eventJSON = {};
-        return;
-      } else {
-        console.log(eventJSON);
-        $scope.validJSON = true;
-        $scope.event = eventJSON.event;
-        $scope.generateTimetable();
-      }
-      $scope.$apply();
-    };
-    reader.readAsText(file);
+    $scope.$apply();
   };
+  
 
   //Useful for testing :v
   $scope.validateFile = function(json){

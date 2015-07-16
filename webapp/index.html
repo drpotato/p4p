@@ -35,6 +35,10 @@
   <script type="text/javascript" src="app/components/map/mapDirective.js"></script>
   <script type="text/javascript" src="app/components/schedule/scheduleController.js"></script>
   <script type="text/javascript" src="app/components/scheduleCreation/scheduleCreationController.js"></script>
+  <script type="text/javascript" src="app/components/dataImport/importPageController.js"></script>
+  <script type="text/javascript" src="app/components/dataImport/openConfXML.js"></script>
+  <script type="text/javascript" src="app/components/upload/fileUpload.js"></script>
+  
 
 </head>
 <body ng-app="esad" ng-controller="EventController as eventApp">
@@ -45,13 +49,16 @@
       <ul class="nav navbar-nav">
         <li>
           <span class="nav-span link-hover">Upload<input id="fileInput" class="nav-input" type="file"
-                                                custom-on-change="uploadFile" value="foo"></span>
+                                                custom-on-change="onFileLoad" value="foo"></span>
         </li>
         <li ng-click="makeICS()">
           <span class="nav-span link-hover">Generate ICS</span>
         </li>
         <li>
           <span class="nav-span"><a class="link-plain" href="/new">New</a></span>
+        </li>
+        <li>
+          <span class="nav-span"><a class="link-plain" href="/import">Import</a></span>
         </li>
         <li>
           <input class="nav-search" placeholder="Search" ng-model="query">

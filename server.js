@@ -16,6 +16,5 @@ var catchAll = function (req, res) {
 };
 
 app.use(catchAll);
-app.get('/', catchAll);
 
 app.listen(process.env.PORT || 3000);

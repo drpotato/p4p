@@ -7,11 +7,11 @@ angular.module('esad', ['esad.fileUpload','esad.map', 'esad.stream', 'esad.subEv
 }])
 
 
-.controller('EventController', function ($scope, $http, fileUpload, openConferenceFormat,displayError) {
+.controller('EventController', function ($scope, $http, fileUpload, openConferenceFormat, displayError) {
   $scope.timetable = [];
   $scope.validJSON = false;
   $scope.error = [];
-  
+
   //Does JS have this method?
   var getUniqueOccurances = function(array,property){
     var propValues = [];
@@ -19,8 +19,17 @@ angular.module('esad', ['esad.fileUpload','esad.map', 'esad.stream', 'esad.subEv
       if (propValues.indexOf(item[property]) === -1){
         propValues.push(item[property]);
       }
-    });  
+    });
     return propValues;
+  };
+
+  var toMoment = function(event) {
+      event.startTime = moment(event.startTime).format("dddd, MMMM Do YYYY, h:mm:ss a");
+      event.endTime = moment(event.endTime).format("dddd, MMMM Do YYYY, h:mm:ss a");
+      for (var i = 0; i < event.subEvents.length; i++) {
+          event.subEvents[i].startTime = moment(event.subEvents[i].startTime).format("dddd, MMMM Do YYYY, h:mm:ss a");
+          event.subEvents[i].endTime = moment(event.subEvents[i].endTime).format("dddd, MMMM Do YYYY, h:mm:ss a");
+      }
   };
 
   $scope.onFileLoad = function (e) {
@@ -41,16 +50,17 @@ angular.module('esad', ['esad.fileUpload','esad.map', 'esad.stream', 'esad.subEv
       $scope.validJSON = true;
       $scope.event = eventJSON.event;
       $scope.generateTimetable();
+      $scope.event = toMoment($scope.event);
     }
     $scope.$apply();
   };
-  
+
 
   //Useful for testing :v
   $scope.validateFile = function(json){
     return openConferenceFormat.validate(json);
   };
-  
+
   $scope.makeICS = function(){
     //TODO: maybe this can be an angular module so we don't have to declare it in the html as well?
     var cal = ics();
@@ -60,7 +70,7 @@ angular.module('esad', ['esad.fileUpload','esad.map', 'esad.stream', 'esad.subEv
     });
     cal.download();
   };
-  
+
   $scope.generateTimetable = function(){
     if (!$scope.validJSON){
       return [];
@@ -78,17 +88,17 @@ angular.module('esad', ['esad.fileUpload','esad.map', 'esad.stream', 'esad.subEv
     });
     console.log($scope.timetable);
   };
-  
+
   $scope.getStreamsAtTime = function(startTime){
     return getUniqueOccurances($scope.getEventsAtTime(startTime),"location");
   };
-  
+
   $scope.getEventsAtTime = function(startTime){
     var events = [];
     $scope.event.subEvents.forEach(function(subEvent){
       if (subEvent.startTime === startTime){
         events.push(subEvent);
-      }  
+      }
     });
     return events;
   };

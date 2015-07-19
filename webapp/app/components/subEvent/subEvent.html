@@ -14,6 +14,7 @@
               <p ng-if="subEvent.tags">Tags: <a ng-repeat="tag in subEvent.tags">{{ tag }} </a></p>
               <ul>
                   <li ng-repeat="person in subEvent.people">
+                  <!-- TODO: Perhaps use a grid system to disaply this? -->
                   <div><strong>{{person.name}}</strong> - {{person.role}}</div>
                       <div ng-if="person.contactDetails">
                           <ul>
@@ -24,8 +25,7 @@
               </ul>
           </div>
           <div class="modal-footer">
-              <button class="btn btn-primary" ng-click="ok()">OK</button>
-              <button class="btn btn-warning" ng-click="cancel()">Cancel</button>
+              <button class="btn btn-primary" ng-click="ok()">Close</button>
           </div>
       </script>
   </div>

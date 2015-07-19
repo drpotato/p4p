@@ -1,7 +1,7 @@
 <div ng-controller="SubEventController">
     <div ng-click="expand()" class="panel-body">
         <h5>{{subEvent.title | limitTo:70}}</h5>
-      
+
         <script type="text/ng-template" id="myModalContent.html">
           <div class="modal-header">
               <h3 class="modal-title">{{subEvent.title}}</h3>
@@ -14,13 +14,10 @@
               <p ng-if="subEvent.tags">Tags: <a ng-repeat="tag in subEvent.tags">{{ tag }} </a></p>
               <ul>
                   <li ng-repeat="person in subEvent.people">
-                      <h3>{{person.name}}</h3>
-
-                      <div>{{person.role}}</div>
+                  <div><strong>{{person.name}}</strong> - {{person.role}}</div>
                       <div ng-if="person.contactDetails">
-                          <div>Contact Details:</div>
                           <ul>
-                              <li ng-repeat="detail in person.contactDetails"> {{detail.type}} - {{detail.value}}</li>
+                              <li ng-repeat="detail in person.contactDetails">{{detail.value}}</li>
                           </ul>
                       </div>
                   </li>
@@ -30,6 +27,6 @@
               <button class="btn btn-primary" ng-click="ok()">OK</button>
               <button class="btn btn-warning" ng-click="cancel()">Cancel</button>
           </div>
-        </script>   
+      </script>
   </div>
 </div>

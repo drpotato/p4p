@@ -23,16 +23,28 @@
             "role": "Student"
           },
           {
-            "name": "Akshya Swain",
-            "role": "Chair"
+            "name": "Dr. Akshya Swain",
+            "role": "Chair",
+            "contactDetails": [
+              {"value": "a.swain@auckland.ac.nz"},
+              {"value": "+64 9 923 4752"}
+            ]
           },
           {
-            "name": "Nitish Patel",
-            "role": "Assessor"
+            "name": "Dr. Nitish Patel",
+            "role": "Assessor",
+            "contactDetails": [
+              {"value": "nd.patel@auckland.ac.nz"},
+              {"value": "+64 9 923 8196"}
+            ]
           },
           {
-            "name": "Sing Nguang",
-            "role": "Assessor"
+            "name": "Prof. Sing Nguang",
+            "role": "Assessor",
+            "contactDetails": [
+              {"value": "sk.nguang@auckland.ac.nz"},
+              {"value": "+64 9 923 9421"}
+            ]
           }
         ],
         "tags": [
@@ -56,16 +68,28 @@
             "role": "Student"
           },
           {
-            "name": "Akshya Swain",
-            "role": "Chair"
+            "name": "Dr. Akshya Swain",
+            "role": "Chair",
+            "contactDetails": [
+              {"value": "a.swain@auckland.ac.nz"},
+              {"value": "+64 9 923 4752"}
+            ]
           },
           {
-            "name": "Nitish Patel",
-            "role": "Assessor"
+            "name": "Dr. Nitish Patel",
+            "role": "Assessor",
+            "contactDetails": [
+              {"value": "nd.patel@auckland.ac.nz"},
+              {"value": "+64 9 923 8196"}
+            ]
           },
           {
-            "name": "Sing Nguang",
-            "role": "Assessor"
+            "name": "Prof. Sing Nguang",
+            "role": "Assessor",
+            "contactDetails": [
+              {"value": "sk.nguang@auckland.ac.nz"},
+              {"value": "+64 9 923 9421"}
+            ]
           }
         ],
         "tags": [
@@ -89,16 +113,28 @@
             "role": "Student"
           },
           {
-            "name": "Akshya Swain",
-            "role": "Chair"
+            "name": "Dr. Akshya Swain",
+            "role": "Chair",
+            "contactDetails": [
+              {"value": "a.swain@auckland.ac.nz"},
+              {"value": "+64 9 923 4752"}
+            ]
           },
           {
-            "name": "Nitish Patel",
-            "role": "Assessor"
+            "name": "Dr. Nitish Patel",
+            "role": "Assessor",
+            "contactDetails": [
+              {"value": "nd.patel@auckland.ac.nz"},
+              {"value": "+64 9 923 8196"}
+            ]
           },
           {
-            "name": "Sing Nguang",
-            "role": "Assessor"
+            "name": "Prof. Sing Nguang",
+            "role": "Assessor",
+            "contactDetails": [
+              {"value": "sk.nguang@auckland.ac.nz"},
+              {"value": "+64 9 923 9421"}
+            ]
           }
         ],
         "tags": [

@@ -9,7 +9,10 @@ angular.module('esad.openConferenceFormat', [])
       definitions: {
         contactDetail: {
           type: 'object',
-          oneOf: [{$ref: '#/definitions/emailDetail'}]
+          oneOf: [
+            {$ref: '#/definitions/emailDetail'},
+            {$ref: '#/definitions/phoneDetail'}
+          ]
         },
         emailDetail: {
           type: 'object',
@@ -18,8 +21,16 @@ angular.module('esad.openConferenceFormat', [])
               format:'email',
               type: 'string'
             }
-
           }, required: ['value']
+        },
+        phoneDetail: {
+          type: 'object',
+          properties: {
+            value: {
+              type: 'string',
+              pattern: '^\\+?[\d ]*$'
+            }
+          }
         },
         person: {
           type: 'object',
@@ -128,7 +139,7 @@ angular.module('esad.openConferenceFormat', [])
     var validate = function(json){
       return tv4.validateMultiple(json, schema);
     };
-  
+
 
     return {
       validate: validate,

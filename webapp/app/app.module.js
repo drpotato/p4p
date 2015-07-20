@@ -1,13 +1,13 @@
 'use strict';
 
-angular.module('esad', ['esad.fileUpload','esad.map', 'esad.stream', 'esad.subEvent', 'esad.openConferenceFormat', 'esad.schedule', 'esad.scheduleCreation','esad.errorView','esad.dataImport'])
+angular.module('esad', ['esad.fileUpload','esad.map', 'esad.stream', 'esad.subEvent', 'esad.openConferenceFormat', 'esad.schedule', 'esad.scheduleCreation','esad.errorView','esad.dataImport','esad.calendarGenerator'])
 
 .config(['$locationProvider', function ($locationProvider) {
   $locationProvider.html5Mode(true);
 }])
 
 
-.controller('EventController', function ($scope, $http, fileUpload, openConferenceFormat, displayError) {
+.controller('EventController', function ($scope, $http, fileUpload, openConferenceFormat, displayError,calendarGenerator) {
   $scope.timetable = [];
   $scope.validJSON = false;
   $scope.error = [];
@@ -62,13 +62,7 @@ angular.module('esad', ['esad.fileUpload','esad.map', 'esad.stream', 'esad.subEv
   };
 
   $scope.makeICS = function(){
-    //TODO: maybe this can be an angular module so we don't have to declare it in the html as well?
-    var cal = ics();
-    $scope.event.subEvents.forEach(function(subEvent){
-      console.log(subEvent);
-      cal.addEvent(subEvent.title,subEvent.title,subEvent.location,subEvent.startTime, subEvent.endTime);
-    });
-    cal.download();
+    calendarGenerator.buildWithSubEvents($scope.event.subEvents);
   };
 
   $scope.generateTimetable = function(){

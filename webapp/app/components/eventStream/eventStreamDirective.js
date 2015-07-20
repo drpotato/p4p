@@ -17,7 +17,7 @@ angular.module('esad.stream', [])
       $scope.display = {'display':'none'};
     }
   });
-  
+    
 })
 
 .directive('eventStream', function () {

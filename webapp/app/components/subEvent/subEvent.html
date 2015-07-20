@@ -1,7 +1,7 @@
 <div ng-controller="SubEventController">
     <div ng-click="expand()" class="panel-body">
         <h5>{{subEvent.title | limitTo:70}}</h5>
-
+        <p>{{hint}}</p>
         <script type="text/ng-template" id="myModalContent.html">
           <div class="modal-header">
               <h3 class="modal-title">{{subEvent.title}}</h3>

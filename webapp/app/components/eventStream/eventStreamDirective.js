@@ -13,7 +13,6 @@ angular.module('esad.stream', [])
     if (numEvents > 0){
       $scope.display = {'display':'block'};  
     }else{
-      console.log("Hide");
       $scope.display = {'display':'none'};
     }
   });

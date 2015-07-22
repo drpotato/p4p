@@ -30,6 +30,7 @@ angular.module('esad', ['esad.fileUpload','esad.map', 'esad.stream', 'esad.subEv
           event.subEvents[i].startTime = moment(event.subEvents[i].startTime).format("dddd, MMMM Do YYYY, h:mm:ss a");
           event.subEvents[i].endTime = moment(event.subEvents[i].endTime).format("dddd, MMMM Do YYYY, h:mm:ss a");
       }
+    return event;
   };
 
   $scope.onFileLoad = function (e) {
@@ -62,6 +63,7 @@ angular.module('esad', ['esad.fileUpload','esad.map', 'esad.stream', 'esad.subEv
   };
 
   $scope.makeICS = function(){
+    console.log($scope);
     calendarGenerator.buildWithSubEvents($scope.event.subEvents);
   };
 

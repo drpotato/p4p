@@ -6,14 +6,15 @@ angular.module('esad.calendarGenerator',[])
 .factory('calendarGenerator',function(){
   
   var schedule = null;
-  var savedSubEvents = [];
+  var savedSubEvents = {};
+  var listeners = [];
   
   var generate = function(subEvents){
     //TODO: maybe this can be an angular module so we don't have to declare it in the html as well?
     var cal = ics();
     
     
-    subEvents.forEach(function(subEvent){
+    angular.forEach(subEvents,function(subEvent){
       console.log(subEvent);
       cal.addEvent(subEvent.title,subEvent.title,subEvent.location,subEvent.startTime, subEvent.endTime);
     });
@@ -21,9 +22,30 @@ angular.module('esad.calendarGenerator',[])
   }
   
   
+  
   var addSubEvent = function(subEvent){
-    savedSubEvents.push(subEvent);
-    console.log(savedSubEvents);
+    savedSubEvents[subEvent] = subEvent;
+    notifyListeners(subEvent,"saved");
+  };
+  
+  var removeSubEvent = function(subEvent){
+    savedSubEvents[subEvent] = undefined;
+    notifyListeners(subEvent,"removed");
+  };
+  
+  var notifyListeners = function(subEvent,status){
+    listeners.forEach(function(listener){
+      if (listener.subEvent === subEvent){
+        listener.callback(status);
+      }
+    });
+  }
+  
+  var onSubEventSaveStatusChange = function(subEvent,callback){
+    listeners.push({
+      subEvent:subEvent,
+      callback:callback
+    });
   };
   
   var buildWithSubEvents = function(subEvents){
@@ -36,6 +58,9 @@ angular.module('esad.calendarGenerator',[])
   
   return {
     buildWithSubEvents:buildWithSubEvents,
-    buildFromSavedEvents:buildFromSavedEvents
+    buildFromSavedEvents:buildFromSavedEvents,
+    addSubEvent:addSubEvent,
+    removeSubEvent:removeSubEvent,
+    onSubEventSaveStatusChange:onSubEventSaveStatusChange
   }
 })

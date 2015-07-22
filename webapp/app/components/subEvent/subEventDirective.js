@@ -4,6 +4,7 @@ angular.module('esad.subEvent', ['ui.bootstrap','ui.bootstrap.modal','esad.calen
 
 .controller('SubEventController', function ($scope, $modal,calendarGenerator) {
   $scope.expanded = false;
+  $scope.saved = false;
   $scope.expand = function (size) {
     var modalInstance = $modal.open({
       animation: true,
@@ -13,6 +14,9 @@ angular.module('esad.subEvent', ['ui.bootstrap','ui.bootstrap.modal','esad.calen
       resolve: {
         subEvent: function () {
           return $scope.subEvent;
+        },
+        saved: function () {
+          return $scope.saved;
         }
       }
     });
@@ -30,9 +34,31 @@ angular.module('esad.subEvent', ['ui.bootstrap','ui.bootstrap.modal','esad.calen
 .directive('subEvent', function () {
   return {
     restrict: 'E',
+    transclude:true,
     scope: {
       subEvent: "=subEvent"
     },
     templateUrl: "app/components/subEvent/subEvent.html"
+  };
+}).controller('SelectedEventIndicator', function ($scope,calendarGenerator) {
+  
+  $scope.display = "";
+  
+  calendarGenerator.onSubEventSaveStatusChange($scope.subEvent,function(status){
+    if (status === "saved"){
+      $scope.display = "I have been saved";
+    }else{
+      $scope.display = "";
+    }
+  });
+  
+}).directive('selectedEventIndicator',function(){
+  return {
+    restrict: 'E',
+    require: ['^subEvent', 'selectedEventIndicator'],
+    scope: {
+      subEvent:'='
+    },
+    templateUrl: "app/components/subEvent/selectedEventIndicator.html"
   };
 });

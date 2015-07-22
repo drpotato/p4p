@@ -2,7 +2,9 @@
   <h3>{{name}}</h3>
   <ul class="list-unstyled">
     <li ng-repeat="subEvent in filteredEvents = (subEvents | filter:query)" class="">
-      <sub-event sub-event="subEvent"></sub-event>
+      <sub-event sub-event="subEvent">
+        <selected-event-indicator sub-event="subEvent"></selected-event-indicator>
+      </sub-event>
     </li>
   </ul>
 </div>

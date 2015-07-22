@@ -1,5 +1,6 @@
 .panel-body{
   min-height: 120px;
+  min-width:200px;
   border-top: 1px solid hsl(0,0%,60%);
   border-left: 1px solid hsl(0,0%,60%);
   border-right: 2px solid hsl(0,0%,50%);
@@ -111,7 +112,8 @@
 .stream-box {
   -webkit-flex: 1 1 auto;
   flex: 1 1 auto;
-  
+  flex-basis: 0;
+  flex-grow: 1;
   
   -webkit-transition: width 0.7s ease-out;
   transition: width 0.7s ease-out;

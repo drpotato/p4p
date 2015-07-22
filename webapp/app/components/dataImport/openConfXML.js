@@ -117,4 +117,37 @@ angular.module('esad.dataImport')
       parse:parse,
       convert:convert
     }
-  });
+  })
+
+.factory('wonconferenceXML', function() {
+  
+  var parse = function(xmlString){
+    var oParser = new DOMParser();
+    var oDOM = oParser.parseFromString(xmlString, "text/xml");    
+    return oDOM;
+  };
+  
+  
+  var convert = function(document){
+     var eventsXML = document.querySelectorAll('Event');
+     for (var i=0;i<eventsXML.length;i++){
+       var eventXML = events[i];
+       var subEvent = {
+        "title": eventXML.querySelector('eventLang.TITLE').textContent,
+        "location": eventXML.querySelector('room.ID').textContent,
+        "startTime": eventXML.querySelector('eventLang.TITLE').textContent,
+        "endTime": eventXML.querySelector('eventLang.TITLE').textContent,
+        "description": eventXML.querySelector('eventLang.DESCRIPTION').textContent,
+        "type": eventXML.querySelector('event.TYPE').textContent,
+        "people": eventXML.querySelector('event.KEYSPEAKER').textContent,
+        "tags": []
+       };
+       
+     }
+  };
+  
+  return {
+    parse:parse,
+    convert:convert
+  }
+});

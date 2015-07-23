@@ -1,5 +1,6 @@
 var express = require('express');
 var morgan = require('morgan');
+var VCard = require('vcards-js');
 
 var app = express();
 
@@ -14,6 +15,21 @@ app.use('/bower_components', express.static(__dirname + '/webapp/bower_component
 var catchAll = function (req, res) {
   res.sendFile(__dirname + '/webapp/index.html');
 };
+
+app.get('/vcard', function (req, res) {
+  var vCard = VCard();
+  vCard.firstName = req.query.firstName;
+  vCard.lastName = req.query.lastName;
+
+  var fileName = vCard.firstName + vCard.lastName + '.vcf';
+
+  // Set content-type and disposition including desired filename
+  res.set('Content-Type', 'text/vcard; name="' + fileName + '"');
+  res.set('Content-Disposition', 'inline; filename="' + fileName + '"');
+
+  // Send response
+  res.send(vCard.getFormattedString());
+});
 
 app.use(catchAll);
 

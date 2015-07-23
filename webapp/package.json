@@ -10,7 +10,7 @@
     "angular": "1.4.0",
     "angular-route": "~1.4.0",
     "angular-loader": "~1.4.0",
-    "angular-mocks": "~1.4.0", 
+    "angular-mocks": "~1.4.0",
     "chai": "1.6.0",
     "ng-file-upload": "4.2.4",
     "supertest": ">=0.15.0",

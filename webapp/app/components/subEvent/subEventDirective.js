@@ -7,8 +7,8 @@ angular.module('esad.subEvent', ['ui.bootstrap','ui.bootstrap.modal','esad.calen
   $scope.expand = function (size) {
     var modalInstance = $modal.open({
       animation: true,
-      templateUrl: 'myModalContent.html',
-      controller: 'SubEventModalInstanceCtrl',
+      templateUrl: 'app/components/person/personView.html',
+      controller: 'PersonController',
       size: size,
       resolve: {
         subEvent: function () {

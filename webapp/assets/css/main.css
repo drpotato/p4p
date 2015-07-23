@@ -75,6 +75,7 @@ body{
 }
 
 .stream-box {
+  display: block;
   -webkit-flex: 1 1 auto;
   flex: 1 1 auto;
   flex-basis: 0;
@@ -84,6 +85,10 @@ body{
   transition: width 0.7s ease-out;
   margin:5px;
   text-align: center;
+}
+
+.stream-box.hidden{
+  display:hidden;
 }
 
 .vertical-centre{

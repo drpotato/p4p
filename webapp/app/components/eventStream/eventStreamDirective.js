@@ -10,11 +10,14 @@ angular.module('esad.stream', [])
  
   $scope.$watch('query',function(){
     var numEvents = $filter("filter")($scope.subEvents, $scope.query).length;
+    
     if (numEvents > 0){
-      $scope.display = {'display':'block'};  
+      $element[0].parentNode.classList.remove('hidden');
+      //$scope.display = {'display':'block'};  
     }else{
-      console.log("Hide");
-      $scope.display = {'display':'none'};
+      //Yeah..........
+      $element[0].parentNode.classList.add('hidden');
+      //$scope.display = {'display':'none'};
     }
   });
     

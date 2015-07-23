@@ -16,6 +16,8 @@ angular.module('esad.fileUpload',[])
 
 .factory('fileUpload',function(){
   
+  var activeFile = null;
+  
   var uploadFile = function (evt) {
     var files = evt.target.files; // FileList object
 
@@ -23,13 +25,19 @@ angular.module('esad.fileUpload',[])
       alert("Only 1 file");
     }
     var file = files[0];
+    activeFile = file.name;
     var reader = new FileReader();
     
     reader.onload = evt.data.callback;
     reader.readAsText(file);
   };
   
+  var getFileName = function(){
+    return activeFile;
+  };
+  
   return {
-    uploadFile:uploadFile
+    uploadFile:uploadFile,
+    file:getFileName
   }
 })

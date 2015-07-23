@@ -47,11 +47,12 @@ angular.module('esad', ['esad.fileUpload','esad.map', 'esad.stream', 'esad.subEv
       var eventJSON = {};
       return;
     } else {
-      console.log(eventJSON);
+      $scope.filename = fileUpload.file();
       $scope.validJSON = true;
       $scope.event = eventJSON.event;
       $scope.generateTimetable();
       $scope.event = toMoment($scope.event);
+      console.log($scope);
     }
     $scope.$apply();
   };

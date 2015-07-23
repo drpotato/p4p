@@ -4,7 +4,6 @@ angular.module('esad.subEvent', ['ui.bootstrap','ui.bootstrap.modal','esad.calen
 
 .controller('SubEventController', function ($scope, $modal,calendarGenerator) {
   $scope.expanded = false;
-  $scope.saved = false;
   $scope.expand = function (size) {
     var modalInstance = $modal.open({
       animation: true,
@@ -14,22 +13,40 @@ angular.module('esad.subEvent', ['ui.bootstrap','ui.bootstrap.modal','esad.calen
       resolve: {
         subEvent: function () {
           return $scope.subEvent;
-        },
-        saved: function () {
-          return $scope.saved;
         }
       }
     });
   };
 }).controller('SubEventModalInstanceCtrl', function ($scope, $modalInstance, subEvent,calendarGenerator) {
   $scope.subEvent = subEvent;
+  
+  var setSaveButtonText = function(savedState){
+    if (savedState){
+      $scope.saveText = "Delete from Saved Events";
+    }else{
+      $scope.saveText= "Save this event";
+    }
+    
+  }
+  
+  setSaveButtonText(calendarGenerator.getSubEventSaveStatus($scope.subEvent) === "saved");
+  
   $scope.ok = function () {
     $modalInstance.close();
   };
 
   $scope.save = function () {
-    calendarGenerator.addSubEvent($scope.subEvent);
+    if (calendarGenerator.getSubEventSaveStatus($scope.subEvent) === "saved"){
+      calendarGenerator.removeSubEvent($scope.subEvent);
+    }else{
+      calendarGenerator.addSubEvent($scope.subEvent);
+    }
   };
+  
+  
+  calendarGenerator.onSubEventSaveStatusChange($scope.subEvent,function(status){
+    setSaveButtonText(status === "saved");
+  });
 })
 .directive('subEvent', function () {
   return {
@@ -42,13 +59,13 @@ angular.module('esad.subEvent', ['ui.bootstrap','ui.bootstrap.modal','esad.calen
   };
 }).controller('SelectedEventIndicator', function ($scope,calendarGenerator) {
   
-  $scope.display = "";
+  $scope.display = {'display':'none'};  
   
   calendarGenerator.onSubEventSaveStatusChange($scope.subEvent,function(status){
     if (status === "saved"){
-      $scope.display = "I have been saved";
+      $scope.display = {'display':'block'};  
     }else{
-      $scope.display = "";
+      $scope.display = {'display':'none'};  
     }
   });
   

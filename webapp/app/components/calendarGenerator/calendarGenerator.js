@@ -15,7 +15,6 @@ angular.module('esad.calendarGenerator',[])
     
     
     angular.forEach(subEvents,function(subEvent){
-      console.log(subEvent);
       cal.addEvent(subEvent.title,subEvent.title,subEvent.location,subEvent.startTime, subEvent.endTime);
     });
     cal.download();
@@ -31,6 +30,14 @@ angular.module('esad.calendarGenerator',[])
   var removeSubEvent = function(subEvent){
     savedSubEvents[subEvent] = undefined;
     notifyListeners(subEvent,"removed");
+  };
+  
+  var getSubEventSaveStatus = function(subEvent){
+    if (savedSubEvents[subEvent]){
+      return "saved";
+    }else{
+      return "removed";
+    }
   };
   
   var notifyListeners = function(subEvent,status){
@@ -61,6 +68,7 @@ angular.module('esad.calendarGenerator',[])
     buildFromSavedEvents:buildFromSavedEvents,
     addSubEvent:addSubEvent,
     removeSubEvent:removeSubEvent,
+    getSubEventSaveStatus:getSubEventSaveStatus,
     onSubEventSaveStatusChange:onSubEventSaveStatusChange
   }
 })

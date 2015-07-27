@@ -20,8 +20,12 @@ angular.module('esad.openConferenceFormat', [])
             value: {
               format:'email',
               type: 'string'
+            },
+            type: {
+              enum: ['email', 'phone']
             }
-          }, required: ['value']
+          },
+          required: ['value', 'type']
         },
         phoneDetail: {
           type: 'object',
@@ -29,8 +33,12 @@ angular.module('esad.openConferenceFormat', [])
             value: {
               type: 'string',
               pattern: '^\\+?[\d ]*$'
+            },
+            type: {
+              enum: ['email', 'phone']
             }
-          }
+          },
+          required: ['value', 'type']
         },
         person: {
           type: 'object',

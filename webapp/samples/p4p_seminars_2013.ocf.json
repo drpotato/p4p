@@ -26,24 +26,42 @@
             "name": "Dr. Akshya Swain",
             "role": "Chair",
             "contactDetails": [
-              {"value": "a.swain@auckland.ac.nz"},
-              {"value": "+64 9 923 4752"}
+              {
+                "value": "a.swain@auckland.ac.nz",
+                "type": "email"
+              },
+              {
+                "value": "+64 9 923 4752",
+                "type": "phone"
+              }
             ]
           },
           {
             "name": "Dr. Nitish Patel",
             "role": "Assessor",
             "contactDetails": [
-              {"value": "nd.patel@auckland.ac.nz"},
-              {"value": "+64 9 923 8196"}
+              {
+                "value": "nd.patel@auckland.ac.nz",
+                "type": "email"
+              },
+              {
+                "value": "+64 9 923 8196",
+                "type": "phone"
+              }
             ]
           },
           {
             "name": "Prof. Sing Nguang",
             "role": "Assessor",
             "contactDetails": [
-              {"value": "sk.nguang@auckland.ac.nz"},
-              {"value": "+64 9 923 9421"}
+              {
+                "value": "sk.nguang@auckland.ac.nz",
+                "type": "email"
+              },
+              {
+                "value": "+64 9 923 9421",
+                "type": "phone"
+              }
             ]
           }
         ],
@@ -71,24 +89,42 @@
             "name": "Dr. Akshya Swain",
             "role": "Chair",
             "contactDetails": [
-              {"value": "a.swain@auckland.ac.nz"},
-              {"value": "+64 9 923 4752"}
+              {
+                "value": "a.swain@auckland.ac.nz",
+                "type": "email"
+              },
+              {
+                "value": "+64 9 923 4752",
+                "type": "phone"
+              }
             ]
           },
           {
             "name": "Dr. Nitish Patel",
             "role": "Assessor",
             "contactDetails": [
-              {"value": "nd.patel@auckland.ac.nz"},
-              {"value": "+64 9 923 8196"}
+              {
+                "value": "nd.patel@auckland.ac.nz",
+                "type": "email"
+              },
+              {
+                "value": "+64 9 923 8196",
+                "type": "phone"
+              }
             ]
           },
           {
             "name": "Prof. Sing Nguang",
             "role": "Assessor",
             "contactDetails": [
-              {"value": "sk.nguang@auckland.ac.nz"},
-              {"value": "+64 9 923 9421"}
+              {
+                "value": "sk.nguang@auckland.ac.nz",
+                "type": "email"
+              },
+              {
+                "value": "+64 9 923 9421",
+                "type": "phone"
+              }
             ]
           }
         ],
@@ -116,24 +152,42 @@
             "name": "Dr. Akshya Swain",
             "role": "Chair",
             "contactDetails": [
-              {"value": "a.swain@auckland.ac.nz"},
-              {"value": "+64 9 923 4752"}
+              {
+                "value": "a.swain@auckland.ac.nz",
+                "type": "email"
+              },
+              {
+                "value": "+64 9 923 4752",
+                "type": "phone"
+              }
             ]
           },
           {
             "name": "Dr. Nitish Patel",
             "role": "Assessor",
             "contactDetails": [
-              {"value": "nd.patel@auckland.ac.nz"},
-              {"value": "+64 9 923 8196"}
+              {
+                "value": "nd.patel@auckland.ac.nz",
+                "type": "email"
+              },
+              {
+                "value": "+64 9 923 8196",
+                "type": "phone"
+              }
             ]
           },
           {
             "name": "Prof. Sing Nguang",
             "role": "Assessor",
             "contactDetails": [
-              {"value": "sk.nguang@auckland.ac.nz"},
-              {"value": "+64 9 923 9421"}
+              {
+                "value": "sk.nguang@auckland.ac.nz",
+                "type": "email"
+              },
+              {
+                "value": "+64 9 923 9421",
+                "type": "phone"
+              }
             ]
           }
         ],

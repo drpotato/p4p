@@ -7,8 +7,8 @@ angular.module('esad.subEvent', ['ui.bootstrap','ui.bootstrap.modal','esad.calen
   $scope.expand = function (size) {
     var modalInstance = $modal.open({
       animation: true,
-      templateUrl: 'app/components/person/personView.html',
-      controller: 'PersonController',
+      templateUrl: 'myModalContent.html',
+      controller: 'SubEventModalInstanceCtrl',
       size: size,
       resolve: {
         subEvent: function () {
@@ -41,6 +41,34 @@ angular.module('esad.subEvent', ['ui.bootstrap','ui.bootstrap.modal','esad.calen
     }else{
       calendarGenerator.addSubEvent($scope.subEvent);
     }
+  };
+
+  $scope.saveContact = function(person) {
+
+    var names = person.name.split(' ');
+
+    var lastName = names.pop();
+    var firstName = names.join(' ');
+
+    var qs = '?firstName=' + firstName + '&lastName=' + lastName;
+
+    for (var i = 0; i < person.contactDetails.length; i++) {
+      switch (person.contactDetails[i].type) {
+        case 'email':
+          qs += '&email=' + encodeURIComponent(person.contactDetails[i].value);
+          break;
+        case 'phone':
+          qs += '&workPhone=' + encodeURIComponent(person.contactDetails[i].value);
+          break;
+      }
+    }
+
+    var url = encodeURI(window.location.origin + '/vcard' + qs);
+
+    console.log(url);
+
+    window.open(url, '_blank');
+
   };
   
   

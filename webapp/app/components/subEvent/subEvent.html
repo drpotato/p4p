@@ -15,10 +15,17 @@
               <ul>
                   <li ng-repeat="person in subEvent.people">
                   <!-- TODO: Perhaps use a grid system to disaply this? -->
-                  <div><strong>{{person.name}}</strong> - {{person.role}}</div>
+                  <div><strong>{{person.name}}</strong> - {{person.role}}<br><a ng-if="person.contactDetails" href="#" ng-click="saveContact(person)">Save Contact</a> </div>
                       <div ng-if="person.contactDetails">
                           <ul>
-                              <li ng-repeat="detail in person.contactDetails">{{detail.value}}</li>
+                              <li ng-repeat="detail in person.contactDetails">
+                                <!-- TODO: Make this a filter.-->
+                                <div ng-switch="detail.type">
+                                  <a ng-switch-when="email" ng-href="mailto:{{detail.value}}">{{detail.value}}</a>
+                                  <a ng-switch-when="phone" ng-href="tel:{{detail.value}}">{{detail.value}}</a>
+                                  <a ng-switch-default>{{detail.value}}</a>
+                                </div>
+                              </li>
                           </ul>
                       </div>
                   </li>

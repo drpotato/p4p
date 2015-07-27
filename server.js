@@ -20,8 +20,14 @@ app.get('/vcard', function (req, res) {
   var vCard = VCard();
   vCard.firstName = req.query.firstName;
   vCard.lastName = req.query.lastName;
+  vCard.email = decodeURIComponent(req.query.email);
+  vCard.cellPhone = decodeURIComponent(req.query.cellPhone);
+  vCard.workPhone = decodeURIComponent(req.query.workPhone);
+  vCard.homePhone = decodeURIComponent(req.query.homePhone);
 
-  var fileName = vCard.firstName + vCard.lastName + '.vcf';
+  console.log(vCard);
+
+  var fileName = vCard.firstName + ' ' + vCard.lastName + '.vcf';
 
   // Set content-type and disposition including desired filename
   res.set('Content-Type', 'text/vcard; name="' + fileName + '"');

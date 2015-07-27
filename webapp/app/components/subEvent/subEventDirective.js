@@ -65,8 +65,6 @@ angular.module('esad.subEvent', ['ui.bootstrap','ui.bootstrap.modal','esad.calen
 
     var url = encodeURI(window.location.origin + '/vcard' + qs);
 
-    console.log(url);
-
     window.open(url, '_blank');
 
   };

@@ -1,10 +1,10 @@
 'use strict';
 
-angular.module('esad.calendarGenerator',[])
+angular.module('esad.calendarGenerator', ['ngLodash'])
 
 
-.factory('calendarGenerator',function(){
-  
+.factory('calendarGenerator', function(lodash){
+  var _ = lodash;
   var schedule = null;
   var savedSubEvents = {};
   var listeners = [];
@@ -20,24 +20,26 @@ angular.module('esad.calendarGenerator',[])
     cal.download();
   }
   
-  
+  var init = function (initSchedule) {
+    schedule = _.clone(initSchedule);
+    schedule.subEvents = [];
+  };
   
   var addSubEvent = function(subEvent){
+    schedule.subEvents.push(subEvent);
     savedSubEvents[subEvent] = subEvent;
     notifyListeners(subEvent,"saved");
   };
   
   var removeSubEvent = function(subEvent){
+    var index = schedule.subEvents.indexOf(subEvent);
+    schedule.subEvents.splice(index, 1);
     savedSubEvents[subEvent] = undefined;
     notifyListeners(subEvent,"removed");
   };
   
   var getSubEventSaveStatus = function(subEvent){
-    if (savedSubEvents[subEvent]){
-      return "saved";
-    }else{
-      return "removed";
-    }
+    return (schedule.subEvents.indexOf(subEvent) > -1) ? "saved" : "removed";
   };
   
   var notifyListeners = function(subEvent,status){
@@ -62,8 +64,14 @@ angular.module('esad.calendarGenerator',[])
   var buildFromSavedEvents = function(){
     return generate(savedSubEvents);
   }
+
+  var getSchedule = function () {
+    return schedule;
+  };
   
   return {
+    init: init,
+    getSchedule: getSchedule,
     buildWithSubEvents:buildWithSubEvents,
     buildFromSavedEvents:buildFromSavedEvents,
     addSubEvent:addSubEvent,

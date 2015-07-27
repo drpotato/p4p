@@ -53,6 +53,7 @@ angular.module('esad', ['esad.fileUpload','esad.map', 'esad.stream', 'esad.subEv
       $scope.generateTimetable();
       $scope.event = toMoment($scope.event);
       console.log($scope);
+      calendarGenerator.init($scope.event);
     }
     $scope.$apply();
   };
@@ -68,12 +69,15 @@ angular.module('esad', ['esad.fileUpload','esad.map', 'esad.stream', 'esad.subEv
     calendarGenerator.buildWithSubEvents($scope.event.subEvents);
   };
 
-  $scope.generateTimetable = function(){
+  $scope.generateTimetable = function(event){
+
+    event = event || $scope.event;
+
     if (!$scope.validJSON){
       return [];
     }
     $scope.timetable = [];
-    var times =  getUniqueOccurances($scope.event.subEvents,"startTime");
+    var times =  getUniqueOccurances(event.subEvents,"startTime");
     times.forEach(function(time){
       var streams = $scope.getStreamsAtTime(time);
       var events = $scope.getEventsAtTime(time);
@@ -100,5 +104,9 @@ angular.module('esad', ['esad.fileUpload','esad.map', 'esad.stream', 'esad.subEv
     return events;
   };
 
+  $scope.fuckShitUp = function () {
+    console.log('Saved Schedule:', calendarGenerator.getSchedule());
+    $scope.generateTimetable(calendarGenerator.getSchedule());
+  }
 
 });

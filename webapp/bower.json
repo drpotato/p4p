@@ -17,6 +17,7 @@
     "angular-json-editor": "~0.1.8",
     "karma-read-json": "~1.1.0",
     "tv4": "~1.1.12",
-    "angular-bootstrap" : "~0.13.0"
+    "angular-bootstrap": "~0.13.0",
+    "ng-lodash": "~0.2.3"
   }
 }

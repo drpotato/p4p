@@ -25,8 +25,6 @@ app.get('/vcard', function (req, res) {
   vCard.workPhone = decodeURIComponent(req.query.workPhone);
   vCard.homePhone = decodeURIComponent(req.query.homePhone);
 
-  console.log(vCard);
-
   var fileName = vCard.firstName + ' ' + vCard.lastName + '.vcf';
 
   // Set content-type and disposition including desired filename

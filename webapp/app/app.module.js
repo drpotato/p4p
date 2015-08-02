@@ -79,8 +79,8 @@ angular.module('esad', ['esad.fileUpload','esad.map', 'esad.stream', 'esad.subEv
     $scope.timetable = [];
     var times =  getUniqueOccurances(event.subEvents,"startTime");
     times.forEach(function(time){
-      var streams = $scope.getStreamsAtTime(time);
-      var events = $scope.getEventsAtTime(time);
+      var streams = $scope.getStreamsAtTime(time, event);
+      var events = $scope.getEventsAtTime(time, event);
       $scope.timetable.push({
         time: time,
         streams: streams,
@@ -90,13 +90,16 @@ angular.module('esad', ['esad.fileUpload','esad.map', 'esad.stream', 'esad.subEv
     console.log($scope.timetable);
   };
 
-  $scope.getStreamsAtTime = function(startTime){
-    return getUniqueOccurances($scope.getEventsAtTime(startTime),"location");
+  $scope.getStreamsAtTime = function(startTime, event){
+    return getUniqueOccurances($scope.getEventsAtTime(startTime, event),"location");
   };
 
-  $scope.getEventsAtTime = function(startTime){
+  $scope.getEventsAtTime = function(startTime, event){
+
+    event = event || $scope.event;
+
     var events = [];
-    $scope.event.subEvents.forEach(function(subEvent){
+    event.subEvents.forEach(function(subEvent){
       if (subEvent.startTime === startTime){
         events.push(subEvent);
       }

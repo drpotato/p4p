@@ -1,0 +1,1139 @@
+{
+  "event": {
+    "title": "Seminar Series 2014 - Part IV Research Projects",
+    "location": "Faculty of Engineering, 20 Symonds St, Auckland",
+    "startTime": "2014-09-11T09:00:00",
+    "endTime": "2014-09-12T15:00:00",
+    "organiser": "The University of Auckland - Department of Electrical and Computer Engineering",
+    "subEvents": [
+      {
+        "title": "Parking management system",
+        "location": "Room 1.401",
+        "startTime": "2014-09-11T09:00:00",
+        "endTime": "2014-09-11T09:30:00",
+        "description": "",
+        "type": "Project Seminar",
+        "people": [
+          {
+            "name": "Tony Fu",
+            "role": "Student"
+          },
+          {
+            "name": "Stephanie Liao",
+            "role": "Student"
+          },
+          {
+            "name": "Dr. Kevin I-Kai Wang",
+            "role": "Chair",
+            "contactDetails": [
+              {
+                "value": "kevin.wang@auckland.ac.nz",
+                "type": "email"
+              }
+            ]
+          },
+          {
+            "name": "Dr. Mark Andrews",
+            "role": "Assessor",
+            "contactDetails": [
+              {
+                "value": "m.andrews@auckland.ac.nz",
+                "type": "email"
+              }
+            ]
+          },
+          {
+            "name": "Waleed Abdulla",
+            "role": "Assessor",
+            "contactDetails": [
+              {
+                "value": "w.abdulla@auckland.ac.nz",
+                "type": "email"
+              }
+            ]
+          }
+        ],
+        "tags": [
+          "Commercial and Industrial Systems"
+        ]
+      },
+      {
+        "title": "RF-based localisation for indoor warehouse environment",
+        "location": "Room 1.401",
+        "startTime": "2014-09-11T09:30:00",
+        "endTime": "2014-09-11T10:00:00",
+        "description": "",
+        "type": "Project Seminar",
+        "people": [
+          {
+            "name": "Danny Kwok",
+            "role": "Student"
+          },
+          {
+            "name": "Jose Catapang",
+            "role": "Student"
+          },
+          {
+            "name": "Dr. Kevin I-Kai Wang",
+            "role": "Chair",
+            "contactDetails": [
+              {
+                "value": "kevin.wang@auckland.ac.nz",
+                "type": "email"
+              }
+            ]
+          },
+          {
+            "name": "Dr. Mark Andrews",
+            "role": "Assessor",
+            "contactDetails": [
+              {
+                "value": "m.andrews@auckland.ac.nz",
+                "type": "email"
+              }
+            ]
+          },
+          {
+            "name": "Waleed Abdulla",
+            "role": "Assessor",
+            "contactDetails": [
+              {
+                "value": "w.abdulla@auckland.ac.nz",
+                "type": "email"
+              }
+            ]
+          }
+        ],
+        "tags": [
+          "Commercial and Industrial Systems"
+        ]
+      },
+      {
+        "title": "High voltage power cable rating evaluation",
+        "location": "Room 1.401",
+        "startTime": "2014-09-11T10:00:00",
+        "endTime": "2014-09-11T10:30:00",
+        "description": "",
+        "type": "Project Seminar",
+        "people": [
+          {
+            "name": "Ziao Wei",
+            "role": "Student"
+          },
+          {
+            "name": "Taesung Kim",
+            "role": "Student"
+          },
+          {
+            "name": "Dr. Kevin I-Kai Wang",
+            "role": "Chair",
+            "contactDetails": [
+              {
+                "value": "kevin.wang@auckland.ac.nz",
+                "type": "email"
+              }
+            ]
+          },
+          {
+            "name": "Dr. Mark Andrews",
+            "role": "Assessor",
+            "contactDetails": [
+              {
+                "value": "m.andrews@auckland.ac.nz",
+                "type": "email"
+              }
+            ]
+          },
+          {
+            "name": "Waleed Abdulla",
+            "role": "Assessor",
+            "contactDetails": [
+              {
+                "value": "w.abdulla@auckland.ac.nz",
+                "type": "email"
+              }
+            ]
+          }
+        ],
+        "tags": [
+          "Commercial and Industrial Systems"
+        ]
+      },
+      {
+        "title": "Arc Flash-A statistical basis for risk analysis",
+        "location": "Room 1.401",
+        "startTime": "2014-09-11T11:00:00",
+        "endTime": "2014-09-11T11:30:00",
+        "description": "",
+        "type": "Project Seminar",
+        "people": [
+          {
+            "name": "Ash Young",
+            "role": "Student"
+          },
+          {
+            "name": "Jane Kasmara",
+            "role": "Student"
+          },
+          {
+            "name": "Dr. Oliver Sinnen",
+            "role": "Chair",
+            "contactDetails": [
+              {
+                "value": "o.sinnen@auckland.ac.nz",
+                "type": "email"
+              }
+            ]
+          },
+          {
+            "name": "Prof. Udaya Madawala",
+            "role": "Assessor",
+            "contactDetails": [
+              {
+                "value": "u.madawala@auckland.ac.nz",
+                "type": "email"
+              }
+            ]
+          },
+          {
+            "name": "Dr. Duleepa Thrimawithana",
+            "role": "Assessor",
+            "contactDetails": [
+              {
+                "value": "d.thrimawithana@auckland.ac.nz",
+                "type": "email"
+              }
+            ]
+          }
+        ],
+        "tags": [
+          "Power Systems"
+        ]
+      },
+      {
+        "title": "Smart Meter enabled control of existing and future household loads",
+        "location": "Room 1.401",
+        "startTime": "2014-09-11T11:30:00",
+        "endTime": "2014-09-11T12:00:00",
+        "description": "",
+        "type": "Project Seminar",
+        "people": [
+          {
+            "name": "Muntdhar Al-Yassiri",
+            "role": "Student"
+          },
+          {
+            "name": "Subin Mathew",
+            "role": "Student"
+          },
+          {
+            "name": "Dr. Oliver Sinnen",
+            "role": "Chair",
+            "contactDetails": [
+              {
+                "value": "o.sinnen@auckland.ac.nz",
+                "type": "email"
+              }
+            ]
+          },
+          {
+            "name": "Prof. Udaya Madawala",
+            "role": "Assessor",
+            "contactDetails": [
+              {
+                "value": "u.madawala@auckland.ac.nz",
+                "type": "email"
+              }
+            ]
+          },
+          {
+            "name": "Dr. Duleepa Thrimawithana",
+            "role": "Assessor",
+            "contactDetails": [
+              {
+                "value": "d.thrimawithana@auckland.ac.nz",
+                "type": "email"
+              }
+            ]
+          }
+        ],
+        "tags": [
+          "Power Systems"
+        ]
+      },
+      {
+        "title": "Smart micro-grid prototype using OPAL-RT, Labview, and CompactRio",
+        "location": "Room 1.401",
+        "startTime": "2014-09-11T12:00:00",
+        "endTime": "2014-09-11T12:30:00",
+        "description": "",
+        "type": "Project Seminar",
+        "people": [
+          {
+            "name": "Gaurav Khire",
+            "role": "Student"
+          },
+          {
+            "name": "Brian Ruvas",
+            "role": "Student"
+          },
+          {
+            "name": "Dr. Oliver Sinnen",
+            "role": "Chair",
+            "contactDetails": [
+              {
+                "value": "o.sinnen@auckland.ac.nz",
+                "type": "email"
+              }
+            ]
+          },
+          {
+            "name": "Prof. Udaya Madawala",
+            "role": "Assessor",
+            "contactDetails": [
+              {
+                "value": "u.madawala@auckland.ac.nz",
+                "type": "email"
+              }
+            ]
+          },
+          {
+            "name": "Dr. Duleepa Thrimawithana",
+            "role": "Chair",
+            "contactDetails": [
+              {
+                "value": "d.thrimawithana@auckland.ac.nz",
+                "type": "email"
+              }
+            ]
+          }
+        ],
+        "tags": [
+          "Power Systems"
+        ]
+      },
+      {
+        "title": "Reliability assessment for distribution utilities in smart grid",
+        "location": "Room 1.401",
+        "startTime": "2014-09-11T14:00:00",
+        "endTime": "2014-09-11T14:30:00",
+        "description": "",
+        "type": "Project Seminar",
+        "people": [
+          {
+            "name": "Shrey Bharat",
+            "role": "Student"
+          },
+          {
+            "name": "Gurvinder Dhillon",
+            "role": "Student"
+          },
+          {
+            "name": "Dr. Duleepa Thrimawithana",
+            "role": "Chair",
+            "contactDetails": [
+              {
+                "value": "d.thrimawithana@auckland.ac.nz",
+                "type": "email"
+              }
+            ]
+          },
+          {
+            "name": "Dr. Kevin I-Kai Wang",
+            "role": "Assessor",
+            "contactDetails": [
+              {
+                "value": "kevin.wang@auckland.ac.nz",
+                "type": "email"
+              }
+            ]
+          },
+          {
+            "name": "Prof. Udaya Madawala",
+            "role": "Assessor",
+            "contactDetails": [
+              {
+                "value": "u.madawala@auckland.ac.nz",
+                "type": "email"
+              }
+            ]
+          }
+        ],
+        "tags": [
+          "Power Systems"
+        ]
+      },
+      {
+        "title": "Read my fingertips",
+        "location": "Room 1.401",
+        "startTime": "2014-09-12T09:00:00",
+        "endTime": "2014-09-12T09:30:00",
+        "description": "",
+        "type": "Project Seminar",
+        "people": [
+          {
+            "name": "Varshil Udani",
+            "role": "Student"
+          },
+          {
+            "name": "Luke Harries",
+            "role": "Student"
+          },
+          {
+            "name": "Dr. Kevin I-Kai Wang",
+            "role": "Chair",
+            "contactDetails": [
+              {
+                "value": "kevin.wang@auckland.ac.nz",
+                "type": "email"
+              }
+            ]
+          },
+          {
+            "name": "Dr. Rashina Hoda",
+            "role": "Assessor",
+            "contactDetails": [
+              {
+                "value": "r.hoda@auckland.ac.nz",
+                "type": "email"
+              }
+            ]
+          },
+          {
+            "name": "Dr. Partha Roop",
+            "role": "Assessor",
+            "contactDetails": [
+              {
+                "value": "p.roop@auckland.ac.nz",
+                "type": "email"
+              }
+            ]
+          }
+        ],
+        "tags": [
+          "Intelligent Systems"
+        ]
+      },
+      {
+        "title": "Visual debugging of Java code",
+        "location": "Room 1.401",
+        "startTime": "2014-09-12T09:30:00",
+        "endTime": "2014-09-12T10:00:00",
+        "description": "",
+        "type": "Project Seminar",
+        "people": [
+          {
+            "name": "Ho Yeung Chin",
+            "role": "Student"
+          },
+          {
+            "name": "Khan Ho",
+            "role": "Student"
+          },
+          {
+            "name": "Dr. Kevin I-Kai Wang",
+            "role": "Chair",
+            "contactDetails": [
+              {
+                "value": "kevin.wang@auckland.ac.nz",
+                "type": "email"
+              }
+            ]
+          },
+          {
+            "name": "Dr. Rashina Hoda",
+            "role": "Assessor",
+            "contactDetails": [
+              {
+                "value": "r.hoda@auckland.ac.nz",
+                "type": "email"
+              }
+            ]
+          },
+          {
+            "name": "Dr. Partha Roop",
+            "role": "Assessor",
+            "contactDetails": [
+              {
+                "value": "p.roop@auckland.ac.nz",
+                "type": "email"
+              }
+            ]
+          }
+        ],
+        "tags": [
+          "Intelligent Systems"
+        ]
+      },
+      {
+        "title": "Geolocation services",
+        "location": "Room 1.401",
+        "startTime": "2014-09-12T10:00:00",
+        "endTime": "2014-09-12T10:30:00",
+        "description": "",
+        "type": "Project Seminar",
+        "people": [
+          {
+            "name": "Linda Chin",
+            "role": "Student"
+          },
+          {
+            "name": "Apple Zhang",
+            "role": "Student"
+          },
+          {
+            "name": "Dr. Kevin I-Kai Wang",
+            "role": "Chair",
+            "contactDetails": [
+              {
+                "value": "kevin.wang@auckland.ac.nz",
+                "type": "email"
+              }
+            ]
+          },
+          {
+            "name": "Dr. Rashina Hoda",
+            "role": "Assessor",
+            "contactDetails": [
+              {
+                "value": "r.hoda@auckland.ac.nz",
+                "type": "email"
+              }
+            ]
+          },
+          {
+            "name": "Dr. Partha Roop",
+            "role": "Assessor",
+            "contactDetails": [
+              {
+                "value": "p.roop@auckland.ac.nz",
+                "type": "email"
+              }
+            ]
+          }
+        ],
+        "tags": [
+          "Intelligent Systems"
+        ]
+      },
+      {
+        "title": "Development of a high-density DC-DC converter for fuel-cell applications",
+        "location": "Room 1.401",
+        "startTime": "2014-09-12T11:00:00",
+        "endTime": "2014-09-12T11:30:00",
+        "description": "",
+        "type": "Project Seminar",
+        "people": [
+          {
+            "name": "Alistair Dumper",
+            "role": "Student"
+          },
+          {
+            "name": "Eric Zhu",
+            "role": "Student"
+          },
+          {
+            "name": "Dr. Duleepa Thrimawithana",
+            "role": "Chair",
+            "contactDetails": [
+              {
+                "value": "d.thrimawithana@auckland.ac.nz",
+                "type": "email"
+              }
+            ]
+          },
+          {
+            "name": "Dr. Mohan Sridharan",
+            "role": "Assessor",
+            "contactDetails": [
+              {
+                "value": "m.sridharan@auckland.ac.nz",
+                "type": "email"
+              }
+            ]
+          },
+          {
+            "name": "Momen Bahadornejad",
+            "role": "Assessor"
+          }
+        ],
+        "tags": [
+          "Green Energy Technologies"
+        ]
+      },
+      {
+        "title": "Automatic daylight control for LED luminaires",
+        "location": "Room 1.401",
+        "startTime": "2014-09-12T11:00:00",
+        "endTime": "2014-09-12T11:30:00",
+        "description": "",
+        "type": "Project Seminar",
+        "people": [
+          {
+            "name": "Jasmine Poon",
+            "role": "Student"
+          },
+          {
+            "name": "Muhammad Noor Fadzili",
+            "role": "Student"
+          },
+          {
+            "name": "Dr. Duleepa Thrimawithana",
+            "role": "Chair",
+            "contactDetails": [
+              {
+                "value": "d.thrimawithana@auckland.ac.nz",
+                "type": "email"
+              }
+            ]
+          },
+          {
+            "name": "Dr. Mohan Sridharan",
+            "role": "Assessor",
+            "contactDetails": [
+              {
+                "value": "m.sridharan@auckland.ac.nz",
+                "type": "email"
+              }
+            ]
+          },
+          {
+            "name": "Momen Bahadornejad",
+            "role": "Assessor"
+          }
+        ],
+        "tags": [
+          "Green Energy Technologies"
+        ]
+      },
+      {
+        "title": "Intelligent controllers for wind energy systems",
+        "location": "Room 1.401",
+        "startTime": "2014-09-12T11:00:00",
+        "endTime": "2014-09-12T11:30:00",
+        "description": "",
+        "type": "Project Seminar",
+        "people": [
+          {
+            "name": "Almo Wong",
+            "role": "Student"
+          },
+          {
+            "name": "Horace Lee",
+            "role": "Student"
+          },
+          {
+            "name": "Dr. Duleepa Thrimawithana",
+            "role": "Chair",
+            "contactDetails": [
+              {
+                "value": "d.thrimawithana@auckland.ac.nz",
+                "type": "email"
+              }
+            ]
+          },
+          {
+            "name": "Dr. Mohan Sridharan",
+            "role": "Assessor",
+            "contactDetails": [
+              {
+                "value": "m.sridharan@auckland.ac.nz",
+                "type": "email"
+              }
+            ]
+          },
+          {
+            "name": "Momen Bahadornejad",
+            "role": "Assessor"
+          }
+        ],
+        "tags": [
+          "Green Energy Technologies"
+        ]
+      },
+      {
+        "title": "Standards based testing of solar PV inverters",
+        "location": "Room 1.401",
+        "startTime": "2014-09-12T11:00:00",
+        "endTime": "2014-09-12T11:30:00",
+        "description": "",
+        "type": "Project Seminar",
+        "people": [
+          {
+            "name": "Nick Carson",
+            "role": "Student"
+          },
+          {
+            "name": "Rhett Calvert",
+            "role": "Student"
+          },
+          {
+            "name": "Dr. Nirmal-Kumar Nair",
+            "role": "Chair",
+            "contactDetails": [
+              {
+                "value": "n.nair@auckland.ac.nz",
+                "type": "email"
+              }
+            ]
+          },
+          {
+            "name": "Prof. Grant Covic",
+            "role": "Assessor",
+            "contactDetails": [
+              {
+                "value": "ga.covic@auckland.ac.nz",
+                "type": "email"
+              }
+            ]
+          },
+          {
+            "name": "Dr. Stevan Berber",
+            "role": "Assessor",
+            "contactDetails": [
+              {
+                "value": "s.berber@auckland.ac.nz",
+                "type": "email"
+              }
+            ]
+          }
+        ],
+        "tags": [
+          "Green Energy Technologies"
+        ]
+      },
+      {
+        "title": "Contactless interconnection of photovoltaic panels",
+        "location": "Room 3.401",
+        "startTime": "2014-09-11T09:00:00",
+        "endTime": "2014-09-11T09:30:00",
+        "description": "",
+        "type": "Project Seminar",
+        "people": [
+          {
+            "name": "Lei Wei",
+            "role": "Student"
+          },
+          {
+            "name": "Shengkai Ji",
+            "role": "Student"
+          },
+          {
+            "name": "Dr. Sing Nguang",
+            "role": "Chair",
+            "contactDetails": [
+              {
+                "value": "sk.nguang@auckland.ac.nz",
+                "type": "email"
+              }
+            ]
+          },
+          {
+            "name": "Dr. Akshya Swain",
+            "role": "Assessor",
+            "contactDetails": [
+              {
+                "value": "a.swain@auckland.ac.nz",
+                "type": "email"
+              },
+              {
+                "value": "+64 9 923 4752",
+                "type": "phone"
+              }
+            ]
+          },
+          {
+            "name": "Dr. Nitish Patel",
+            "role": "Assessor",
+            "contactDetails": [
+              {
+                "value": "nd.patel@auckland.ac.nz",
+                "type": "email"
+              },
+              {
+                "value": "+64 9 923 8196",
+                "type": "phone"
+              }
+            ]
+          }
+        ],
+        "tags": [
+          "Control Systems"
+        ]
+      },
+      {
+        "title": "Physical activity monitoring through wireless wearable devices",
+        "location": "Room 3.401",
+        "startTime": "2014-09-11T09:30:00",
+        "endTime": "2014-09-11T10:00:00",
+        "description": "",
+        "type": "Project Seminar",
+        "people": [
+          {
+            "name": "Steven Liu",
+            "role": "Student"
+          },
+          {
+            "name": "Hanson Li",
+            "role": "Student"
+          },
+          {
+            "name": "Dr. Sing Nguang",
+            "role": "Chair",
+            "contactDetails": [
+              {
+                "value": "sk.nguang@auckland.ac.nz",
+                "type": "email"
+              }
+            ]
+          },
+          {
+            "name": "Dr. Akshya Swain",
+            "role": "Assessor",
+            "contactDetails": [
+              {
+                "value": "a.swain@auckland.ac.nz",
+                "type": "email"
+              },
+              {
+                "value": "+64 9 923 4752",
+                "type": "phone"
+              }
+            ]
+          },
+          {
+            "name": "Dr. Nitish Patel",
+            "role": "Assessor",
+            "contactDetails": [
+              {
+                "value": "nd.patel@auckland.ac.nz",
+                "type": "email"
+              },
+              {
+                "value": "+64 9 923 8196",
+                "type": "phone"
+              }
+            ]
+          }
+        ],
+        "tags": [
+          "Control Systems"
+        ]
+      },
+      {
+        "title": "Designing pacemakers using precision timed architectures",
+        "location": "Room 3.401",
+        "startTime": "2014-09-11T10:00:00",
+        "endTime": "2014-09-11T10:30:00",
+        "description": "",
+        "type": "Project Seminar",
+        "people": [
+          {
+            "name": "Hammond Pearce",
+            "role": "Student"
+          },
+          {
+            "name": "Nathan Allen",
+            "role": "Student"
+          },
+          {
+            "name": "Dr. Sing Nguang",
+            "role": "Chair",
+            "contactDetails": [
+              {
+                "value": "sk.nguang@auckland.ac.nz",
+                "type": "email"
+              }
+            ]
+          },
+          {
+            "name": "Dr. Akshya Swain",
+            "role": "Assessor",
+            "contactDetails": [
+              {
+                "value": "a.swain@auckland.ac.nz",
+                "type": "email"
+              },
+              {
+                "value": "+64 9 923 4752",
+                "type": "phone"
+              }
+            ]
+          },
+          {
+            "name": "Dr. Nitish Patel",
+            "role": "Assessor",
+            "contactDetails": [
+              {
+                "value": "nd.patel@auckland.ac.nz",
+                "type": "email"
+              },
+              {
+                "value": "+64 9 923 8196",
+                "type": "phone"
+              }
+            ]
+          }
+        ],
+        "tags": [
+          "Control Systems"
+        ]
+      },
+      {
+        "title": "Altitude and attitude sensing of the Gough Stewart platform",
+        "location": "Room 3.401",
+        "startTime": "2014-09-11T11:00:00",
+        "endTime": "2014-09-11T11:30:00",
+        "description": "",
+        "type": "Project Seminar",
+        "people": [
+          {
+            "name": "Jonathan Pullon",
+            "role": "Student"
+          },
+          {
+            "name": "Endrico Bester",
+            "role": "Student"
+          },
+          {
+            "name": "Dr. Jing Sun",
+            "role": "Chair",
+            "contactDetails": [
+              {
+                "value": "j.sun@cs.auckland.ac.nz",
+                "type": "email"
+              }
+            ]
+          },
+          {
+            "name": "Dr. Nirmal Nair",
+            "role": "Assessor",
+            "contactDetails": [
+              {
+                "value": "n.nair@auckland.ac.nz",
+                "type": "email"
+              }
+            ]
+          },
+          {
+            "name": "Dr. Sing Nguang",
+            "role": "Assessor",
+            "contactDetails": [
+              {
+                "value": "sk.nguang@auckland.ac.nz",
+                "type": "email"
+              }
+            ]
+          }
+        ],
+        "tags": [
+          "Control Systems"
+        ]
+      },
+      {
+        "title": "Measuring power consumption of PCI Express boards",
+        "location": "Room 3.401",
+        "startTime": "2014-09-11T11:00:00",
+        "endTime": "2014-09-11T11:30:00",
+        "description": "",
+        "type": "Project Seminar",
+        "people": [
+          {
+            "name": "Simon Attwood",
+            "role": "Student"
+          },
+          {
+            "name": "Nathan Martin",
+            "role": "Student"
+          },
+          {
+            "name": "Dr. Jing Sun",
+            "role": "Chair",
+            "contactDetails": [
+              {
+                "value": "j.sun@cs.auckland.ac.nz",
+                "type": "email"
+              }
+            ]
+          },
+          {
+            "name": "Dr. Nirmal Nair",
+            "role": "Assessor",
+            "contactDetails": [
+              {
+                "value": "n.nair@auckland.ac.nz",
+                "type": "email"
+              }
+            ]
+          },
+          {
+            "name": "Dr. Sing Nguang",
+            "role": "Assessor",
+            "contactDetails": [
+              {
+                "value": "sk.nguang@auckland.ac.nz",
+                "type": "email"
+              }
+            ]
+          }
+        ],
+        "tags": [
+          "Control Systems"
+        ]
+      },
+      {
+        "title": "A laser deflection system",
+        "location": "Room 3.401",
+        "startTime": "2014-09-11T11:00:00",
+        "endTime": "2014-09-11T11:30:00",
+        "description": "",
+        "type": "Project Seminar",
+        "people": [
+          {
+            "name": "Patrin Illenberger",
+            "role": "Student"
+          },
+          {
+            "name": "Steven Ruddell",
+            "role": "Student"
+          },
+          {
+            "name": "Dr. Jing Sun",
+            "role": "Chair",
+            "contactDetails": [
+              {
+                "value": "j.sun@cs.auckland.ac.nz",
+                "type": "email"
+              }
+            ]
+          },
+          {
+            "name": "Dr. Nirmal Nair",
+            "role": "Assessor",
+            "contactDetails": [
+              {
+                "value": "n.nair@auckland.ac.nz",
+                "type": "email"
+              }
+            ]
+          },
+          {
+            "name": "Dr. Sing Nguang",
+            "role": "Assessor",
+            "contactDetails": [
+              {
+                "value": "sk.nguang@auckland.ac.nz",
+                "type": "email"
+              }
+            ]
+          }
+        ],
+        "tags": [
+          "Control Systems"
+        ]
+      },
+      {
+        "title": "Design and development of WSNs with multiple sensors",
+        "location": "Room 3.401",
+        "startTime": "2014-09-11T11:00:00",
+        "endTime": "2014-09-11T11:30:00",
+        "description": "",
+        "type": "Project Seminar",
+        "people": [
+          {
+            "name": "Jimmy Lin",
+            "role": "Student"
+          },
+          {
+            "name": "Emily Ng",
+            "role": "Student"
+          },
+          {
+            "name": "Dr. Robert Sheehan",
+            "role": "Chair",
+            "contactDetails": [
+              {
+                "value": "r.sheehan@auckland.ac.nz",
+                "type": "email"
+              }
+            ]
+          },
+          {
+            "name": "Dr. Michael Neve",
+            "role": "Assessor",
+            "contactDetails": [
+              {
+                "value": "mj.neve@auckland.ac.nz",
+                "type": "email"
+              }
+            ]
+          },
+          {
+            "name": "Dr. Gerard Rowe",
+            "role": "Assessor",
+            "contactDetails": [
+              {
+                "value": "gb.rowe@auckland.ac.nz",
+                "type": "email"
+              }
+            ]
+          }
+        ],
+        "tags": [
+          "Telecommunications"
+        ]
+      },
+      {
+        "title": "Wideband channel measurements, data processing, channel modelling and simulation",
+        "location": "Room 3.401",
+        "startTime": "2014-09-11T11:00:00",
+        "endTime": "2014-09-11T11:30:00",
+        "description": "",
+        "type": "Project Seminar",
+        "people": [
+          {
+            "name": "Andy Lu",
+            "role": "Student"
+          },
+          {
+            "name": "Zoe Huang",
+            "role": "Student"
+          },
+          {
+            "name": "Dr. Robert Sheehan",
+            "role": "Chair",
+            "contactDetails": [
+              {
+                "value": "r.sheehan@auckland.ac.nz",
+                "type": "email"
+              }
+            ]
+          },
+          {
+            "name": "Dr. Michael Neve",
+            "role": "Assessor",
+            "contactDetails": [
+              {
+                "value": "mj.neve@auckland.ac.nz",
+                "type": "email"
+              }
+            ]
+          },
+          {
+            "name": "Dr. Gerard Rowe",
+            "role": "Assessor",
+            "contactDetails": [
+              {
+                "value": "gb.rowe@auckland.ac.nz",
+                "type": "email"
+              }
+            ]
+          }
+        ],
+        "tags": [
+          "Telecommunications"
+        ]
+      }
+    ]
+  }
+}

@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('esad', ['esad.fileUpload','esad.map', 'esad.stream', 'esad.subEvent', 'esad.openConferenceFormat', 'esad.schedule', 'esad.scheduleCreation','esad.errorView','esad.dataImport','esad.calendarGenerator', 'esad.listView', 'angularMoment', 'ngStorage'])
+angular.module('esad', ['esad.fileUpload','esad.map', 'esad.stream', 'esad.subEvent', 'esad.openConferenceFormat', 'esad.schedule', 'esad.scheduleCreation','esad.errorView','esad.dataImport','esad.calendarGenerator', 'esad.listView', 'angularMoment', 'ngStorage', 'ngAnimate'])
 
 .config(['$locationProvider', function ($locationProvider) {
   $locationProvider.html5Mode(true);
@@ -53,6 +53,9 @@ angular.module('esad', ['esad.fileUpload','esad.map', 'esad.stream', 'esad.subEv
       $scope.event = eventJSON.event;
       $scope.generateTimetable();
       $scope.event = toMoment($scope.event);
+      $scope.event.subEvents.sort(function (a, b) {
+        return (a.startTime > b.startTime) - (a.startTime < b.startTime);
+      });
       calendarGenerator.init($scope.event);
       $localStorage.event = $scope.event;
     }
@@ -114,7 +117,7 @@ angular.module('esad', ['esad.fileUpload','esad.map', 'esad.stream', 'esad.subEv
   };
 
   $scope.isDifferentDay = function (index) {
-    return index == 0; // || $scope.event.subEvents[index].startTime.getDate() != $scope.event.subEvents[index - 1].startTime.getDate()
+    return index == 0 || moment($scope.event.subEvents[index].startTime).format('ddd D') != moment($scope.event.subEvents[index - 1].startTime).format('ddd D');
   };
 
 });

@@ -23,16 +23,12 @@
             "role": "Student"
           },
           {
-            "name": "Dr. Akshya Swain",
+            "name": "Dr. Jing Sun",
             "role": "Chair",
             "contactDetails": [
               {
-                "value": "a.swain@auckland.ac.nz",
+                "value": "j.sun@cs.auckland.ac.nz",
                 "type": "email"
-              },
-              {
-                "value": "+64 9 923 4752",
-                "type": "phone"
               }
             ]
           },

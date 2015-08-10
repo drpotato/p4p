@@ -1,0 +1,50 @@
+<div class="container-fluid">
+  <div class="list-view row">
+    <div class="col-xs-12">
+      <h1>{{event.title}}</h1>
+       <div>{{event.startTime | amDateFormat:'dddd, MMMM Do YYYY'}}</div>
+       <div>{{event.endTime | amDateFormat:'dddd, MMMM Do YYYY'}}</div>
+
+      <h4>{{event.organiser}}</h4>
+    </div>
+  </div>
+  <div class="list-view row" ng-repeat="subEvent in event.subEvents | orderBy: 'startTime'">
+    <div class="col-xs-2 col-md-1 col-md-offset-1">
+      <p ng-if="isDifferentDay($index)">{{subEvent.startTime | amDateFormat:'ddd D'}}</p>
+    </div>
+    <div class="col-xs-3 col-md-1">
+      <div>{{subEvent.startTime | amDateFormat: 'h:mm a'}}</div>
+      <div class="text-muted">{{subEvent.endTime | amDateFormat: 'h:mm a'}}</div>
+    </div>
+    <div class="col-xs-4 col-md-5 link-hover" ng-click="subEvent.isCollapsed = !subEvent.isCollapsed">
+      <div>{{subEvent.title}}</div>
+      <ul class="list-inline">
+        <li class="text-muted" ng-repeat="tag in subEvent.tags">{{ tag }}</li>
+      </ul>
+      <div collapse="subEvent.isCollapsed">
+        <div>{{subEvent.description}}</div>
+        <div>People</div>
+        <ul>
+          <li ng-repeat="person in subEvent.people">
+            <!-- TODO: Perhaps use a grid system to disaply this? -->
+            <div><strong>{{person.name}}</strong> - {{person.role}}<br><a ng-if="person.contactDetails" href="#" ng-click="saveContact(person)">Save Contact</a> </div>
+            <div ng-if="person.contactDetails">
+              <ul>
+                <li ng-repeat="detail in person.contactDetails">
+                  <!-- TODO: Make this a filter.-->
+                  <div ng-switch="detail.type">
+                    <a ng-switch-when="email" ng-href="mailto:{{detail.value}}">{{detail.value}}</a>
+                    <a ng-switch-when="phone" ng-href="tel:{{detail.value}}">{{detail.value}}</a>
+                    <a ng-switch-default>{{detail.value}}</a>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="col-xs-3 col-md-2">{{subEvent.location}}</div>
+  </div>
+  <error-view></error-view>
+</div>

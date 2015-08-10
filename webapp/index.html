@@ -7,14 +7,15 @@
   <base href="/">
 
   <!-- Scrolls -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+  <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="bower_components/angular-bootstrap/ui-bootstrap-csp.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jsoneditor/4.2.1/jsoneditor.css">
   <link rel="stylesheet" href="assets/css/main.css">
   <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
 
   <!-- Spells -->
-  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.js"></script>
-  <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.js"></script>
+  <script type="text/javascript" src="bower_components/jquery/dist/jquery.min.js"></script>
+  <script type="text/javascript" src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
   <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?libraries=places"></script>
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.10.3/moment.js"></script>
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.2/angular.js"></script>
@@ -27,6 +28,7 @@
   <script type="text/javascript" src="bower_components/angular-json-editor/dist/angular-json-editor.js"></script>
   <script type="text/javascript" src="bower_components/tv4/tv4.js"></script>
   <script type="text/javascript" src="bower_components/angular-bootstrap/ui-bootstrap-tpls.js"></script>
+  <script type="text/javascript" src="bower_components/ngstorage/ngStorage.js"></script>
   <script type="text/javascript" src="assets/js/ics.deps.min.js"></script>
   <script type="text/javascript" src="assets/js/ics.min.js"></script>
   <script type="text/javascript" src="app/app.module.js"></script>
@@ -41,7 +43,8 @@
   <script type="text/javascript" src="app/components/dataImport/openConfXML.js"></script>
   <script type="text/javascript" src="app/components/upload/fileUpload.js"></script>
   <script type="text/javascript" src="app/components/calendarGenerator/calendarGenerator.js"></script>
-  
+  <script type="text/javascript" src="app/components/listView/listViewController.js"></script>
+
 
 </head>
 <body ng-app="esad" ng-controller="EventController as eventApp">
@@ -80,6 +83,8 @@
     <div class="col-sm-3 col-md-2 sidebar">
       <ul class="nav nav-sidebar">
         <li ng-click=""><a><span class="">{{filename}}</span></a></li>
+        <li><a href="/">Grid</a></li>
+        <li><a href="/list">List</a></li>
         <li><input class="nav-search" placeholder="Search" ng-model="query"></li>
         <li ng-click="fuckShitUp()"><a href="#"><span class="">Show My Schedule</span></a></li>
         <li ng-click="makeICS()"><a href="#"><span class="">Export items to Calendar</span></a></li>

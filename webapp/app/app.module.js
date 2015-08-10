@@ -1,16 +1,17 @@
 'use strict';
 
-angular.module('esad', ['esad.fileUpload','esad.map', 'esad.stream', 'esad.subEvent', 'esad.openConferenceFormat', 'esad.schedule', 'esad.scheduleCreation','esad.errorView','esad.dataImport','esad.calendarGenerator'])
+angular.module('esad', ['esad.fileUpload','esad.map', 'esad.stream', 'esad.subEvent', 'esad.openConferenceFormat', 'esad.schedule', 'esad.scheduleCreation','esad.errorView','esad.dataImport','esad.calendarGenerator', 'esad.listView', 'angularMoment', 'ngStorage'])
 
 .config(['$locationProvider', function ($locationProvider) {
   $locationProvider.html5Mode(true);
 }])
 
 
-.controller('EventController', function ($scope, $http, fileUpload, openConferenceFormat, displayError,calendarGenerator) {
-  $scope.timetable = [];
+.controller('EventController', function ($scope, $http, $localStorage, fileUpload, openConferenceFormat, displayError, calendarGenerator) {
+  $scope.timetable = $localStorage.timetable || [];
   $scope.validJSON = false;
   $scope.error = [];
+  $scope.event = $localStorage.event;
 
   //Does JS have this method?
   var getUniqueOccurances = function(array,property){
@@ -24,11 +25,12 @@ angular.module('esad', ['esad.fileUpload','esad.map', 'esad.stream', 'esad.subEv
   };
 
   var toMoment = function(event) {
-      event.startTime = moment(event.startTime).format("dddd, MMMM Do YYYY, h:mm:ss a");
-      event.endTime = moment(event.endTime).format("dddd, MMMM Do YYYY, h:mm:ss a");
+      event.startTime = moment(event.startTime);
+      event.endTime = moment(event.endTime);
       for (var i = 0; i < event.subEvents.length; i++) {
-          event.subEvents[i].startTime = moment(event.subEvents[i].startTime).format("dddd, MMMM Do YYYY, h:mm:ss a");
-          event.subEvents[i].endTime = moment(event.subEvents[i].endTime).format("dddd, MMMM Do YYYY, h:mm:ss a");
+          event.subEvents[i].startTime = moment(event.subEvents[i].startTime);
+          event.subEvents[i].endTime = moment(event.subEvents[i].endTime);
+          event.subEvents[i].isCollapsed = true;
       }
     return event;
   };
@@ -44,7 +46,6 @@ angular.module('esad', ['esad.fileUpload','esad.map', 'esad.stream', 'esad.subEv
         console.error(error);
       });
       displayError.display(result.errors);
-      var eventJSON = {};
       return;
     } else {
       $scope.filename = fileUpload.file();
@@ -52,8 +53,8 @@ angular.module('esad', ['esad.fileUpload','esad.map', 'esad.stream', 'esad.subEv
       $scope.event = eventJSON.event;
       $scope.generateTimetable();
       $scope.event = toMoment($scope.event);
-      console.log($scope);
       calendarGenerator.init($scope.event);
+      $localStorage.event = $scope.event;
     }
     $scope.$apply();
   };
@@ -87,7 +88,7 @@ angular.module('esad', ['esad.fileUpload','esad.map', 'esad.stream', 'esad.subEv
         events: events
       });
     });
-    console.log($scope.timetable);
+    $localStorage.timetable = $scope.timetable;
   };
 
   $scope.getStreamsAtTime = function(startTime, event){
@@ -110,6 +111,10 @@ angular.module('esad', ['esad.fileUpload','esad.map', 'esad.stream', 'esad.subEv
   $scope.fuckShitUp = function () {
     console.log('Saved Schedule:', calendarGenerator.getSchedule());
     $scope.generateTimetable(calendarGenerator.getSchedule());
-  }
+  };
+
+  $scope.isDifferentDay = function (index) {
+    return index == 0; // || $scope.event.subEvents[index].startTime.getDate() != $scope.event.subEvents[index - 1].startTime.getDate()
+  };
 
 });

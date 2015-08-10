@@ -18,6 +18,8 @@
     "karma-read-json": "~1.1.0",
     "tv4": "~1.1.12",
     "angular-bootstrap": "~0.13.0",
-    "ng-lodash": "~0.2.3"
+    "ng-lodash": "~0.2.3",
+    "bootstrap": "~3.3.5",
+    "ngstorage": "~0.3.7"
   }
 }

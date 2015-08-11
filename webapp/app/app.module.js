@@ -120,8 +120,4 @@ angular.module('esad', ['esad.fileUpload','esad.map', 'esad.stream', 'esad.subEv
     return index == 0 || moment($scope.event.subEvents[index].startTime).format('ddd D') != moment($scope.event.subEvents[index - 1].startTime).format('ddd D');
   };
 
-  $scope.$watch('query',function(){
-
-  });
-
 });

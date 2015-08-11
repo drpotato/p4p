@@ -8,7 +8,7 @@
       <h4>{{event.organiser}}</h4>
     </div>
   </div>
-  <div class="list-view row" ng-repeat="subEvent in event.subEvents | orderBy: 'startTime'">
+  <div class="list-view row" ng-repeat="subEvent in event.subEvents | orderBy: 'startTime' | filter: query">
     <div class="col-xs-2 col-md-1 col-md-offset-1">
       <p ng-if="isDifferentDay($index)">{{subEvent.startTime | amDateFormat:'ddd D'}}</p>
     </div>

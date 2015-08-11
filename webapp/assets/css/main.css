@@ -92,7 +92,7 @@ body{
 }
 
 .stream-box.hidden{
-  display:hidden;
+  display: none;
 }
 
 .vertical-centre{
@@ -109,6 +109,10 @@ body{
 
 .esad-time{
   border-bottom: 1px solid hsl(0,0%,50%);
+}
+
+.right-justify {
+  text-align: right;
 }
 
 .link-hover {

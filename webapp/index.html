@@ -83,7 +83,7 @@
   <div class="row">
     <div class="col-sm-3 col-md-2 sidebar">
       <ul class="nav nav-sidebar">
-        <li ng-click=""><a><span class="">{{filename}}</span></a></li>
+        <li ng-if="filename" ng-click=""><a><span class="">{{filename}}</span></a></li>
         <li><a href="/">Grid</a></li>
         <li><a href="/list">List</a></li>
         <li><input class="nav-search" placeholder="Search" ng-model="query"></li>

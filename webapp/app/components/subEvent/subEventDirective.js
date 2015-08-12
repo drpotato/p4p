@@ -36,7 +36,7 @@ angular.module('esad.subEvent', ['ui.bootstrap','ui.bootstrap.modal','esad.calen
   setSaveButtonText(calendarGenerator.getSubEventSaveStatus($scope.subEvent) === "saved");
   
   $scope.ok = function () {
-    $modalInstance.close();
+    $modalInstance.dismiss('close');
   };
 
   $scope.save = function () {

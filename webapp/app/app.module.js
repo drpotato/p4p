@@ -8,11 +8,7 @@ angular.module('esad', ['esad.fileUpload','esad.map', 'esad.stream', 'esad.subEv
 
 
 .controller('EventController', function ($scope, $http, $localStorage, fileUpload, openConferenceFormat, displayError, calendarGenerator) {
-  $scope.timetable = $localStorage.timetable || [];
-  $scope.validJSON = false;
-  $scope.error = [];
-  $scope.event = $localStorage.event;
-
+  
   //Does JS have this method?
   var getUniqueOccurances = function(array,property){
     var propValues = [];
@@ -39,6 +35,11 @@ angular.module('esad', ['esad.fileUpload','esad.map', 'esad.stream', 'esad.subEv
     $scope.errors = [];
     var eventJSON = JSON.parse(e.target.result);
     var result = $scope.validateFile(eventJSON);
+    $scope.processValidatorResult(result,eventJSON);
+    $scope.$apply();
+  };
+  
+  $scope.processValidatorResult = function(result,eventJSON){
     if (result.valid === false) {
       //Handle Error States
       $scope.event = null;
@@ -59,7 +60,7 @@ angular.module('esad', ['esad.fileUpload','esad.map', 'esad.stream', 'esad.subEv
       calendarGenerator.init($scope.event);
       $localStorage.event = $scope.event;
     }
-    $scope.$apply();
+    
   };
 
 
@@ -119,5 +120,17 @@ angular.module('esad', ['esad.fileUpload','esad.map', 'esad.stream', 'esad.subEv
   $scope.isDifferentDay = function (index) {
     return index == 0 || moment($scope.event.subEvents[index].startTime).format('ddd D') != moment($scope.event.subEvents[index - 1].startTime).format('ddd D');
   };
+  
+  
+  //Function definitions first
+  $scope.timetable = $localStorage.timetable || [];
+  $scope.validJSON = false;
+  $scope.error = [];
+  $scope.event = $localStorage.event;
+
+  if ($localStorage.event){
+    $scope.processValidatorResult($scope.validateFile($localStorage),$localStorage); 
+  }
+  
 
 });

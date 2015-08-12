@@ -5,6 +5,7 @@ angular.module('esad.subEvent', ['ui.bootstrap','ui.bootstrap.modal','esad.calen
 .controller('SubEventController', function ($scope, $modal,calendarGenerator) {
   $scope.expanded = false;
   $scope.expand = function (size) {
+    
     var modalInstance = $modal.open({
       animation: true,
       templateUrl: 'myModalContent.html',
@@ -13,6 +14,9 @@ angular.module('esad.subEvent', ['ui.bootstrap','ui.bootstrap.modal','esad.calen
       resolve: {
         subEvent: function () {
           return $scope.subEvent;
+        },
+        calendarGenerator : function(){
+          return calendarGenerator;
         }
       }
     });

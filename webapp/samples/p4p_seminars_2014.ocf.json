@@ -570,8 +570,8 @@
       {
         "title": "Automatic daylight control for LED luminaires",
         "location": "Room 1.401",
-        "startTime": "2014-09-12T11:00:00",
-        "endTime": "2014-09-12T11:30:00",
+        "startTime": "2014-09-12T11:30:00",
+        "endTime": "2014-09-12T12:00:00",
         "description": "",
         "type": "Project Seminar",
         "people": [
@@ -621,8 +621,8 @@
       {
         "title": "Intelligent controllers for wind energy systems",
         "location": "Room 1.401",
-        "startTime": "2014-09-12T11:00:00",
-        "endTime": "2014-09-12T11:30:00",
+        "startTime": "2014-09-12T12:00:00",
+        "endTime": "2014-09-12T12:30:00",
         "description": "",
         "type": "Project Seminar",
         "people": [
@@ -672,8 +672,8 @@
       {
         "title": "Standards based testing of solar PV inverters",
         "location": "Room 1.401",
-        "startTime": "2014-09-12T11:00:00",
-        "endTime": "2014-09-12T11:30:00",
+        "startTime": "2014-09-12T14:00:00",
+        "endTime": "2014-09-12T14:30:00",
         "description": "",
         "type": "Project Seminar",
         "people": [
@@ -951,8 +951,8 @@
       {
         "title": "Measuring power consumption of PCI Express boards",
         "location": "Room 3.401",
-        "startTime": "2014-09-11T11:00:00",
-        "endTime": "2014-09-11T11:30:00",
+        "startTime": "2014-09-11T11:30:00",
+        "endTime": "2014-09-11T12:00:00",
         "description": "",
         "type": "Project Seminar",
         "people": [
@@ -1002,8 +1002,8 @@
       {
         "title": "A laser deflection system",
         "location": "Room 3.401",
-        "startTime": "2014-09-11T11:00:00",
-        "endTime": "2014-09-11T11:30:00",
+        "startTime": "2014-09-11T12:00:00",
+        "endTime": "2014-09-11T12:30:00",
         "description": "",
         "type": "Project Seminar",
         "people": [
@@ -1053,8 +1053,8 @@
       {
         "title": "Design and development of WSNs with multiple sensors",
         "location": "Room 3.401",
-        "startTime": "2014-09-11T11:00:00",
-        "endTime": "2014-09-11T11:30:00",
+        "startTime": "2014-09-11T14:00:00",
+        "endTime": "2014-09-11T14:30:00",
         "description": "",
         "type": "Project Seminar",
         "people": [
@@ -1104,8 +1104,8 @@
       {
         "title": "Wideband channel measurements, data processing, channel modelling and simulation",
         "location": "Room 3.401",
-        "startTime": "2014-09-11T11:00:00",
-        "endTime": "2014-09-11T11:30:00",
+        "startTime": "2014-09-11T14:30:00",
+        "endTime": "2014-09-11T15:00:00",
         "description": "",
         "type": "Project Seminar",
         "people": [
@@ -1257,8 +1257,8 @@
       {
         "title": "A real-time distributed hardware monitoring framework",
         "location": "Room 3.401",
-        "startTime": "2014-09-12T09:30:00",
-        "endTime": "2014-09-12T10:00:00",
+        "startTime": "2014-09-12T10:00:00",
+        "endTime": "2014-09-12T10:30:00",
         "description": "",
         "type": "Project Seminar",
         "people": [
@@ -1971,8 +1971,8 @@
       {
         "title": "Wireless wearable devices interfaced with smartphones",
         "location": "Room 3.402",
-        "startTime": "2014-09-12T09:30:00",
-        "endTime": "2014-09-12T10:00:00",
+        "startTime": "2014-09-12T10:00:00",
+        "endTime": "2014-09-12T10:30:00",
         "description": "",
         "type": "Project Seminar",
         "people": [
@@ -2481,8 +2481,8 @@
       {
         "title": "An investigation of high reluctance pads",
         "location": "Room 3.403",
-        "startTime": "2014-09-11T11:00:00",
-        "endTime": "2014-09-11T11:30:00",
+        "startTime": "2014-09-11T11:30:00",
+        "endTime": "2014-09-11T12:00:00",
         "description": "",
         "type": "Project Seminar",
         "people": [

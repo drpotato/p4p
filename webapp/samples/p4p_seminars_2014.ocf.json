@@ -43,7 +43,7 @@
             ]
           },
           {
-            "name": "Waleed Abdulla",
+            "name": "Dr. Waleed Abdulla",
             "role": "Assessor",
             "contactDetails": [
               {
@@ -553,8 +553,14 @@
             ]
           },
           {
-            "name": "Momen Bahadornejad",
-            "role": "Assessor"
+            "name": "Dr. Momen Bahadornejad",
+            "role": "Assessor",
+            "contactDetails": [
+              {
+                "value": "m.bahadornejad@auckland.ac.nz",
+                "type": "email"
+              }
+            ]
           }
         ],
         "tags": [
@@ -598,8 +604,14 @@
             ]
           },
           {
-            "name": "Momen Bahadornejad",
-            "role": "Assessor"
+            "name": "Dr. Momen Bahadornejad",
+            "role": "Assessor",
+            "contactDetails": [
+              {
+                "value": "m.bahadornejad@auckland.ac.nz",
+                "type": "email"
+              }
+            ]
           }
         ],
         "tags": [
@@ -643,8 +655,14 @@
             ]
           },
           {
-            "name": "Momen Bahadornejad",
-            "role": "Assessor"
+            "name": "Dr. Momen Bahadornejad",
+            "role": "Assessor",
+            "contactDetails": [
+              {
+                "value": "m.bahadornejad@auckland.ac.nz",
+                "type": "email"
+              }
+            ]
           }
         ],
         "tags": [
@@ -1125,6 +1143,2662 @@
             "contactDetails": [
               {
                 "value": "gb.rowe@auckland.ac.nz",
+                "type": "email"
+              }
+            ]
+          }
+        ],
+        "tags": [
+          "Telecommunications"
+        ]
+      },
+      {
+        "title": "Building a cloud based manufacturing system",
+        "location": "Room 3.401",
+        "startTime": "2014-09-12T09:00:00",
+        "endTime": "2014-09-12T09:30:00",
+        "description": "",
+        "type": "Project Seminar",
+        "people": [
+          {
+            "name": "Suraksha Sathyanarayana Setty",
+            "role": "Student"
+          },
+          {
+            "name": "Humaa Yaqoob",
+            "role": "Student"
+          },
+          {
+            "name": "Dr. Oliver Sinnen",
+            "role": "Chair",
+            "contactDetails": [
+              {
+                "value": "o.sinnen@auckland.ac.nz",
+                "type": "email"
+              }
+            ]
+          },
+          {
+            "name": "Prof. Kevin Sowerby",
+            "role": "Assessor",
+            "contactDetails": [
+              {
+                "value": "kw.sowerby@auckland.ac.nz",
+                "type": "email"
+              }
+            ]
+          },
+          {
+            "name": "Dr. Robert Sheehan",
+            "role": "Assessor",
+            "contactDetails": [
+              {
+                "value": "r.sheehan@auckland.ac.nz",
+                "type": "email"
+              }
+            ]
+          }
+        ],
+        "tags": [
+          "Parallel and Distributed Systems"
+        ]
+      },
+      {
+        "title": "Scheduling algorithm comparison in Java",
+        "location": "Room 3.401",
+        "startTime": "2014-09-12T09:30:00",
+        "endTime": "2014-09-12T10:00:00",
+        "description": "",
+        "type": "Project Seminar",
+        "people": [
+          {
+            "name": "Eddie Chae",
+            "role": "Student"
+          },
+          {
+            "name": "Kyle Jung",
+            "role": "Student"
+          },
+          {
+            "name": "Dr. Oliver Sinnen",
+            "role": "Chair",
+            "contactDetails": [
+              {
+                "value": "o.sinnen@auckland.ac.nz",
+                "type": "email"
+              }
+            ]
+          },
+          {
+            "name": "Prof. Kevin Sowerby",
+            "role": "Assessor",
+            "contactDetails": [
+              {
+                "value": "kw.sowerby@auckland.ac.nz",
+                "type": "email"
+              }
+            ]
+          },
+          {
+            "name": "Dr. Robert Sheehan",
+            "role": "Assessor",
+            "contactDetails": [
+              {
+                "value": "r.sheehan@auckland.ac.nz",
+                "type": "email"
+              }
+            ]
+          }
+        ],
+        "tags": [
+          "Parallel and Distributed Systems"
+        ]
+      },
+      {
+        "title": "A real-time distributed hardware monitoring framework",
+        "location": "Room 3.401",
+        "startTime": "2014-09-12T09:30:00",
+        "endTime": "2014-09-12T10:00:00",
+        "description": "",
+        "type": "Project Seminar",
+        "people": [
+          {
+            "name": "Santhan Kusam Venkata",
+            "role": "Student"
+          },
+          {
+            "name": "Jahnavi Bharadwaj",
+            "role": "Student"
+          },
+          {
+            "name": "Dr. Oliver Sinnen",
+            "role": "Chair",
+            "contactDetails": [
+              {
+                "value": "o.sinnen@auckland.ac.nz",
+                "type": "email"
+              }
+            ]
+          },
+          {
+            "name": "Prof. Kevin Sowerby",
+            "role": "Assessor",
+            "contactDetails": [
+              {
+                "value": "kw.sowerby@auckland.ac.nz",
+                "type": "email"
+              }
+            ]
+          },
+          {
+            "name": "Dr. Robert Sheehan",
+            "role": "Assessor",
+            "contactDetails": [
+              {
+                "value": "r.sheehan@auckland.ac.nz",
+                "type": "email"
+              }
+            ]
+          }
+        ],
+        "tags": [
+          "Parallel and Distributed Systems"
+        ]
+      },
+      {
+        "title": "Video cameras on quadcopter wirelessly transmitted, stitched and output on an Oculus Rift",
+        "location": "Room 3.401",
+        "startTime": "2014-09-12T11:00:00",
+        "endTime": "2014-09-12T11:30:00",
+        "description": "",
+        "type": "Project Seminar",
+        "people": [
+          {
+            "name": "Dylan Snow",
+            "role": "Student"
+          },
+          {
+            "name": "Ruane Seumanutafa",
+            "role": "Student"
+          },
+          {
+            "name": "Dr. Mark Andrews",
+            "role": "Chair",
+            "contactDetails": [
+              {
+                "value": "m.andrews@auckland.ac.nz",
+                "type": "email"
+              }
+            ]
+          },
+          {
+            "name": "Dr. Stevan Berber",
+            "role": "Assessor",
+            "contactDetails": [
+              {
+                "value": "s.berber@auckland.ac.nz",
+                "type": "email"
+              }
+            ]
+          },
+          {
+            "name": "Dr. Bernard Guillemin",
+            "role": "Assessor",
+            "contactDetails": [
+              {
+                "value": "bj.guillemin@auckland.ac.nz",
+                "type": "email"
+              }
+            ]
+          }
+        ],
+        "tags": [
+          "Image Processing and Visualisation Techniques"
+        ]
+      },
+      {
+        "title": "Traffic signal timing data visualisation",
+        "location": "Room 3.401",
+        "startTime": "2014-09-12T11:30:00",
+        "endTime": "2014-09-12T12:00:00",
+        "description": "",
+        "type": "Project Seminar",
+        "people": [
+          {
+            "name": "Mark Tooley",
+            "role": "Student"
+          },
+          {
+            "name": "Surbhi Sharma",
+            "role": "Student"
+          },
+          {
+            "name": "Dr. Mark Andrews",
+            "role": "Chair",
+            "contactDetails": [
+              {
+                "value": "m.andrews@auckland.ac.nz",
+                "type": "email"
+              }
+            ]
+          },
+          {
+            "name": "Dr. Stevan Berber",
+            "role": "Assessor",
+            "contactDetails": [
+              {
+                "value": "s.berber@auckland.ac.nz",
+                "type": "email"
+              }
+            ]
+          },
+          {
+            "name": "Dr. Bernard Guillemin",
+            "role": "Assessor",
+            "contactDetails": [
+              {
+                "value": "bj.guillemin@auckland.ac.nz",
+                "type": "email"
+              }
+            ]
+          }
+        ],
+        "tags": [
+          "Image Processing and Visualisation Techniques"
+        ]
+      },
+      {
+        "title": "Adjustable size & shape laser beam",
+        "location": "Room 3.401",
+        "startTime": "2014-09-12T12:00:00",
+        "endTime": "2014-09-12T12:30:00",
+        "description": "",
+        "type": "Project Seminar",
+        "people": [
+          {
+            "name": "David Chen",
+            "role": "Student"
+          },
+          {
+            "name": "Marco Benitez",
+            "role": "Student"
+          },
+          {
+            "name": "Dr. Mark Andrews",
+            "role": "Chair",
+            "contactDetails": [
+              {
+                "value": "m.andrews@auckland.ac.nz",
+                "type": "email"
+              }
+            ]
+          },
+          {
+            "name": "Dr. Stevan Berber",
+            "role": "Assessor",
+            "contactDetails": [
+              {
+                "value": "s.berber@auckland.ac.nz",
+                "type": "email"
+              }
+            ]
+          },
+          {
+            "name": "Dr. Bernard Guillemin",
+            "role": "Assessor",
+            "contactDetails": [
+              {
+                "value": "bj.guillemin@auckland.ac.nz",
+                "type": "email"
+              }
+            ]
+          }
+        ],
+        "tags": [
+          "Image Processing and Visualisation Techniques"
+        ]
+      },
+      {
+        "title": "Mobile app for on-site construction coordination",
+        "location": "Room 3.401",
+        "startTime": "2014-09-12T14:00:00",
+        "endTime": "2014-09-12T14:30:00",
+        "description": "",
+        "type": "Project Seminar",
+        "people": [
+          {
+            "name": "James Mcarthur",
+            "role": "Student"
+          },
+          {
+            "name": "Mikhail D’Souza",
+            "role": "Student"
+          },
+          {
+            "name": "Prof. Robert Amor",
+            "role": "Chair",
+            "contactDetails": [
+              {
+                "value": "trebor@cs.auckland.ac.nz",
+                "type": "email"
+              }
+            ]
+          },
+          {
+            "name": "Dr. Sing Nguang",
+            "role": "Assessor",
+            "contactDetails": [
+              {
+                "value": "sk.nguang@auckland.ac.nz",
+                "type": "email"
+              }
+            ]
+          },
+          {
+            "name": "Dr. Oliver Sinnen",
+            "role": "Chair",
+            "contactDetails": [
+              {
+                "value": "o.sinnen@auckland.ac.nz",
+                "type": "email"
+              }
+            ]
+          }
+        ],
+        "tags": [
+          "Image Processing and Visualisation Techniques"
+        ]
+      },
+      {
+        "title": "A high frequency bi-directional IPT system",
+        "location": "Room 3.402",
+        "startTime": "2014-09-11T09:00:00",
+        "endTime": "2014-09-11T09:30:00",
+        "description": "",
+        "type": "Project Seminar",
+        "people": [
+          {
+            "name": "Regan Trow",
+            "role": "Student"
+          },
+          {
+            "name": "Corin Roland",
+            "role": "Student"
+          },
+          {
+            "name": "Prof. Grant Covic",
+            "role": "Chair",
+            "contactDetails": [
+              {
+                "value": "ga.covic@auckland.ac.nz",
+                "type": "email"
+              }
+            ]
+          },
+          {
+            "name": "Dr. Nasser Giacaman",
+            "role": "Assessor",
+            "contactDetails": [
+              {
+                "value": "n.giacaman@auckland.ac.nz",
+                "type": "email"
+              }
+            ]
+          },
+          {
+            "name": "Dr. Avinash Malik",
+            "role": "Chair",
+            "contactDetails": [
+              {
+                "value": "avinash.malik@auckland.ac.nz",
+                "type": "email"
+              }
+            ]
+          }
+        ],
+        "tags": [
+          "Power Electronics"
+        ]
+      },
+      {
+        "title": "A Contactless EV charging system",
+        "location": "Room 3.402",
+        "startTime": "2014-09-11T09:30:00",
+        "endTime": "2014-09-11T10:00:00",
+        "description": "",
+        "type": "Project Seminar",
+        "people": [
+          {
+            "name": "Paul Oh",
+            "role": "Student"
+          },
+          {
+            "name": "Jeff Jeong",
+            "role": "Student"
+          },
+          {
+            "name": "Prof. Grant Covic",
+            "role": "Chair",
+            "contactDetails": [
+              {
+                "value": "ga.covic@auckland.ac.nz",
+                "type": "email"
+              }
+            ]
+          },
+          {
+            "name": "Dr. Nasser Giacaman",
+            "role": "Assessor",
+            "contactDetails": [
+              {
+                "value": "n.giacaman@auckland.ac.nz",
+                "type": "email"
+              }
+            ]
+          },
+          {
+            "name": "Dr. Avinash Malik",
+            "role": "Chair",
+            "contactDetails": [
+              {
+                "value": "avinash.malik@auckland.ac.nz",
+                "type": "email"
+              }
+            ]
+          }
+        ],
+        "tags": [
+          "Power Electronics"
+        ]
+      },
+      {
+        "title": "Multiphase pad for wireless charging of EVs and robotic systems",
+        "location": "Room 3.402",
+        "startTime": "2014-09-11T10:00:00",
+        "endTime": "2014-09-11T10:30:00",
+        "description": "",
+        "type": "Project Seminar",
+        "people": [
+          {
+            "name": "Brooke Watene",
+            "role": "Student"
+          },
+          {
+            "name": "Ming-Hsiang Ko",
+            "role": "Student"
+          },
+          {
+            "name": "Prof. Grant Covic",
+            "role": "Chair",
+            "contactDetails": [
+              {
+                "value": "ga.covic@auckland.ac.nz",
+                "type": "email"
+              }
+            ]
+          },
+          {
+            "name": "Dr. Nasser Giacaman",
+            "role": "Assessor",
+            "contactDetails": [
+              {
+                "value": "n.giacaman@auckland.ac.nz",
+                "type": "email"
+              }
+            ]
+          },
+          {
+            "name": "Dr. Avinash Malik",
+            "role": "Chair",
+            "contactDetails": [
+              {
+                "value": "avinash.malik@auckland.ac.nz",
+                "type": "email"
+              }
+            ]
+          }
+        ],
+        "tags": [
+          "Power Electronics"
+        ]
+      },
+      {
+        "title": "Smart flow-rate sensor",
+        "location": "Room 3.402",
+        "startTime": "2014-09-11T11:00:00",
+        "endTime": "2014-09-11T11:30:00",
+        "description": "",
+        "type": "Project Seminar",
+        "people": [
+          {
+            "name": "Elliot Buckley",
+            "role": "Student"
+          },
+          {
+            "name": "Itay Ben Dom",
+            "role": "Student"
+          },
+          {
+            "name": "Prof. Gill Dobbie",
+            "role": "Chair",
+            "contactDetails": [
+              {
+                "value": "gill@cs.auckland.ac.nz ",
+                "type": "email"
+              }
+            ]
+          },
+          {
+            "name": "Dr. Catherine Watson",
+            "role": "Assessor",
+            "contactDetails": [
+              {
+                "value": "c.watson@auckland.ac.nz",
+                "type": "email"
+              }
+            ]
+          },
+          {
+            "name": "Dr. Bernard Guillemin",
+            "role": "Chair",
+            "contactDetails": [
+              {
+                "value": "bj.guillemin@auckland.ac.nz",
+                "type": "email"
+              }
+            ]
+          }
+        ],
+        "tags": [
+          "Signal Processing"
+        ]
+      },
+      {
+        "title": "Convex shape from silhouette in real-time",
+        "location": "Room 3.402",
+        "startTime": "2014-09-11T11:30:00",
+        "endTime": "2014-09-11T12:00:00",
+        "description": "",
+        "type": "Project Seminar",
+        "people": [
+          {
+            "name": "Shreyas Mahanta",
+            "role": "Student"
+          },
+          {
+            "name": "Jordan Smith",
+            "role": "Student"
+          },
+          {
+            "name": "Prof. Gill Dobbie",
+            "role": "Chair",
+            "contactDetails": [
+              {
+                "value": "gill@cs.auckland.ac.nz ",
+                "type": "email"
+              }
+            ]
+          },
+          {
+            "name": "Dr. Catherine Watson",
+            "role": "Assessor",
+            "contactDetails": [
+              {
+                "value": "c.watson@auckland.ac.nz",
+                "type": "email"
+              }
+            ]
+          },
+          {
+            "name": "Dr. Bernard Guillemin",
+            "role": "Chair",
+            "contactDetails": [
+              {
+                "value": "bj.guillemin@auckland.ac.nz",
+                "type": "email"
+              }
+            ]
+          }
+        ],
+        "tags": [
+          "Signal Processing"
+        ]
+      },
+      {
+        "title": "Vision system design and calibration system",
+        "location": "Room 3.402",
+        "startTime": "2014-09-11T12:00:00",
+        "endTime": "2014-09-11T12:30:00",
+        "description": "",
+        "type": "Project Seminar",
+        "people": [
+          {
+            "name": "Swapnil Karnik",
+            "role": "Student"
+          },
+          {
+            "name": "Zenon Colaco",
+            "role": "Student"
+          },
+          {
+            "name": "Prof. Gill Dobbie",
+            "role": "Chair",
+            "contactDetails": [
+              {
+                "value": "gill@cs.auckland.ac.nz ",
+                "type": "email"
+              }
+            ]
+          },
+          {
+            "name": "Dr. Catherine Watson",
+            "role": "Assessor",
+            "contactDetails": [
+              {
+                "value": "c.watson@auckland.ac.nz",
+                "type": "email"
+              }
+            ]
+          },
+          {
+            "name": "Dr. Bernard Guillemin",
+            "role": "Chair",
+            "contactDetails": [
+              {
+                "value": "bj.guillemin@auckland.ac.nz",
+                "type": "email"
+              }
+            ]
+          }
+        ],
+        "tags": [
+          "Signal Processing"
+        ]
+      },
+      {
+        "title": "How much does posture of movement change a person’s speech? Approach 1",
+        "location": "Room 3.402",
+        "startTime": "2014-09-11T14:00:00",
+        "endTime": "2014-09-11T14:30:00",
+        "description": "",
+        "type": "Project Seminar",
+        "people": [
+          {
+            "name": "James Chun",
+            "role": "Student"
+          },
+          {
+            "name": "Yun Sun Yim",
+            "role": "Student"
+          },
+          {
+            "name": "Dr. Ian Warren",
+            "role": "Chair",
+            "contactDetails": [
+              {
+                "value": "i.warren@auckland.ac.nz ",
+                "type": "email"
+              }
+            ]
+          },
+          {
+            "name": "Dr. Momen Bahadornejad",
+            "role": "Assessor",
+            "contactDetails": [
+              {
+                "value": "m.bahadornejad@auckland.ac.nz",
+                "type": "email"
+              }
+            ]
+          },
+          {
+            "name": "Dr. Mark Andrews",
+            "role": "Chair",
+            "contactDetails": [
+              {
+                "value": "m.andrews@auckland.ac.nz",
+                "type": "email"
+              }
+            ]
+          }
+        ],
+        "tags": [
+          "Signal Processing"
+        ]
+      },
+      {
+        "title": "FPGA-based configurable gateway for heterogeneous wireless sensor network",
+        "location": "Room 3.402",
+        "startTime": "2014-09-12T09:00:00",
+        "endTime": "2014-09-12T09:30:00",
+        "description": "",
+        "type": "Project Seminar",
+        "people": [
+          {
+            "name": "Tejas Parnerkar",
+            "role": "Student"
+          },
+          {
+            "name": "Diwakar Somu",
+            "role": "Student"
+          },
+          {
+            "name": "Dr. Catherine Watson",
+            "role": "Chair",
+            "contactDetails": [
+              {
+                "value": "c.watson@auckland.ac.nz",
+                "type": "email"
+              }
+            ]
+          },
+          {
+            "name": "Prof. Gill Dobbie",
+            "role": "Assessor",
+            "contactDetails": [
+              {
+                "value": "gill@cs.auckland.ac.nz ",
+                "type": "email"
+              }
+            ]
+          },
+          {
+            "name": "Dr. Ian Warren",
+            "role": "Chair",
+            "contactDetails": [
+              {
+                "value": "i.warren@auckland.ac.nz ",
+                "type": "email"
+              }
+            ]
+          }
+        ],
+        "tags": [
+          "Internet Applications"
+        ]
+      },
+      {
+        "title": "A web system for managing used textbooks",
+        "location": "Room 3.402",
+        "startTime": "2014-09-12T09:30:00",
+        "endTime": "2014-09-12T10:00:00",
+        "description": "",
+        "type": "Project Seminar",
+        "people": [
+          {
+            "name": "Taylor Li",
+            "role": "Student"
+          },
+          {
+            "name": "Wilson Zheng",
+            "role": "Student"
+          },
+          {
+            "name": "Dr. Catherine Watson",
+            "role": "Chair",
+            "contactDetails": [
+              {
+                "value": "c.watson@auckland.ac.nz",
+                "type": "email"
+              }
+            ]
+          },
+          {
+            "name": "Prof. Gill Dobbie",
+            "role": "Assessor",
+            "contactDetails": [
+              {
+                "value": "gill@cs.auckland.ac.nz ",
+                "type": "email"
+              }
+            ]
+          },
+          {
+            "name": "Dr. Ian Warren",
+            "role": "Chair",
+            "contactDetails": [
+              {
+                "value": "i.warren@auckland.ac.nz ",
+                "type": "email"
+              }
+            ]
+          }
+        ],
+        "tags": [
+          "Internet Applications"
+        ]
+      },
+      {
+        "title": "Wireless wearable devices interfaced with smartphones",
+        "location": "Room 3.402",
+        "startTime": "2014-09-12T09:30:00",
+        "endTime": "2014-09-12T10:00:00",
+        "description": "",
+        "type": "Project Seminar",
+        "people": [
+          {
+            "name": "Yueh-Lun Lee",
+            "role": "Student"
+          },
+          {
+            "name": "Bob Luo",
+            "role": "Student"
+          },
+          {
+            "name": "Dr. Catherine Watson",
+            "role": "Chair",
+            "contactDetails": [
+              {
+                "value": "c.watson@auckland.ac.nz",
+                "type": "email"
+              }
+            ]
+          },
+          {
+            "name": "Prof. Gill Dobbie",
+            "role": "Assessor",
+            "contactDetails": [
+              {
+                "value": "gill@cs.auckland.ac.nz ",
+                "type": "email"
+              }
+            ]
+          },
+          {
+            "name": "Dr. Ian Warren",
+            "role": "Chair",
+            "contactDetails": [
+              {
+                "value": "i.warren@auckland.ac.nz ",
+                "type": "email"
+              }
+            ]
+          }
+        ],
+        "tags": [
+          "Internet Applications"
+        ]
+      },
+      {
+        "title": "Robot software framework for multiple robot platforms",
+        "location": "Room 3.402",
+        "startTime": "2014-09-12T11:00:00",
+        "endTime": "2014-09-12T11:30:00",
+        "description": "",
+        "type": "Project Seminar",
+        "people": [
+          {
+            "name": "Christopher Lee",
+            "role": "Student"
+          },
+          {
+            "name": "Yoon Ho Im",
+            "role": "Student"
+          },
+          {
+            "name": "Dr. Bruce MacDonald",
+            "role": "Chair",
+            "contactDetails": [
+              {
+                "value": "b.macdonald@auckland.ac.nz",
+                "type": "email"
+              }
+            ]
+          },
+          {
+            "name": "Prof. Udaya Madawala",
+            "role": "Assessor",
+            "contactDetails": [
+              {
+                "value": "u.madawala@auckland.ac.nz",
+                "type": "email"
+              }
+            ]
+          },
+          {
+            "name": "Dr. Nasser Giacaman",
+            "role": "Assessor",
+            "contactDetails": [
+              {
+                "value": "n.giacaman@auckland.ac.nz",
+                "type": "email"
+              }
+            ]
+          }
+        ],
+        "tags": [
+          "Robotics"
+        ]
+      },
+      {
+        "title": "Robot soccer competition system",
+        "location": "Room 3.402",
+        "startTime": "2014-09-12T11:30:00",
+        "endTime": "2014-09-12T12:00:00",
+        "description": "",
+        "type": "Project Seminar",
+        "people": [
+          {
+            "name": "Anirvan Bhaduri",
+            "role": "Student"
+          },
+          {
+            "name": "Erqian Zhang",
+            "role": "Student"
+          },
+          {
+            "name": "Dr. Bruce MacDonald",
+            "role": "Chair",
+            "contactDetails": [
+              {
+                "value": "b.macdonald@auckland.ac.nz",
+                "type": "email"
+              }
+            ]
+          },
+          {
+            "name": "Prof. Udaya Madawala",
+            "role": "Assessor",
+            "contactDetails": [
+              {
+                "value": "u.madawala@auckland.ac.nz",
+                "type": "email"
+              }
+            ]
+          },
+          {
+            "name": "Dr. Nasser Giacaman",
+            "role": "Assessor",
+            "contactDetails": [
+              {
+                "value": "n.giacaman@auckland.ac.nz",
+                "type": "email"
+              }
+            ]
+          }
+        ],
+        "tags": [
+          "Robotics"
+        ]
+      },
+      {
+        "title": "Control of a delta robot",
+        "location": "Room 3.402",
+        "startTime": "2014-09-12T12:00:00",
+        "endTime": "2014-09-12T12:30:00",
+        "description": "",
+        "type": "Project Seminar",
+        "people": [
+          {
+            "name": "Eric Lin",
+            "role": "Student"
+          },
+          {
+            "name": "Dr. Bruce MacDonald",
+            "role": "Chair",
+            "contactDetails": [
+              {
+                "value": "b.macdonald@auckland.ac.nz",
+                "type": "email"
+              }
+            ]
+          },
+          {
+            "name": "Prof. Udaya Madawala",
+            "role": "Assessor",
+            "contactDetails": [
+              {
+                "value": "u.madawala@auckland.ac.nz",
+                "type": "email"
+              }
+            ]
+          },
+          {
+            "name": "Dr. Nasser Giacaman",
+            "role": "Assessor",
+            "contactDetails": [
+              {
+                "value": "n.giacaman@auckland.ac.nz",
+                "type": "email"
+              }
+            ]
+          }
+        ],
+        "tags": [
+          "Robotics"
+        ]
+      },
+      {
+        "title": "NI autonomous robotics competition 2014 - project 1",
+        "location": "Room 3.402",
+        "startTime": "2014-09-12T14:00:00",
+        "endTime": "2014-09-12T14:30:00",
+        "description": "",
+        "type": "Project Seminar",
+        "people": [
+          {
+            "name": "Brook Dyer",
+            "role": "Student"
+          },
+          {
+            "name": "Matthew Boyes",
+            "role": "Student"
+          },
+          {
+            "name": "Prof. Kevin Sowerby",
+            "role": "Chair",
+            "contactDetails": [
+              {
+                "value": "kw.sowerby@auckland.ac.nz",
+                "type": "email"
+              }
+            ]
+          },
+          {
+            "name": "Dr. Nitish Patel",
+            "role": "Assessor",
+            "contactDetails": [
+              {
+                "value": "nd.patel@auckland.ac.nz",
+                "type": "email"
+              },
+              {
+                "value": "+64 9 923 8196",
+                "type": "phone"
+              }
+            ]
+          },
+          {
+            "name": "Dr. Bruce MacDonald",
+            "role": "Assessor",
+            "contactDetails": [
+              {
+                "value": "b.macdonald@auckland.ac.nz",
+                "type": "email"
+              }
+            ]
+          }
+        ],
+        "tags": [
+          "Signal Processing"
+        ]
+      },
+      {
+        "title": "NI autonomous robotics competition 2014 - project 2",
+        "location": "Room 3.402",
+        "startTime": "2014-09-12T14:30:00",
+        "endTime": "2014-09-12T15:00:00",
+        "description": "",
+        "type": "Project Seminar",
+        "people": [
+          {
+            "name": "Kirsten Johnston",
+            "role": "Student"
+          },
+          {
+            "name": "Briony Forsberg",
+            "role": "Student"
+          },
+          {
+            "name": "Prof. Kevin Sowerby",
+            "role": "Chair",
+            "contactDetails": [
+              {
+                "value": "kw.sowerby@auckland.ac.nz",
+                "type": "email"
+              }
+            ]
+          },
+          {
+            "name": "Dr. Nitish Patel",
+            "role": "Assessor",
+            "contactDetails": [
+              {
+                "value": "nd.patel@auckland.ac.nz",
+                "type": "email"
+              },
+              {
+                "value": "+64 9 923 8196",
+                "type": "phone"
+              }
+            ]
+          },
+          {
+            "name": "Dr. Bruce MacDonald",
+            "role": "Assessor",
+            "contactDetails": [
+              {
+                "value": "b.macdonald@auckland.ac.nz",
+                "type": "email"
+              }
+            ]
+          }
+        ],
+        "tags": [
+          "Signal Processing"
+        ]
+      },
+      {
+        "title": "A mobile App for tracking objects",
+        "location": "Room 3.403",
+        "startTime": "2014-09-11T09:00:00",
+        "endTime": "2014-09-11T09:30:00",
+        "description": "",
+        "type": "Project Seminar",
+        "people": [
+          {
+            "name": "Elliot Colquhoun",
+            "role": "Student"
+          },
+          {
+            "name": "Kate West-Walker",
+            "role": "Student"
+          },
+          {
+            "name": "Dr. Gerald Weber",
+            "role": "Chair",
+            "contactDetails": [
+              {
+                "value": "g.weber@cs.auckland.ac.nz",
+                "type": "email"
+              }
+            ]
+          },
+          {
+            "name": "Dr. Beryl Plimmer",
+            "role": "Assessor",
+            "contactDetails": [
+              {
+                "value": "b.plimmer@auckland.ac.nz",
+                "type": "email"
+              }
+            ]
+          },
+          {
+            "name": "Dr. Burkhard Wuensche",
+            "role": "Assessor",
+            "contactDetails": [
+              {
+                "value": "burkhard@cs.auckland.ac.nz",
+                "type": "email"
+              }
+            ]
+          }
+        ],
+        "tags": [
+          "Internet Applications"
+        ]
+      },
+      {
+        "title": "Server observer and data aggregator",
+        "location": "Room 3.403",
+        "startTime": "2014-09-11T09:30:00",
+        "endTime": "2014-09-11T10:00:00",
+        "description": "",
+        "type": "Project Seminar",
+        "people": [
+          {
+            "name": "Victor Xiv",
+            "role": "Student"
+          },
+          {
+            "name": "Dr. Gerald Weber",
+            "role": "Chair",
+            "contactDetails": [
+              {
+                "value": "g.weber@cs.auckland.ac.nz",
+                "type": "email"
+              }
+            ]
+          },
+          {
+            "name": "Dr. Beryl Plimmer",
+            "role": "Assessor",
+            "contactDetails": [
+              {
+                "value": "b.plimmer@auckland.ac.nz",
+                "type": "email"
+              }
+            ]
+          },
+          {
+            "name": "Dr. Burkhard Wuensche",
+            "role": "Assessor",
+            "contactDetails": [
+              {
+                "value": "burkhard@cs.auckland.ac.nz",
+                "type": "email"
+              }
+            ]
+          }
+        ],
+        "tags": [
+          "Internet Applications"
+        ]
+      },
+      {
+        "title": "Android-integrated 6LoWPAN wireless sensor and actuator networks for the internet of things applications",
+        "location": "Room 3.403",
+        "startTime": "2014-09-11T10:00:00",
+        "endTime": "2014-09-11T10:30:00",
+        "description": "",
+        "type": "Project Seminar",
+        "people": [
+          {
+            "name": "Ashwin Rajamohan",
+            "role": "Student"
+          },
+          {
+            "name": "Shivank Dubey",
+            "role": "Student"
+          },
+          {
+            "name": "Dr. Gerald Weber",
+            "role": "Chair",
+            "contactDetails": [
+              {
+                "value": "g.weber@cs.auckland.ac.nz",
+                "type": "email"
+              }
+            ]
+          },
+          {
+            "name": "Dr. Beryl Plimmer",
+            "role": "Assessor",
+            "contactDetails": [
+              {
+                "value": "b.plimmer@auckland.ac.nz",
+                "type": "email"
+              }
+            ]
+          },
+          {
+            "name": "Dr. Burkhard Wuensche",
+            "role": "Assessor",
+            "contactDetails": [
+              {
+                "value": "burkhard@cs.auckland.ac.nz",
+                "type": "email"
+              }
+            ]
+          }
+        ],
+        "tags": [
+          "Internet Applications"
+        ]
+      },
+      {
+        "title": "Leak detection on buried pipelines",
+        "location": "Room 3.403",
+        "startTime": "2014-09-11T11:00:00",
+        "endTime": "2014-09-11T11:30:00",
+        "description": "",
+        "type": "Project Seminar",
+        "people": [
+          {
+            "name": "Ping-Kang Ho",
+            "role": "Student"
+          },
+          {
+            "name": "Puna Walker",
+            "role": "Student"
+          },
+          {
+            "name": "Dr. Rashina Hoda",
+            "role": "Chair",
+            "contactDetails": [
+              {
+                "value": "r.hoda@auckland.ac.nz",
+                "type": "email"
+              }
+            ]
+          },
+          {
+            "name": "Dr. Nasser Giacaman",
+            "role": "Assessor",
+            "contactDetails": [
+              {
+                "value": "n.giacaman@auckland.ac.nz",
+                "type": "email"
+              }
+            ]
+          },
+          {
+            "name": "Dr. Momen Bahadornejad",
+            "role": "Assessor",
+            "contactDetails": [
+              {
+                "value": "m.bahadornejad@auckland.ac.nz",
+                "type": "email"
+              }
+            ]
+          }
+        ],
+        "tags": [
+          "Electronic Systems"
+        ]
+      },
+      {
+        "title": "An investigation of high reluctance pads",
+        "location": "Room 3.403",
+        "startTime": "2014-09-11T11:00:00",
+        "endTime": "2014-09-11T11:30:00",
+        "description": "",
+        "type": "Project Seminar",
+        "people": [
+          {
+            "name": "Matthew Pearce",
+            "role": "Student"
+          },
+          {
+            "name": "Jamie Gawith",
+            "role": "Student"
+          },
+          {
+            "name": "Dr. Rashina Hoda",
+            "role": "Chair",
+            "contactDetails": [
+              {
+                "value": "r.hoda@auckland.ac.nz",
+                "type": "email"
+              }
+            ]
+          },
+          {
+            "name": "Dr. Nasser Giacaman",
+            "role": "Assessor",
+            "contactDetails": [
+              {
+                "value": "n.giacaman@auckland.ac.nz",
+                "type": "email"
+              }
+            ]
+          },
+          {
+            "name": "Dr. Momen Bahadornejad",
+            "role": "Assessor",
+            "contactDetails": [
+              {
+                "value": "m.bahadornejad@auckland.ac.nz",
+                "type": "email"
+              }
+            ]
+          }
+        ],
+        "tags": [
+          "Electronic Systems"
+        ]
+      },
+      {
+        "title": "An electronic cricket scoreboard",
+        "location": "Room 3.403",
+        "startTime": "2014-09-11T12:00:00",
+        "endTime": "2014-09-11T12:30:00",
+        "description": "",
+        "type": "Project Seminar",
+        "people": [
+          {
+            "name": "Amrutha Viswakarma",
+            "role": "Student"
+          },
+          {
+            "name": "Sujata Roy",
+            "role": "Student"
+          },
+          {
+            "name": "Dr. Rashina Hoda",
+            "role": "Chair",
+            "contactDetails": [
+              {
+                "value": "r.hoda@auckland.ac.nz",
+                "type": "email"
+              }
+            ]
+          },
+          {
+            "name": "Dr. Nasser Giacaman",
+            "role": "Assessor",
+            "contactDetails": [
+              {
+                "value": "n.giacaman@auckland.ac.nz",
+                "type": "email"
+              }
+            ]
+          },
+          {
+            "name": "Dr. Momen Bahadornejad",
+            "role": "Assessor",
+            "contactDetails": [
+              {
+                "value": "m.bahadornejad@auckland.ac.nz",
+                "type": "email"
+              }
+            ]
+          }
+        ],
+        "tags": [
+          "Internet Applications"
+        ]
+      },
+      {
+        "title": "Automation of a mechanical rig for dynamic powering of Evs",
+        "location": "Room 3.403",
+        "startTime": "2014-09-11T14:00:00",
+        "endTime": "2014-09-11T14:30:00",
+        "description": "",
+        "type": "Project Seminar",
+        "people": [
+          {
+            "name": "Xun Cui",
+            "role": "Student"
+          },
+          {
+            "name": "Dave Allan",
+            "role": "Student"
+          },
+          {
+            "name": "Dr. Catherine Watson",
+            "role": "Chair",
+            "contactDetails": [
+              {
+                "value": "c.watson@auckland.ac.nz",
+                "type": "email"
+              }
+            ]
+          },
+          {
+            "name": "Dr. Akshya Swain",
+            "role": "Assessor",
+            "contactDetails": [
+              {
+                "value": "a.swain@auckland.ac.nz",
+                "type": "email"
+              },
+              {
+                "value": "+64 9 923 4752",
+                "type": "phone"
+              }
+            ]
+          },
+          {
+            "name": "Dr. Avinash Malik",
+            "role": "Chair",
+            "contactDetails": [
+              {
+                "value": "avinash.malik@auckland.ac.nz",
+                "type": "email"
+              }
+            ]
+          }
+        ],
+        "tags": [
+          "Electronic Systems"
+        ]
+      },
+      {
+        "title": "Circuit sketching and electronic log book on android tablet",
+        "location": "Room 3.403",
+        "startTime": "2014-09-12T09:00:00",
+        "endTime": "2014-09-12T09:30:00",
+        "description": "",
+        "type": "Project Seminar",
+        "people": [
+          {
+            "name": "David Yan",
+            "role": "Student"
+          },
+          {
+            "name": "Simar Kalra",
+            "role": "Student"
+          },
+          {
+            "name": "Dr. Andrew Luxton-Reilly",
+            "role": "Chair",
+            "contactDetails": [
+              {
+                "value": "a.luxton-reilly@auckland.ac.nz",
+                "type": "email"
+              }
+            ]
+          },
+          {
+            "name": "Dr. Burkhard Wuensche",
+            "role": "Assessor",
+            "contactDetails": [
+              {
+                "value": "burkhard@cs.auckland.ac.nz",
+                "type": "email"
+              }
+            ]
+          },
+          {
+            "name": "Dr. Christof Lutteroth",
+            "role": "Chair",
+            "contactDetails": [
+              {
+                "value": "lutteroth@cs.auckland.ac.nz",
+                "type": "email"
+              }
+            ]
+          }
+        ],
+        "tags": [
+          "Software Applications"
+        ]
+      },
+      {
+        "title": "Extending a tablet based programming environment for children",
+        "location": "Room 3.403",
+        "startTime": "2014-09-12T09:30:00",
+        "endTime": "2014-09-12T10:00:00",
+        "description": "",
+        "type": "Project Seminar",
+        "people": [
+          {
+            "name": "David Haden",
+            "role": "Student"
+          },
+          {
+            "name": "Sara Metz",
+            "role": "Student"
+          },
+          {
+            "name": "Dr. Andrew Luxton-Reilly",
+            "role": "Chair",
+            "contactDetails": [
+              {
+                "value": "a.luxton-reilly@auckland.ac.nz",
+                "type": "email"
+              }
+            ]
+          },
+          {
+            "name": "Dr. Burkhard Wuensche",
+            "role": "Assessor",
+            "contactDetails": [
+              {
+                "value": "burkhard@cs.auckland.ac.nz",
+                "type": "email"
+              }
+            ]
+          },
+          {
+            "name": "Dr. Christof Lutteroth",
+            "role": "Chair",
+            "contactDetails": [
+              {
+                "value": "lutteroth@cs.auckland.ac.nz",
+                "type": "email"
+              }
+            ]
+          }
+        ],
+        "tags": [
+          "Software Applications"
+        ]
+      },
+      {
+        "title": "Student time - a cross platform mobile study tracking tool",
+        "location": "Room 3.403",
+        "startTime": "2014-09-12T10:00:00",
+        "endTime": "2014-09-12T10:30:00",
+        "description": "",
+        "type": "Project Seminar",
+        "people": [
+          {
+            "name": "Anneke Smitheram",
+            "role": "Student"
+          },
+          {
+            "name": "Peter Kang",
+            "role": "Student"
+          },
+          {
+            "name": "Dr. Andrew Luxton-Reilly",
+            "role": "Chair",
+            "contactDetails": [
+              {
+                "value": "a.luxton-reilly@auckland.ac.nz",
+                "type": "email"
+              }
+            ]
+          },
+          {
+            "name": "Dr. Burkhard Wuensche",
+            "role": "Assessor",
+            "contactDetails": [
+              {
+                "value": "burkhard@cs.auckland.ac.nz",
+                "type": "email"
+              }
+            ]
+          },
+          {
+            "name": "Dr. Christof Lutteroth",
+            "role": "Chair",
+            "contactDetails": [
+              {
+                "value": "lutteroth@cs.auckland.ac.nz",
+                "type": "email"
+              }
+            ]
+          }
+        ],
+        "tags": [
+          "Software Applications"
+        ]
+      },
+      {
+        "title": "Android app for electronic lab management",
+        "location": "Room 3.403",
+        "startTime": "2014-09-12T11:00:00",
+        "endTime": "2014-09-12T11:30:00",
+        "description": "",
+        "type": "Project Seminar",
+        "people": [
+          {
+            "name": "Tae Youn",
+            "role": "Student"
+          },
+          {
+            "name": "Henry Lee",
+            "role": "Student"
+          },
+          {
+            "name": "Dr. Rashina Hoda",
+            "role": "Chair",
+            "contactDetails": [
+              {
+                "value": "r.hoda@auckland.ac.nz",
+                "type": "email"
+              }
+            ]
+          },
+          {
+            "name": "Dr. Andrew Luxton-Reilly",
+            "role": "Assessor",
+            "contactDetails": [
+              {
+                "value": "a.luxton-reilly@auckland.ac.nz",
+                "type": "email"
+              }
+            ]
+          },
+          {
+            "name": "Dr. Beryl Plimmer",
+            "role": "Assessor",
+            "contactDetails": [
+              {
+                "value": "b.plimmer@auckland.ac.nz",
+                "type": "email"
+              }
+            ]
+          }
+        ],
+        "tags": [
+          "Software Applications"
+        ]
+      },
+      {
+        "title": "User programmable kiosk",
+        "location": "Room 3.403",
+        "startTime": "2014-09-12T11:30:00",
+        "endTime": "2014-09-12T11:00:00",
+        "description": "",
+        "type": "Project Seminar",
+        "people": [
+          {
+            "name": "Shreya Shah",
+            "role": "Student"
+          },
+          {
+            "name": "Georgina Wood",
+            "role": "Student"
+          },
+          {
+            "name": "Dr. Rashina Hoda",
+            "role": "Chair",
+            "contactDetails": [
+              {
+                "value": "r.hoda@auckland.ac.nz",
+                "type": "email"
+              }
+            ]
+          },
+          {
+            "name": "Dr. Andrew Luxton-Reilly",
+            "role": "Assessor",
+            "contactDetails": [
+              {
+                "value": "a.luxton-reilly@auckland.ac.nz",
+                "type": "email"
+              }
+            ]
+          },
+          {
+            "name": "Dr. Beryl Plimmer",
+            "role": "Assessor",
+            "contactDetails": [
+              {
+                "value": "b.plimmer@auckland.ac.nz",
+                "type": "email"
+              }
+            ]
+          }
+        ],
+        "tags": [
+          "Software Applications"
+        ]
+      },
+      {
+        "title": "Phone automation App",
+        "location": "Room 3.403",
+        "startTime": "2014-09-12T12:00:00",
+        "endTime": "2014-09-12T12:30:00",
+        "description": "",
+        "type": "Project Seminar",
+        "people": [
+          {
+            "name": "Dhanish Semar Shahul",
+            "role": "Student"
+          },
+          {
+            "name": "Ted Chen",
+            "role": "Student"
+          },
+          {
+            "name": "Dr. Rashina Hoda",
+            "role": "Chair",
+            "contactDetails": [
+              {
+                "value": "r.hoda@auckland.ac.nz",
+                "type": "email"
+              }
+            ]
+          },
+          {
+            "name": "Dr. Andrew Luxton-Reilly",
+            "role": "Assessor",
+            "contactDetails": [
+              {
+                "value": "a.luxton-reilly@auckland.ac.nz",
+                "type": "email"
+              }
+            ]
+          },
+          {
+            "name": "Dr. Beryl Plimmer",
+            "role": "Assessor",
+            "contactDetails": [
+              {
+                "value": "b.plimmer@auckland.ac.nz",
+                "type": "email"
+              }
+            ]
+          }
+        ],
+        "tags": [
+          "Software Applications"
+        ]
+      },
+      {
+        "title": "Planning tool for coursework scheduling",
+        "location": "Room 3.403",
+        "startTime": "2014-09-12T14:00:00",
+        "endTime": "2014-09-12T14:30:00",
+        "description": "",
+        "type": "Project Seminar",
+        "people": [
+          {
+            "name": "Janodya Moonamale",
+            "role": "Student"
+          },
+          {
+            "name": "Amruth Akoju",
+            "role": "Student"
+          },
+          {
+            "name": "Dr. Sathiamoorthy Manoharan",
+            "role": "Chair",
+            "contactDetails": [
+              {
+                "value": "s.manoharan@auckland.ac.nz",
+                "type": "email"
+              }
+            ]
+          },
+          {
+            "name": "Dr. Jing Sun",
+            "role": "Chair",
+            "contactDetails": [
+              {
+                "value": "j.sun@cs.auckland.ac.nz",
+                "type": "email"
+              }
+            ]
+          },
+          {
+            "name": "Dr. Ewan Tempero",
+            "role": "Assessor",
+            "contactDetails": [
+              {
+                "value": "e.tempero@auckland.ac.nz",
+                "type": "email"
+              }
+            ]
+          }
+        ],
+        "tags": [
+          "Electronic Systems"
+        ]
+      },
+      {
+        "title": "Fractal geometries applied to wire antennas",
+        "location": "Room 3.407",
+        "startTime": "2014-09-11T09:00:00",
+        "endTime": "2014-09-11T09:30:00",
+        "description": "",
+        "type": "Project Seminar",
+        "people": [
+          {
+            "name": "Dong Li",
+            "role": "Student"
+          },
+          {
+            "name": "Allister Collinge",
+            "role": "Student"
+          },
+          {
+            "name": "Dr. Michael Neve",
+            "role": "Chair",
+            "contactDetails": [
+              {
+                "value": "mj.neve@auckland.ac.nz",
+                "type": "email"
+              }
+            ]
+          },
+          {
+            "name": "Prof. Kevin Sowerby",
+            "role": "Assessor",
+            "contactDetails": [
+              {
+                "value": "kw.sowerby@auckland.ac.nz",
+                "type": "email"
+              }
+            ]
+          },
+          {
+            "name": "Dr. Bernard Guillemin",
+            "role": "Assessor",
+            "contactDetails": [
+              {
+                "value": "bj.guillemin@auckland.ac.nz",
+                "type": "email"
+              }
+            ]
+          }
+        ],
+        "tags": [
+          "Radio Systems"
+        ]
+      },
+      {
+        "title": "Fractal geometries applied to inverted F antennas",
+        "location": "Room 3.407",
+        "startTime": "2014-09-11T09:30:00",
+        "endTime": "2014-09-11T10:00:00",
+        "description": "",
+        "type": "Project Seminar",
+        "people": [
+          {
+            "name": "Asanka Opata Kankanange",
+            "role": "Student"
+          },
+          {
+            "name": "Karan Singh",
+            "role": "Student"
+          },
+          {
+            "name": "Dr. Michael Neve",
+            "role": "Chair",
+            "contactDetails": [
+              {
+                "value": "mj.neve@auckland.ac.nz",
+                "type": "email"
+              }
+            ]
+          },
+          {
+            "name": "Prof. Kevin Sowerby",
+            "role": "Assessor",
+            "contactDetails": [
+              {
+                "value": "kw.sowerby@auckland.ac.nz",
+                "type": "email"
+              }
+            ]
+          },
+          {
+            "name": "Dr. Bernard Guillemin",
+            "role": "Assessor",
+            "contactDetails": [
+              {
+                "value": "bj.guillemin@auckland.ac.nz",
+                "type": "email"
+              }
+            ]
+          }
+        ],
+        "tags": [
+          "Radio Systems"
+        ]
+      },
+      {
+        "title": "Microwave filter fabrication using additive manufacturing",
+        "location": "Room 3.407",
+        "startTime": "2014-09-11T10:00:00",
+        "endTime": "2014-09-11T10:30:00",
+        "description": "",
+        "type": "Project Seminar",
+        "people": [
+          {
+            "name": "Rohit More",
+            "role": "Student"
+          },
+          {
+            "name": "Priya Mittal",
+            "role": "Student"
+          },
+          {
+            "name": "Dr. Michael Neve",
+            "role": "Chair",
+            "contactDetails": [
+              {
+                "value": "mj.neve@auckland.ac.nz",
+                "type": "email"
+              }
+            ]
+          },
+          {
+            "name": "Prof. Kevin Sowerby",
+            "role": "Assessor",
+            "contactDetails": [
+              {
+                "value": "kw.sowerby@auckland.ac.nz",
+                "type": "email"
+              }
+            ]
+          },
+          {
+            "name": "Dr. Bernard Guillemin",
+            "role": "Assessor",
+            "contactDetails": [
+              {
+                "value": "bj.guillemin@auckland.ac.nz",
+                "type": "email"
+              }
+            ]
+          }
+        ],
+        "tags": [
+          "Radio Systems"
+        ]
+      },
+      {
+        "title": "Inertial navigation and attitude sensing",
+        "location": "Room 3.407",
+        "startTime": "2014-09-11T11:00:00",
+        "endTime": "2014-09-11T11:30:00",
+        "description": "",
+        "type": "Project Seminar",
+        "people": [
+          {
+            "name": "Kevin Shin",
+            "role": "Student"
+          },
+          {
+            "name": "Neil Blake",
+            "role": "Student"
+          },
+          {
+            "name": "Dr. Bruce MacDonald",
+            "role": "Chair",
+            "contactDetails": [
+              {
+                "value": "b.macdonald@auckland.ac.nz",
+                "type": "email"
+              }
+            ]
+          },
+          {
+            "name": "Dr. Waleed Abdulla",
+            "role": "Assessor",
+            "contactDetails": [
+              {
+                "value": "w.abdulla@auckland.ac.nz",
+                "type": "email"
+              }
+            ]
+          },
+          {
+            "name": "Dr. Mohan Sridharan",
+            "role": "Assessor",
+            "contactDetails": [
+              {
+                "value": "m.sridharan@auckland.ac.nz",
+                "type": "email"
+              }
+            ]
+          }
+        ],
+        "tags": [
+          "Embedded Systems"
+        ]
+      },
+      {
+        "title": "A virtual reality driving simulator for intelligent transportation systems",
+        "location": "Room 3.407",
+        "startTime": "2014-09-11T11:30:00",
+        "endTime": "2014-09-11T12:00:00",
+        "description": "",
+        "type": "Project Seminar",
+        "people": [
+          {
+            "name": "Haihao Zhang",
+            "role": "Student"
+          },
+          {
+            "name": "Josh Archer",
+            "role": "Student"
+          },
+          {
+            "name": "Dr. Bruce MacDonald",
+            "role": "Chair",
+            "contactDetails": [
+              {
+                "value": "b.macdonald@auckland.ac.nz",
+                "type": "email"
+              }
+            ]
+          },
+          {
+            "name": "Dr. Waleed Abdulla",
+            "role": "Assessor",
+            "contactDetails": [
+              {
+                "value": "w.abdulla@auckland.ac.nz",
+                "type": "email"
+              }
+            ]
+          },
+          {
+            "name": "Dr. Mohan Sridharan",
+            "role": "Assessor",
+            "contactDetails": [
+              {
+                "value": "m.sridharan@auckland.ac.nz",
+                "type": "email"
+              }
+            ]
+          }
+        ],
+        "tags": [
+          "Embedded Systems"
+        ]
+      },
+      {
+        "title": "FPGA-based platform for internet of industrial things",
+        "location": "Room 3.407",
+        "startTime": "2014-09-11T12:00:00",
+        "endTime": "2014-09-11T12:30:00",
+        "description": "",
+        "type": "Project Seminar",
+        "people": [
+          {
+            "name": "Manu Sharma",
+            "role": "Student"
+          },
+          {
+            "name": "Dez Packwood",
+            "role": "Student"
+          },
+          {
+            "name": "Dr. Bruce MacDonald",
+            "role": "Chair",
+            "contactDetails": [
+              {
+                "value": "b.macdonald@auckland.ac.nz",
+                "type": "email"
+              }
+            ]
+          },
+          {
+            "name": "Dr. Waleed Abdulla",
+            "role": "Assessor",
+            "contactDetails": [
+              {
+                "value": "w.abdulla@auckland.ac.nz",
+                "type": "email"
+              }
+            ]
+          },
+          {
+            "name": "Dr. Mohan Sridharan",
+            "role": "Assessor",
+            "contactDetails": [
+              {
+                "value": "m.sridharan@auckland.ac.nz",
+                "type": "email"
+              }
+            ]
+          }
+        ],
+        "tags": [
+          "Embedded Systems"
+        ]
+      },
+      {
+        "title": "Body area wireless sensor network for real-time characterization of human gait",
+        "location": "Room 3.407",
+        "startTime": "2014-09-11T14:00:00",
+        "endTime": "2014-09-11T14:30:00",
+        "description": "",
+        "type": "Project Seminar",
+        "people": [
+          {
+            "name": "Arjhun Shivakuma",
+            "role": "Student"
+          },
+          {
+            "name": "Jason Padarath",
+            "role": "Student"
+          },
+          {
+            "name": "Prof. Zoran Salcic",
+            "role": "Chair",
+            "contactDetails": [
+              {
+                "value": "z.salcic@auckland.ac.nz",
+                "type": "email"
+              }
+            ]
+          },
+          {
+            "name": "Dr. Partha Roop",
+            "role": "Assessor",
+            "contactDetails": [
+              {
+                "value": "p.roop@auckland.ac.nz",
+                "type": "email"
+              }
+            ]
+          },
+          {
+            "name": "Dr. Stevan Berber",
+            "role": "Assessor",
+            "contactDetails": [
+              {
+                "value": "s.berber@auckland.ac.nz",
+                "type": "email"
+              }
+            ]
+          }
+        ],
+        "tags": [
+          "Embedded Systems"
+        ]
+      },
+      {
+        "title": "Designing a wireless ambient intelligence infrastructure",
+        "location": "Room 3.407",
+        "startTime": "2014-09-11T14:30:00",
+        "endTime": "2014-09-11T15:00:00",
+        "description": "",
+        "type": "Project Seminar",
+        "people": [
+          {
+            "name": "Bashar Dawood",
+            "role": "Student"
+          },
+          {
+            "name": "Zhenya Yaroshenko",
+            "role": "Student"
+          },
+          {
+            "name": "Prof. Zoran Salcic",
+            "role": "Chair",
+            "contactDetails": [
+              {
+                "value": "z.salcic@auckland.ac.nz",
+                "type": "email"
+              }
+            ]
+          },
+          {
+            "name": "Dr. Partha Roop",
+            "role": "Assessor",
+            "contactDetails": [
+              {
+                "value": "p.roop@auckland.ac.nz",
+                "type": "email"
+              }
+            ]
+          },
+          {
+            "name": "Dr. Stevan Berber",
+            "role": "Assessor",
+            "contactDetails": [
+              {
+                "value": "s.berber@auckland.ac.nz",
+                "type": "email"
+              }
+            ]
+          }
+        ],
+        "tags": [
+          "Embedded Systems"
+        ]
+      },
+      {
+        "title": "App game for blind people",
+        "location": "Room 3.407",
+        "startTime": "2014-09-12T09:00:00",
+        "endTime": "2014-09-12T09:30:00",
+        "description": "",
+        "type": "Project Seminar",
+        "people": [
+          {
+            "name": "Theo Thompson",
+            "role": "Student"
+          },
+          {
+            "name": "Benjamin Jones",
+            "role": "Student"
+          },
+          {
+            "name": "Prof. Robert Amor",
+            "role": "Chair",
+            "contactDetails": [
+              {
+                "value": "trebor@cs.auckland.ac.nz",
+                "type": "email"
+              }
+            ]
+          },
+          {
+            "name": "Dr. Gerald Weber",
+            "role": "Assessor",
+            "contactDetails": [
+              {
+                "value": "g.weber@cs.auckland.ac.nz",
+                "type": "email"
+              }
+            ]
+          },
+          {
+            "name": "Dr. Ewan Tempero",
+            "role": "Assessor",
+            "contactDetails": [
+              {
+                "value": "e.tempero@auckland.ac.nz",
+                "type": "email"
+              }
+            ]
+          }
+        ],
+        "tags": [
+          "Software Tools"
+        ]
+      },
+      {
+        "title": "A new toolbox for API mashups",
+        "location": "Room 3.407",
+        "startTime": "2014-09-12T09:30:00",
+        "endTime": "2014-09-12T10:00:00",
+        "description": "",
+        "type": "Project Seminar",
+        "people": [
+          {
+            "name": "Kartik Andalam",
+            "role": "Student"
+          },
+          {
+            "name": "Kirushi Arunthavasothy",
+            "role": "Student"
+          },
+          {
+            "name": "Prof. Robert Amor",
+            "role": "Chair",
+            "contactDetails": [
+              {
+                "value": "trebor@cs.auckland.ac.nz",
+                "type": "email"
+              }
+            ]
+          },
+          {
+            "name": "Dr. Gerald Weber",
+            "role": "Assessor",
+            "contactDetails": [
+              {
+                "value": "g.weber@cs.auckland.ac.nz",
+                "type": "email"
+              }
+            ]
+          },
+          {
+            "name": "Dr. Ewan Tempero",
+            "role": "Assessor",
+            "contactDetails": [
+              {
+                "value": "e.tempero@auckland.ac.nz",
+                "type": "email"
+              }
+            ]
+          }
+        ],
+        "tags": [
+          "Software Tools"
+        ]
+      },
+      {
+        "title": "Tabletop game (software App)",
+        "location": "Room 3.407",
+        "startTime": "2014-09-12T10:00:00",
+        "endTime": "2014-09-12T10:30:00",
+        "description": "",
+        "type": "Project Seminar",
+        "people": [
+          {
+            "name": "Tom Hulme",
+            "role": "Student"
+          },
+          {
+            "name": "John Lambert",
+            "role": "Student"
+          },
+          {
+            "name": "Prof. Robert Amor",
+            "role": "Chair",
+            "contactDetails": [
+              {
+                "value": "trebor@cs.auckland.ac.nz",
+                "type": "email"
+              }
+            ]
+          },
+          {
+            "name": "Dr. Gerald Weber",
+            "role": "Assessor",
+            "contactDetails": [
+              {
+                "value": "g.weber@cs.auckland.ac.nz",
+                "type": "email"
+              }
+            ]
+          },
+          {
+            "name": "Dr. Ewan Tempero",
+            "role": "Assessor",
+            "contactDetails": [
+              {
+                "value": "e.tempero@auckland.ac.nz",
+                "type": "email"
+              }
+            ]
+          }
+        ],
+        "tags": [
+          "Software Tools"
+        ]
+      },
+      {
+        "title": "Game for learning Te Reo",
+        "location": "Room 3.407",
+        "startTime": "2014-09-12T11:00:00",
+        "endTime": "2014-09-12T11:30:00",
+        "description": "",
+        "type": "Project Seminar",
+        "people": [
+          {
+            "name": "George Chang",
+            "role": "Student"
+          },
+          {
+            "name": "SunKee Hong",
+            "role": "Student"
+          },
+          {
+            "name": "Dr. Robert Sheehan",
+            "role": "Chair",
+            "contactDetails": [
+              {
+                "value": "r.sheehan@auckland.ac.nz",
+                "type": "email"
+              }
+            ]
+          },
+          {
+            "name": "Dr. Sathiamoorthy Manoharan",
+            "role": "Assessor",
+            "contactDetails": [
+              {
+                "value": "s.manoharan@auckland.ac.nz",
+                "type": "email"
+              }
+            ]
+          },
+          {
+            "name": "Dr. Christof Lutteroth",
+            "role": "Chair",
+            "contactDetails": [
+              {
+                "value": "lutteroth@cs.auckland.ac.nz",
+                "type": "email"
+              }
+            ]
+          }
+        ],
+        "tags": [
+          "Software Tools"
+        ]
+      },
+      {
+        "title": "Refactoring on a tablet",
+        "location": "Room 3.407",
+        "startTime": "2014-09-12T11:30:00",
+        "endTime": "2014-09-12T12:00:00",
+        "description": "",
+        "type": "Project Seminar",
+        "people": [
+          {
+            "name": "Raoul Dcunha",
+            "role": "Student"
+          },
+          {
+            "name": "Wasiq Kashkari",
+            "role": "Student"
+          },
+          {
+            "name": "Dr. Robert Sheehan",
+            "role": "Chair",
+            "contactDetails": [
+              {
+                "value": "r.sheehan@auckland.ac.nz",
+                "type": "email"
+              }
+            ]
+          },
+          {
+            "name": "Dr. Sathiamoorthy Manoharan",
+            "role": "Assessor",
+            "contactDetails": [
+              {
+                "value": "s.manoharan@auckland.ac.nz",
+                "type": "email"
+              }
+            ]
+          },
+          {
+            "name": "Dr. Christof Lutteroth",
+            "role": "Chair",
+            "contactDetails": [
+              {
+                "value": "lutteroth@cs.auckland.ac.nz",
+                "type": "email"
+              }
+            ]
+          }
+        ],
+        "tags": [
+          "Software Tools"
+        ]
+      },
+      {
+        "title": "Controlling the desktop with keyboard and gaze",
+        "location": "Room 3.407",
+        "startTime": "2014-09-12T12:00:00",
+        "endTime": "2014-09-12T12:30:00",
+        "description": "",
+        "type": "Project Seminar",
+        "people": [
+          {
+            "name": "Ken Neth Yeoh",
+            "role": "Student"
+          },
+          {
+            "name": "Charindu Weerasinghe",
+            "role": "Student"
+          },
+          {
+            "name": "Dr. Robert Sheehan",
+            "role": "Chair",
+            "contactDetails": [
+              {
+                "value": "r.sheehan@auckland.ac.nz",
+                "type": "email"
+              }
+            ]
+          },
+          {
+            "name": "Dr. Sathiamoorthy Manoharan",
+            "role": "Assessor",
+            "contactDetails": [
+              {
+                "value": "s.manoharan@auckland.ac.nz",
+                "type": "email"
+              }
+            ]
+          },
+          {
+            "name": "Dr. Christof Lutteroth",
+            "role": "Chair",
+            "contactDetails": [
+              {
+                "value": "lutteroth@cs.auckland.ac.nz",
+                "type": "email"
+              }
+            ]
+          }
+        ],
+        "tags": [
+          "Software Tools"
+        ]
+      },
+      {
+        "title": "Allocating channels in wireless networks using game theory",
+        "location": "Room 3.407",
+        "startTime": "2014-09-12T14:00:00",
+        "endTime": "2014-09-12T14:30:00",
+        "description": "",
+        "type": "Project Seminar",
+        "people": [
+          {
+            "name": "Luke Boyes",
+            "role": "Student"
+          },
+          {
+            "name": "Josephina Cheong",
+            "role": "Student"
+          },
+          {
+            "name": "Dr. Mohan Sridharan",
+            "role": "Chair",
+            "contactDetails": [
+              {
+                "value": "m.sridharan@auckland.ac.nz",
+                "type": "email"
+              }
+            ]
+          },
+          {
+            "name": "Dr. Gerard Rowe",
+            "role": "Assessor",
+            "contactDetails": [
+              {
+                "value": "gb.rowe@auckland.ac.nz",
+                "type": "email"
+              }
+            ]
+          },
+          {
+            "name": "Dr. Michael Neve",
+            "role": "Assessor",
+            "contactDetails": [
+              {
+                "value": "mj.neve@auckland.ac.nz",
+                "type": "email"
+              }
+            ]
+          }
+        ],
+        "tags": [
+          "Telecommunications"
+        ]
+      },
+      {
+        "title": "Automatic configuration of GSM networks in disaster recovery situations",
+        "location": "Room 3.407",
+        "startTime": "2014-09-12T14:30:00",
+        "endTime": "2014-09-12T13:00:00",
+        "description": "",
+        "type": "Project Seminar",
+        "people": [
+          {
+            "name": "Chris Wiggins",
+            "role": "Student"
+          },
+          {
+            "name": "Eden Choi",
+            "role": "Student"
+          },
+          {
+            "name": "Dr. Mohan Sridharan",
+            "role": "Chair",
+            "contactDetails": [
+              {
+                "value": "m.sridharan@auckland.ac.nz",
+                "type": "email"
+              }
+            ]
+          },
+          {
+            "name": "Dr. Gerard Rowe",
+            "role": "Assessor",
+            "contactDetails": [
+              {
+                "value": "gb.rowe@auckland.ac.nz",
+                "type": "email"
+              }
+            ]
+          },
+          {
+            "name": "Dr. Michael Neve",
+            "role": "Assessor",
+            "contactDetails": [
+              {
+                "value": "mj.neve@auckland.ac.nz",
                 "type": "email"
               }
             ]

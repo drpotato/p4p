@@ -87,7 +87,7 @@ angular.module('esad', ['esad.fileUpload','esad.map', 'esad.stream', 'esad.subEv
       var streams = $scope.getStreamsAtTime(time, event);
       var events = $scope.getEventsAtTime(time, event);
       $scope.timetable.push({
-        time: time,
+        time: moment(time),
         streams: streams,
         events: events
       });

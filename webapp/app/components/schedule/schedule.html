@@ -12,7 +12,7 @@
     <li class="esad-time" ng-repeat="time in timetable">
       <div class="row vertical-centre">
         <div class="col-md-1">
-          <h4>{{time.time | date:'MMM d, h:mm a'}}</h4>
+          <h4>{{time.time | amDateFormat:'MMM d, h:mm a'}}</h4>
         </div>
         <div class="col-md-11 stream-container">
             <event-stream ng-repeat="stream in time.streams" name="stream" events="time.events" query="query" class="stream-box"></event-stream>

@@ -1,5 +1,5 @@
 <div ng-controller="SubEventController">
-    <div ng-click="expand()" class="panel-body">
+    <div ng-click="expand()" class="panel-body sub-event">
         <h5>{{subEvent.title | limitTo:70}}</h5>
         <ng-transclude></ng-transclude>
         <script type="text/ng-template" id="myModalContent.html">

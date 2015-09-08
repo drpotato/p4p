@@ -63,7 +63,7 @@
       <a href="/" class="navbar-brand">Open Conference Format</a>
     </div>
 
-    <div class="navbar-collapse collapse" id="header-nav">
+    <div class="navbar-left navbar-collapse collapse" id="header-nav">
       <ul class="nav navbar-nav">
         <li>
           <span class="nav-span link-hover">Upload<input id="fileInput" class="nav-input" type="file"
@@ -77,21 +77,26 @@
         </li>
       </ul>
       </div>
+    <div class="navbar-collapse collapse pull-right" id="header-nav-right">
+      <ul class="nav navbar-nav">
+        <li><span class="nav-span"><a class="link-plain" href="/">Grid</a></span></li>
+        <li><span class="nav-span"><a class="link-plain" href="/list">List</a></li>
+        <li><span class="nav-span"><a class="link-plain" href="#" ng-click="fuckShitUp()">Show My Schedule</a></span></li>
+        <li><span class="nav-span" ng-click="makeICS()"><a class="link-plain" href="#">Export items to Calendar</a></span></li>
+        <li>
+          <form class="navbar-form" role="search">
+            <div class="input-group">
+              <input class="nav-search" placeholder="Search" ng-model="query">
+            </div>
+          </form>
+        </li>
+      </ul>
+    </div>
   </div>
 </nav>
 <div class="container-fluid">
   <div class="row">
-    <div class="col-sm-3 col-md-2 sidebar">
-      <ul class="nav nav-sidebar">
-        <li ng-if="filename" ng-click=""><a><span class="">{{filename}}</span></a></li>
-        <li><a href="/">Grid</a></li>
-        <li><a href="/list">List</a></li>
-        <li><input class="nav-search" placeholder="Search" ng-model="query"></li>
-        <li ng-click="fuckShitUp()"><a href="#"><span class="">Show My Schedule</span></a></li>
-        <li ng-click="makeICS()"><a href="#"><span class="">Export items to Calendar</span></a></li>
-      </ul>
-    </div>
-    <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
+    <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-1 main">
       <!-- angular templating -->
       <!-- this is where content will be injected -->
       <div ng-view></div>

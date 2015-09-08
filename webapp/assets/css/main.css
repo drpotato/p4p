@@ -2,8 +2,8 @@ body{
   padding-top:50px;
 }
 
-.list-view.row:not(:last-child) {
-  border-bottom: 1px solid #ccc;
+.list-view {
+  border-top: 1px solid #ccc;
 }
 
 .panel-body{

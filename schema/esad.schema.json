@@ -3,17 +3,42 @@
   "definitions": {
     "contactDetail": {
       "type": "object",
-      "properties": {
-        "type": {"type": "string"},
-        "value": {"type": "string"}
-      },
+      "oneOf": [
+        {"$ref": "#/definitions/emailDetail"},
+        {"$ref": "#/definitions/phoneDetail"}
+      ]
     },
-    "person" :{
+    "emailDetail": {
       "type": "object",
       "properties": {
-        "name" : {"type": "string"},
+        "value": {
+          "format":"email",
+          "type": "string"
+        },
+        "type": {"enum": ["email", "phone"]}
+      },
+      "required": ["value", "type"]
+    },
+    "phoneDetail": {
+      "type": "object",
+      "properties": {
+        "value": {
+          "type": "string",
+          "pattern": "^\\+?[\\d ]*$"
+        },
+        "type": {"enum": ["email", "phone"]}
+      },
+      "required": ["value", "type"]
+    },
+    "person": {
+      "type": "object",
+      "properties": {
+        "name": {"type": "string"},
         "role": {"type": "string"},
-        "contactDetails" : {"type": "array", "items": {"$ref": "#/definitions/contactDetail"}}
+        "contactDetails": {
+          "type": "array",
+          "items": {"anyOf": [{"$ref": "#/definitions/contactDetail"}]}
+        }
       }
     },
     "event": {
@@ -21,19 +46,33 @@
       "properties": {
         "title": {"type": "string"},
         "location": {"type": "string"},
-        "startTime": {"type": "string"},
-        "endTime": {"type": "string"}
+        "startTime": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "endTime": {
+          "type": "string",
+          "format": "date-time"
+        }
       },
+      "required": ["title", "location"]
     },
     "subEvent": {
       "type": "object",
       "allOf": [
         {"$ref": "#/definitions/event"},
-        {"properties": {
+        {
+          "properties": {
             "description": {"type": "string"},
             "type": {"type": "string"},
-            "people": {"type": "array", "items": {"$ref": "#/definitions/person"}},
-            "tags": {"type": "array", "items": {"type": "string"}}
+            "people": {
+              "type": "array",
+              "items": {"$ref": "#/definitions/person"}
+            },
+            "tags": {
+              "type": "array",
+              "items": {"type": "string"}
+            }
           }
         }
       ]
@@ -41,12 +80,22 @@
   },
   "title": "Conference",
   "type": "object",
-  "allOf": [
-    {"$ref": "#/definitions/event"},
-    {"properties": {
-        "organiser": {"type": "string"},
-        "subEvents": {"type": "array", "items": {"$ref": "#/definitions/subEvent"}}
-      }
+  "properties": {
+    "event": {
+      "allOf": [
+        {"$ref": "#/definitions/event"},
+        {
+          "properties": {
+            "organiser": {"type": "string"},
+            "subEvents": {
+              "type": "array",
+              "minItems": 1,
+              "items": {"$ref": "#/definitions/subEvent"}
+            }
+          }, "required": ["subEvents", "organiser"]
+        }
+      ]
     }
-  ]
+  },
+  "required": ["event"]
 }

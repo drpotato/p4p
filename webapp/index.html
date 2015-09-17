@@ -60,36 +60,22 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a href="/" class="navbar-brand">Open Conference Format</a>
+      <a href="/" class="navbar-brand visible-xs">OCF</a>
+      <a href="/" class="navbar-brand hidden-xs">Open Conference Format</a>
+      <form class="navbar-form pull-right" role="search">
+          <div class="input-group">
+            <input class="nav-search form-control" placeholder="Search" ng-model="query">
+          </div>
+      </form>
     </div>
-
-    <div class="navbar-left navbar-collapse collapse" id="header-nav">
+    <div class="navbar-collapse collapse" id="header-nav">
       <ul class="nav navbar-nav">
-        <li>
-          <span class="nav-span link-hover">Upload<input id="fileInput" class="nav-input" type="file"
-                                                custom-on-change="onFileLoad" ng-model="filename"></span>
-        </li>
-        <li>
-          <span class="nav-span"><a class="link-plain" href="/new">New</a></span>
-        </li>
-        <li>
-          <span class="nav-span"><a class="link-plain" href="/import">Import</a></span>
-        </li>
-      </ul>
-      </div>
-    <div class="navbar-collapse collapse pull-right" id="header-nav-right">
-      <ul class="nav navbar-nav">
+        <li><span class="nav-span link-hover">Upload<input id="fileInput" class="nav-input" type="file" custom-on-change="onFileLoad" ng-model="filename"></span></li>
+        <li><span class="nav-span"><a class="link-plain" href="/import">Import</a></span></li>
         <li><span class="nav-span"><a class="link-plain" href="/">Grid</a></span></li>
         <li><span class="nav-span"><a class="link-plain" href="/list">List</a></li>
         <li><span class="nav-span"><a class="link-plain" href="#" ng-click="fuckShitUp()">Show My Schedule</a></span></li>
         <li><span class="nav-span" ng-click="makeICS()"><a class="link-plain" href="#">Export items to Calendar</a></span></li>
-        <li>
-          <form class="navbar-form" role="search">
-            <div class="input-group">
-              <input class="nav-search" placeholder="Search" ng-model="query">
-            </div>
-          </form>
-        </li>
       </ul>
     </div>
   </div>

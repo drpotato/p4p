@@ -37,4 +37,4 @@ app.get('/vcard', function (req, res) {
 
 app.use(catchAll);
 
-app.listen(process.env.PORT || 3000);
+app.listen(3000, '0.0.0.0');
